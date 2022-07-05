@@ -1,9 +1,10 @@
 import React from 'react';
+// import "fabian.scss" from ../asdf
 
 const FabiansComponent = () => {
   return (
-    <div>
-      Fabian
+    <div className='divContainer'>
+      <h1> Fabian </h1>
     </div>
   );
 }
