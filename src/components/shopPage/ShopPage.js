@@ -1,17 +1,19 @@
 import React from 'react';
 import './ShopPage.scss'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import wallConnector from '../../Assets/Images/wall_connector.avif'
-import chillBanner from '../../Assets/Images/chill_banner.avif'
-import floorMats from '../../Assets/Images/floormats.avif'
-import { ShopNowButton } from '../Styled';
+// import { Carousel } from 'react-responsive-carousel';
+// import wallConnector from '../../Assets/Images/wall_connector.avif'
+// import chillBanner from '../../Assets/Images/chill_banner.avif'
+// import floorMats from '../../Assets/Images/floormats.avif'
+// import { ShopNowButton } from '../Styled';
+import HeroCarousel from './HeroCarousel';
 
 const ShopPage = () => {
   return (
     <div className='shop-page-component'>
-      <div className="hero-carousel">
-        <Carousel infiniteLoop emulateTouch interval="5000" showThumbs={false}>
+      <HeroCarousel />
+      {/* <div className="hero-carousel"> */}
+        {/* <Carousel infiniteLoop emulateTouch interval="5000" showThumbs={false}>
           <div className='carousel-image-container'>
             <img src={wallConnector} alt="" />
             <div className="carousel-text">
@@ -26,8 +28,8 @@ const ShopPage = () => {
           <div className='carousel-image-container'>
             <img src={floorMats} alt="" />
           </div>
-        </Carousel>
-      </div>
+        </Carousel> */}
+      {/* </div> */}
     </div>
   );
 }
