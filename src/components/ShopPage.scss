@@ -7,6 +7,11 @@
     img {
       max-height: 100%;
       max-width: 100%;
+      -khtml-user-select: none;
+      -o-user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
     }
   }
 }
