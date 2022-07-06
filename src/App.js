@@ -1,5 +1,5 @@
 import "./App.css";
-import ShopPage from "./components/ShopPage";
+import ShopPage from "./components/shopPage/ShopPage";
 import Nav from "./components/navBar/Nav";
 import { Outlet } from "react-router-dom";
 
