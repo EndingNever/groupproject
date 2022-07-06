@@ -1,17 +1,44 @@
 .shop-page-component{
-  height: 100vh;
-  width: 100vw;
-
+  
   .hero-carousel{
-    // overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    .carousel-image-container{
+      height: 100vh;
+      .carousel-text{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 6.0em;
+        color: white;
+        h1{
+          font-weight: 600;
+          font-size: 3em;
+          margin: 0px;
+        }
+        h2{
+          font-size: 2em;
+        }
+      }
+    }
     img {
-      max-height: 100%;
-      max-width: 100%;
+      height: 100%;
       -khtml-user-select: none;
       -o-user-select: none;
       -moz-user-select: none;
       -webkit-user-select: none;
       user-select: none;
+    }
+    .carousel{
+      .control-arrow{
+       display: none;
+     }
+     .carousel-status{
+      display: none;
+     }
+     .control-dots .dot{
+      margin-bottom: 50px;
+     }
     }
   }
 }
