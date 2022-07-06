@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import { useParams } from "react-router-dom";
 
 const TestPage = () => {
-    return (
-        <div>
-            <h1>Test Route</h1>
-        </div>
-    );
-}
+  const { productCategory } = useParams();
+  return (
+    <div>
+      <h1>Test Route</h1>
+      <h2>{productCategory ? productCategory : "Cart"}</h2>
+    </div>
+  );
+};
 
 export default TestPage;
