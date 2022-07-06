@@ -26,8 +26,8 @@ const products = [
 function Card() {
   return (
     <div className="cardWrapper">
-      <div className="itemImg">
-        <div className="itemImgNonHover">
+      <div className="itemImgWrapper">
+        <div className="itemImg">
           <img src="" alt="" />
         </div>
         <div className="itemImgOnHover">
@@ -36,8 +36,8 @@ function Card() {
         </div>
       </div>
       <div className="item">
-        <p className="itemName"></p>
-        <p className="itemPrice"></p>
+        <p className="itemName">{products.itemName}</p>
+        <p className="itemPrice">{products.itemPrice}</p>
       </div>
     </div>
   );
