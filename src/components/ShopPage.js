@@ -2,9 +2,9 @@ import React from 'react';
 import './ShopPage.scss'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import wallConnector from '../wall_connector.avif'
-import chillBanner from '../chill_banner.avif'
-import floorMats from '../floormats.avif'
+import wallConnector from '../Assets/Images/wall_connector.avif'
+import chillBanner from '../Assets/Images/chill_banner.avif'
+import floorMats from '../Assets/Images/floormats.avif'
 
 const FabiansComponent = () => {
   return (
@@ -22,7 +22,6 @@ const FabiansComponent = () => {
           </div>
         </Carousel>
       </div>
-      {/* <h1>Test</h1> */}
     </div>
   );
 }
