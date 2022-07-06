@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import ShopPage from './components/ShopPage'
 
 function App() {
   return (
     <div className="App">
+      <ShopPage />
     </div>
   );
 }
