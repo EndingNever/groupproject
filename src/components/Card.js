@@ -1,8 +1,11 @@
 import React from "react";
+import wallConnector from "../assets/images/wallConnector.avif";
+import wallConnectorHov from "../assets/images/wallConnectorHover.avif";
 
 const products = [
   {
-    itemImg: "",
+    itemImg: wallConnector,
+    itemImgHover: wallConnectorHov,
     itemName: "Wall Connector",
     itemPrice: "$400",
   },
@@ -28,7 +31,7 @@ function Card() {
     <div className="cardWrapper">
       <div className="itemImgWrapper">
         <div className="itemImg">
-          <img src="" alt="" />
+          <img src={products.itemImg} alt="" />
         </div>
         <div className="itemImgOnHover">
           <img src="" alt="" />
