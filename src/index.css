@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Gotham-Book";
   src: local("Gotham-Book"),
-    url(./assets//fonts/GothamSSm-Book_Web.woff2) format("woff2");
+    url(./assets/fonts/GothamSSm-Book_Web.woff2) format("woff2");
 }
 
 @font-face {
