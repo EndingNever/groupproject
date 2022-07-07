@@ -42,9 +42,9 @@ const ShopPage = () => {
           </div>
         </div>
         <div className="kids">
-          <img src={kids} alt="kid's clothing" />
+          <img src={kids} alt="kids' clothing" />
           <div className="apparel-text">
-            <h1>Kid's apparel</h1>
+            <h1>Kids' apparel</h1>
             <ShopNowButton>SHOP NOW</ShopNowButton>
           </div>
         </div>
