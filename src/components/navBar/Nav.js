@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import TeslaLogo from '../../assets/Images/TeslaLogo'
+import TeslaLogo from '../../assets/images/TeslaLogo'
 import { useNavigate } from "react-router-dom";
 
 const StyledNav = styled.nav`
