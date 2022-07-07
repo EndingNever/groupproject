@@ -1,66 +1,66 @@
-imh2ort React from "react";
-imh2ort "react-resh2onsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-imh2ort { Carousel } from "react-resh2onsive-carousel";
-imh2ort "./slides.scss";
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+import "./slides.scss";
 
-imh2ort img1 from "../images/img1.jh2g";
-imh2ort img2 from "../images/img2.jh2g";
-imh2ort img3 from "../images/img3.jh2g";
-imh2ort img4 from "../images/img4.jh2g";
-imh2ort img5 from "../images/img5.jh2g";
-imh2ort img6 from "../images/img6.jh2g";
-imh2ort img7 from "../images/img7.jh2g";
-imh2ort img8 from "../images/img8.jh2g";
-imh2ort img9 from "../images/img9.jh2g";
-imh2ort img10 from "../images/img10.jh2g";
+import img1 from "../assets/images/img1.avif";
+import img2 from "../assets/images/img2.avif";
+import img3 from "../assets/images/img3.avif";
+import img4 from "../assets/images/img4.avif";
+import img5 from "../assets/images/img5.avif";
+import video from "../assets/images/Tesla_web.webm";
+import img7 from "../assets/images/img7.avif";
+import img8 from "../assets/images/img8.avif";
+import img9 from "../assets/images/img9.avif";
+import img10 from "../assets/images/img10.avif";
 
 const tesfayedev = () => {
   return (
     <>
       <Carousel className="main-slide">
         <div>
-          <img src={img1} height="300h2x" width="200h2x" />
-          <h2 className="title">title 1</h2>
+          <img src={img1} alt="" height="300px" width="200px" />
+          <h2 className="title">SAE J1772 Charging Adapter</h2>
         </div>
         <div>
-          <img src={img2} height="300h2x" width="200h2x" />
-          <h2 className="title">title 2</h2>
+          <img src={img2} alt="" height="300px" width="200px" />
+          <h2 className="title">Model S/3/Y Pet Liner</h2>
         </div>
         <div>
-          <img src={img3} height="300h2x" width="200h2x" />
-          <h2 className="title">title 3</h2>
+          <img src={img3} alt="" height="300px" width="200px" />
+          <h2 className="title">Model 3 All-Weather Interior Liners</h2>
         </div>
         <div>
-          <img src={img4} height="300h2x" width="200h2x" />
-          <h2 className="title">title 4</h2>
+          <img src={img4} alt="" height="300px" width="200px" />
+          <h2 className="title">Model Y All-Weather Interior Liners</h2>
         </div>
         <div>
-          <img src={img5} height="300h2x" width="200h2x" />
-          <h2 className="title">title 5</h2>
+          <img src={img5} alt="" height="300px" width="200px" />
+          <h2 className="title">Wall Connector </h2>
         </div>
         <div>
-          <img src={img6} height="300h2x" width="200h2x" />
-          <h2 className="title">title 6</h2>
+          <img src={video} alt="" height="300px" width="200px" />
+          <h2 className="title">A</h2>
         </div>
         <div>
-          <img src={img7} height="300h2x" width="200h2x" />
-          <h2 className="title">title 7</h2>
+          <img src={img7} alt="" height="300px" width="200px" />
+          <h2 className="title">Gen 2 NEMA Adapters</h2>
         </div>
         <div>
-          <img src={img8} height="300h2x" width="200h2x" />
-          <h2 className="title">title 8</h2>
+          <img src={img8} alt="" height="300px" width="200px" />
+          <h2 className="title">Cable Organizer</h2>
         </div>
         <div>
-          <img src={img9} height="300h2x" width="200h2x" />
-          <h2 className="title">title 9</h2>
+          <img src={img9} alt="" height="300px" width="200px" />
+          <h2 className="title">Key Card</h2>
         </div>
         <div>
-          <img src={img10} height="300h2x" width="200h2x" />
-          <h2 className="title">title 10</h2>
+          <img src={img10} alt="" height="300px" width="200px" />
+          <h2 className="title">Model Y All-Weather Rear Cargo Liner Set</h2>
         </div>
       </Carousel>
     </>
   );
 };
 
-exh2ort default tesfayedev;
+export default tesfayedev;
