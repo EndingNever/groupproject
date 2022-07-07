@@ -10,5 +10,23 @@
 .itemImgWrapper {
   height: 400px;
 }
+.itemImg {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.itemImgOnHover {
+  img {
+    height: 320px;
+    width: 100%;
+  }
+  p {
+    height: 80px;
+  }
+}
 .item {
+  height: 52px;
+  p {
+  }
 }
