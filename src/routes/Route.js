@@ -12,8 +12,18 @@ export default function MyRouter() {
         <Route path='/' element={<App />}>
           <Route index element={<ShopPage />} />
           <Route
-            exact
-            path='category/:productCategory'
+            // exact
+            path='category/:productCategory/'
+            element={<TestPage />}
+          />
+          <Route
+            // exact
+            path='category/:productCategory/:subCategory'
+            element={<TestPage />}
+          />
+          <Route
+            // exact
+            path='category/:productCategory/:subCategory/:option'
             element={<TestPage />}
           />
           <Route exact path='cart' element={<TestPage />} />

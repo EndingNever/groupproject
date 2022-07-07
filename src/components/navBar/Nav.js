@@ -1,146 +1,130 @@
 import React, { createRef, useRef, useState } from "react";
-import styled from "styled-components";
-import TeslaLogo from '../../assets/Images/TeslaLogo'
+import TeslaLogo from "../../assets/images/TeslaLogo";
 import { useNavigate } from "react-router-dom";
-
-const StyledNav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: none;
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  color: white;
-  transition: all 0.1s;
-  ul {
-    display: flex;
-    list-style: none;
-    gap: 16px;
-    padding: 16px;
-  }
-  .navLogo {
-    height: 10px;
-    svg {
-      height: 100%;
-    }
-  }
-  &:hover {
-    background-color: white;
-    color: black;
-  }
-`;
-
-const Indicator = styled.div`
-  position: absolute;
-  background-color: red;
-  height: ${({ setting }) => `${setting.height}px`};
-  width: ${({ setting }) => `${setting.width}px`};
-  transform: translateX(${({ setting }) => `${setting.posX}px`});
-  z-index: -1;
-  transition: all 1s cubic-bezier(0.75, 0, 0, 1);
-  border-radius: 10px;
-  background-color: lightgray;
-`;
-
-const navList = [
-  {
-    category: "Charging",
-    subCategories: ["At Home", "One The Road", "Parts"],
-    promo: "insertImageHere",
-  },
-  {
-    category: "Vehicle Accessories",
-    subCategories: ["Model S", "Model 3", "Model X", "Model Y"],
-    options: [
-      "Best Sellers",
-      "Interior",
-      "Exterior",
-      "Wheels and Tires",
-      "Floor Mats",
-      "Parts",
-      "Keys",
-    ],
-  },
-  {
-    category: "Apparel",
-    subCategories: ["Men", "Women", "Kids"],
-    options: [
-      "Best Sellers",
-      "Tees",
-      "Sweatshirts and Hoodies",
-      "Outerwear",
-      "Joggers",
-      "Hats",
-      "Socks",
-    ],
-    promo: "insertImageHere",
-  },
-  {
-    category: "Lifestyle",
-    subCategories: [
-      "Best Sellers",
-      "Mini Teslas",
-      "Drinkware",
-      "Outdoors & Tech",
-      "Gist Card",
-    ],
-    promo: "insertImageHere",
-  },
-];
+import DropDown from "./DropDown";
+import { Indicator, StyledNav } from "./NavStyledComponents";
+import { navList } from "./navData";
 
 export default function Nav() {
   const navigate = useNavigate();
+  //Refs for link locations and sizes
   const navRefs = useRef(navList.map(() => createRef()));
-  const [indicator, setIndicator] = useState({});
+  //this is cool way to make a list of refs rather than making each one by one
+  const menuRef = useRef();
+  const shopRef = useRef();
 
-  const handleEnter = (item, ref) => {
-    setIndicator({
-      height: ref.offsetHeight + 8,
-      width: ref.offsetWidth + 8,
-      posY: ref.offsetTop - 4,
-      posX: ref.offsetLeft - 4,
-    });
+  //holds the information we need to position the indicator
+  const [indicator, setIndicator] = useState({});
+  //holds the information needed for the drop down menu pulled from the navData
+  const [dropDown, setDropDown] = useState({});
+  //tracks the initial hover to indicate when transition should be active
+  const [initialHover, setInitialHover] = useState(false);
+
+  const handleEnter = (ref, item) => {
+    //this will take the ref info break it into a more manageable object
+    //then set the indicator to its new position as well as update dropDown
+    //information if needed
+    if (initialHover) {
+      setIndicator({
+        height: ref.offsetHeight,
+        width: ref.offsetWidth,
+        posY: ref.offsetTop,
+        posX: ref.offsetLeft,
+        initial: true,
+      });
+      if (item) {
+        setDropDown(item);
+      } else {
+        setDropDown({});
+      }
+    } else {
+      setIndicator({
+        height: ref.offsetHeight,
+        width: ref.offsetWidth,
+        posY: ref.offsetTop,
+        posX: ref.offsetLeft,
+        initial: false,
+      });
+      setInitialHover(true);
+      if (item) {
+        setDropDown(item);
+      } else {
+        setDropDown({});
+      }
+    }
   };
   const handleLeave = () => {
-    setIndicator({
-      height: 0,
-      width: 0,
-      posY: 0,
-      posX: 0,
-    });
+    setInitialHover(false);
   };
 
+  const handleLeaveNav = () => {
+    //this will make the indicator disappear when the mouse exits the nav otherwise it might persist
+    if (!dropDown.category)
+      setIndicator({
+        height: 0,
+        width: 0,
+        posY: 0,
+        posX: 0,
+        initial: false,
+      });
+  };
+
+//create a list of the nav links needed from the navData list
+//assigns each link its subcategory and option data
   const mainNavLinks = navList.map((listItem, i) => (
     <li
+      key={i}
       ref={navRefs.current[i]}
       onClick={() =>
         navigate(
-          `category/${listItem.category.toLocaleLowerCase().replace(/\s/g, "")}`
+          `category/${listItem.category
+            .toLocaleLowerCase()
+            .replace(/\s/g, "-")}`
         )
       }
-      onMouseEnter={() => handleEnter(listItem, navRefs.current[i].current)}
-      onMouseLeave={handleLeave}
+      onMouseEnter={() => handleEnter(navRefs.current[i].current, listItem)}
     >
       {listItem.category}
     </li>
   ));
 
   return (
-    <StyledNav>
-      <Indicator setting={indicator} />
-      <ul className='navLeft'>
-        <div className='navLogo'>
-          <TeslaLogo />
-        </div>
-        <li onClick={() => navigate("/")}>Shop</li>
-      </ul>
-      <ul className='navCenter'>{mainNavLinks}</ul>
-      <ul className='navRight'>
-        <li>Search</li>
-        <li onClick={() => navigate("cart")}>Cart</li>
-        <li>Menu</li>
-      </ul>
-    </StyledNav>
+    <>
+      <DropDown dropDown={dropDown} setDropDown={setDropDown} />
+      <StyledNav
+        persist={dropDown.category ? true : false}
+        onMouseLeave={handleLeaveNav}
+      >
+        <Indicator setting={indicator} />
+        <ul className='navLeft' onMouseLeave={handleLeave}>
+          <div className='navLogo'>
+            <TeslaLogo />
+          </div>
+          <hr />
+          <li
+            ref={shopRef}
+            className='navHoverEffect'
+            onClick={() => navigate("/")}
+            onMouseEnter={() => handleEnter(shopRef.current)}
+          >
+            Shop
+          </li>
+        </ul>
+        <ul className='navCenter' onMouseLeave={handleLeave}>
+          {mainNavLinks}
+        </ul>
+        <ul className='navRight' onMouseLeave={handleLeave}>
+          <li>Search</li>
+          <li onClick={() => navigate("cart")}>Cart</li>
+          <li
+            ref={menuRef}
+            className='navHoverEffect'
+            onMouseEnter={() => handleEnter(menuRef.current)}
+          >
+            Menu
+          </li>
+        </ul>
+      </StyledNav>
+    </>
   );
 }

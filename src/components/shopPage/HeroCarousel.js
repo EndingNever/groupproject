@@ -2,9 +2,9 @@ import React from 'react'
 import './HeroCarousel.scss'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import wallConnector from '../../assets/Images/wall_connector.avif'
-import chillBanner from '../../assets/Images/chill_banner.avif'
-import floorMats from '../../assets/Images/floormats.avif'
+import wallConnector from '../../assets/images/wall_connector.avif'
+import chillBanner from '../../assets/images/chill_banner.avif'
+import floorMats from '../../assets/images/floormats.avif'
 import { ShopNowButton } from '../Styled';
 
 export default function HeroCarousel() {
