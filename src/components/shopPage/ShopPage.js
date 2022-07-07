@@ -31,21 +31,21 @@ const ShopPage = () => {
           <img src={men} alt="men's clothing" />
           <div className="apparel-text">
             <h1>Men's apparel</h1>
-            <ShopNowButton>Shop Now</ShopNowButton>
+            <ShopNowButton>SHOP NOW</ShopNowButton>
           </div>
         </div>
         <div className="women">
           <img src={women} alt="women's clothing" />
           <div className="apparel-text">
             <h1>Women's apparel</h1>
-            <ShopNowButton>Shop Now</ShopNowButton>
+            <ShopNowButton>SHOP NOW</ShopNowButton>
           </div>
         </div>
         <div className="kids">
           <img src={kids} alt="kid's clothing" />
           <div className="apparel-text">
             <h1>Kid's apparel</h1>
-            <ShopNowButton>Shop Now</ShopNowButton>
+            <ShopNowButton>SHOP NOW</ShopNowButton>
           </div>
         </div>
       </div>
