@@ -9,14 +9,19 @@ export default function MyRouter() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<App />}>
+        <Route path="/" element={<App />}>
           <Route index element={<ShopPage />} />
           <Route
             exact
-            path='category/:productCategory'
+            path="category/:productCategory"
             element={<TestPage />}
           />
-          <Route exact path='cart' element={<TestPage />} />
+          <Route
+            exact
+            path="category/:productCategory"
+            element={<TestPage />}
+          />
+          <Route exact path="cart" element={<TestPage />} />
         </Route>
       </Routes>
     </Router>

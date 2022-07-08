@@ -1,46 +1,24 @@
 import React from "react";
-import wallConnector from "../assets/images/wallConnector.avif";
-import wallConnectorHov from "../assets/images/wallConnectorHover.avif";
+import "./Card.scss";
 
-const products = [
-  {
-    itemImg: wallConnector,
-    itemImgHover: wallConnectorHov,
-    itemName: "Wall Connector",
-    itemPrice: "$400",
-  },
-  {
-    itemImg: "",
-    itemName: "Wall Connector Pedestal",
-    itemPrice: "$425",
-  },
-  {
-    itemImg: "",
-    itemName: "Wall Connector Color Match Pedestal Faceplate",
-    itemPrice: "$75",
-  },
-  {
-    itemImg: "",
-    itemName: "Cable Organizer",
-    itemPrice: "$35",
-  },
-];
-
-function Card() {
+function Card(props) {
   return (
     <div className="cardWrapper">
       <div className="itemImgWrapper">
         <div className="itemImg">
-          <img src={products.itemImg} alt="" />
+          <img src={props.itemImg} alt="" />
         </div>
         <div className="itemImgOnHover">
-          <img src="" alt="" />
-          <p>Quick Add +</p>
+          <img src={props.itemImgHover} alt="" />
+          <div className="quickAdd">
+            {" "}
+            <p>Quick Add +</p>
+          </div>
         </div>
       </div>
       <div className="item">
-        <p className="itemName">{products.itemName}</p>
-        <p className="itemPrice">{products.itemPrice}</p>
+        <p className="itemName">{props.itemName}</p>
+        <p className="itemPrice">{props.itemPrice}</p>
       </div>
     </div>
   );
