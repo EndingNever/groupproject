@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "../App";
 import ShopPage from "../components/shopPage/ShopPage";
 import TestPage from "../pages/TestPage";
-import ChargingPage from "../components/chargingPage/ChargingPage";
+import ProductPage from "../components/productPage/ProductPage";
 
 export default function MyRouter() {
   return (
@@ -15,28 +15,24 @@ export default function MyRouter() {
           <Route
             // exact
             path="category/:productCategory/"
-            element={<TestPage />}
+            element={<ProductPage />}
           />
           <Route
             // exact
             path="category/:productCategory/:subCategory"
-            element={<TestPage />}
+            element={<ProductPage />}
           />
           <Route
             // exact
             path="category/:productCategory/:subCategory/:option"
-            element={<TestPage />}
+            element={<ProductPage />}
           />
           <Route
             // exact
             path="search/:searchValue"
-            element={<TestPage />}
+            element={<ProductPage />}
           />
-          <Route
-            exact
-            path="category/:productCategory"
-            element={<ChargingPage />}
-          />
+
           <Route exact path="cart" element={<TestPage />} />
         </Route>
       </Routes>

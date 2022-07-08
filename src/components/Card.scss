@@ -40,6 +40,7 @@
   height: 40px;
   display: grid;
   place-items: center;
+  transform: translateY(100%);
   p {
     color: #fff;
     background-color: #5c5d61;
@@ -47,8 +48,8 @@
 }
 .itemImgWrapper {
   height: 400px;
-  transform: translateY(-80px);
-  z-index: -1;
+  // transform: translateY(-80px);
+  // z-index: -1;
 }
 .itemImg {
   img {
