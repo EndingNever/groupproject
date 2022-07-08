@@ -4,19 +4,36 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "../App";
 import ShopPage from "../components/shopPage/ShopPage";
 import TestPage from "../pages/TestPage";
+import ProductPage from "../components/productPage/ProductPage";
 
 export default function MyRouter() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<App />}>
+        <Route path="/" element={<App />}>
           <Route index element={<ShopPage />} />
           <Route
-            exact
-            path='category/:productCategory'
-            element={<TestPage />}
+            // exact
+            path="category/:productCategory/"
+            element={<ProductPage />}
           />
-          <Route exact path='cart' element={<TestPage />} />
+          <Route
+            // exact
+            path="category/:productCategory/:subCategory"
+            element={<ProductPage />}
+          />
+          <Route
+            // exact
+            path="category/:productCategory/:subCategory/:option"
+            element={<ProductPage />}
+          />
+          <Route
+            // exact
+            path="search/:searchValue"
+            element={<ProductPage />}
+          />
+
+          <Route exact path="cart" element={<TestPage />} />
         </Route>
       </Routes>
     </Router>
