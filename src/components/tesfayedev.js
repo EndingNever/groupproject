@@ -14,48 +14,54 @@ import img8 from "../assets/images/img8.avif";
 import img9 from "../assets/images/img9.avif";
 import img10 from "../assets/images/img10.avif";
 
-const tesfayedev = () => {
+const Tesfayedev = () => {
   return (
     <>
-      <Carousel className="main-slide">
+      <div className="title">
+        <h3>Best Sellers</h3>
+      </div>
+      <Carousel className="main-slide" showThumbs={false} infiniteLoop>
         <div>
-          <img src={img1} alt="" height="300px" width="200px" />
+          <img src={img1} alt="" height="366px" width="366px" />
           <h2 className="title">SAE J1772 Charging Adapter</h2>
         </div>
         <div>
-          <img src={img2} alt="" height="300px" width="200px" />
+          <img src={img2} alt="" height="366px" width="366px" />
           <h2 className="title">Model S/3/Y Pet Liner</h2>
         </div>
         <div>
-          <img src={img3} alt="" height="300px" width="200px" />
+          <img src={img3} alt="" height="366px" width="366px" />
           <h2 className="title">Model 3 All-Weather Interior Liners</h2>
         </div>
         <div>
-          <img src={img4} alt="" height="300px" width="200px" />
+          <img src={img4} alt="" height="366px" width="366px" />
           <h2 className="title">Model Y All-Weather Interior Liners</h2>
         </div>
         <div>
-          <img src={img5} alt="" height="300px" width="200px" />
+          <img src={img5} alt="" height="366px" width="366px" />
           <h2 className="title">Wall Connector </h2>
         </div>
         <div>
-          <img src={video} alt="" height="300px" width="200px" />
-          <h2 className="title">A</h2>
+          <video height="366px" width="366px" autoplay muted loop>
+            <source src={video} type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+          <h2 className="title">TESLA</h2>
         </div>
         <div>
-          <img src={img7} alt="" height="300px" width="200px" />
+          <img src={img7} alt="" height="366px" width="366px" />
           <h2 className="title">Gen 2 NEMA Adapters</h2>
         </div>
         <div>
-          <img src={img8} alt="" height="300px" width="200px" />
+          <img src={img8} alt="" height="366px" width="366px" />
           <h2 className="title">Cable Organizer</h2>
         </div>
         <div>
-          <img src={img9} alt="" height="300px" width="200px" />
+          <img src={img9} alt="" height="366px" width="366px" />
           <h2 className="title">Key Card</h2>
         </div>
         <div>
-          <img src={img10} alt="" height="300px" width="200px" />
+          <img src={img10} alt="" height="366px" width="366px" />
           <h2 className="title">Model Y All-Weather Rear Cargo Liner Set</h2>
         </div>
       </Carousel>
@@ -63,4 +69,4 @@ const tesfayedev = () => {
   );
 };
 
-export default tesfayedev;
+export default Tesfayedev;
