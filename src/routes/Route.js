@@ -26,6 +26,11 @@ export default function MyRouter() {
             path='category/:productCategory/:subCategory/:option'
             element={<TestPage />}
           />
+          <Route
+            // exact
+            path='search/:searchValue'
+            element={<TestPage />}
+          />
           <Route exact path='cart' element={<TestPage />} />
         </Route>
       </Routes>

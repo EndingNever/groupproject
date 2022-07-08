@@ -1,9 +1,11 @@
-import React, { createRef, useRef, useState } from "react";
+import React, { createRef, useRef, useState, useEffect } from "react";
 import TeslaLogo from "../../assets/images/TeslaLogo";
 import { useNavigate } from "react-router-dom";
 import DropDown from "./DropDown";
 import { Indicator, StyledNav } from "./NavStyledComponents";
 import { navList } from "./navData";
+import SearchBar from "./SearchBar";
+import CartBtn from "./CartBtn";
 
 export default function Nav() {
   const navigate = useNavigate();
@@ -53,13 +55,11 @@ export default function Nav() {
       }
     }
   };
-  const handleLeave = () => {
-    setInitialHover(false);
-  };
+  const handleLeave = () => {};
 
   const handleLeaveNav = () => {
     //this will make the indicator disappear when the mouse exits the nav otherwise it might persist
-    if (!dropDown.category)
+    if (!dropDown.category) {
       setIndicator({
         height: 0,
         width: 0,
@@ -67,10 +67,24 @@ export default function Nav() {
         posX: 0,
         initial: false,
       });
+      setInitialHover(false);
+    }
   };
 
-//create a list of the nav links needed from the navData list
-//assigns each link its subcategory and option data
+  const handleSearchHover = () => {
+    setIndicator({
+      height: 0,
+      width: 0,
+      posY: 0,
+      posX: 0,
+      initial: false,
+    });
+    setInitialHover(false);
+    setDropDown({});
+  };
+
+  //create a list of the nav links needed from the navData list
+  //assigns each link its subcategory and option data
   const mainNavLinks = navList.map((listItem, i) => (
     <li
       key={i}
@@ -114,8 +128,12 @@ export default function Nav() {
           {mainNavLinks}
         </ul>
         <ul className='navRight' onMouseLeave={handleLeave}>
-          <li>Search</li>
-          <li onClick={() => navigate("cart")}>Cart</li>
+          <li onMouseEnter={handleSearchHover}>
+            <SearchBar />
+          </li>
+          <li onClick={() => navigate("cart")}>
+            <CartBtn />
+          </li>
           <li
             ref={menuRef}
             className='navHoverEffect'

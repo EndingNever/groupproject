@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 const TestPage = () => {
-  const { productCategory, subCategory, option } = useParams();
+  const { productCategory, subCategory, option, searchValue } = useParams();
   return (
     <div
       style={{
@@ -15,6 +15,7 @@ const TestPage = () => {
     >
       <div>
         <h1>Test Route</h1>
+        <h2>{searchValue && searchValue}</h2>
         <h2>{productCategory ? productCategory : "Cart"}</h2>
         <h2>{subCategory && subCategory}</h2>
         <h2>{option && option}</h2>
