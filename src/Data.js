@@ -6,6 +6,19 @@ import wallConPedestal from "./assets/images/wallConPedestal.avif";
 import wallConPedestalHov from "./assets/images/wallConPedestalHover.avif";
 import wallConFacePlate from "./assets/images/wallConFacePlate.avif";
 import wallConFacePlateHov from "./assets/images/wallConFacePlateHover.avif";
+import mobileConnector from "./assets/images/mobileConnector.avif";
+import mobileConnectorHov from "./assets/images/mobileConnectorHov.avif";
+import cordedMobileConnector from "./assets/images/cordedMobileConnector.avif";
+import cordedMobileConnectorHov from "./assets/images/cordedMobileConnectorHov.avif";
+import nemaAdaptorBundle from "./assets/images/nemaAdaptorBundle.avif";
+import nemaAdaptorBundleHov from "./assets/images/nemaAdaptorBundleHov.avif";
+import gen2NemaAdapters from "./assets/images/gen2NemaAdapters.avif";
+import SAEJ1772ChargingAd from "./assets/images/SAEJ1772ChargingAd.avif";
+import wallConGlassFp from "./assets/images/wallConGlassFp.avif";
+import wallConGlassFpHov from "./assets/images/wallConGlassFpHov.avif";
+import wallConWireboxK from "./assets/images/wallConWireboxK.avif";
+import wallConFastenerK from "./assets/images/wallConFastenerK.avif";
+import gen1NEMAAdapter from "./assets/images/gen1NEMAAdapter.avif";
 
 const items = {
   category: "charging",
@@ -21,7 +34,7 @@ const items = {
           subCategory: "at home",
           category: "charging",
           stockStatus: true,
-          options: ["Quick-add", ""],
+          options: ["quick-add+"],
         },
         {
           itemImg: wallConPedestal,
@@ -30,15 +43,17 @@ const items = {
           itemPrice: "$425",
           subCategory: "at home",
           stockStatus: true,
+          options: ["quick-add+"],
         },
         {
           itemImg: wallConFacePlate,
           itemImgHover: wallConFacePlateHov,
-          itemName: "Wall Connector Color Match Pedestal Faceplate",
+          itemName: "Wall Connector Color Matched Pedestal Faceplate",
           itemPrice: "$75",
           category: "charging",
           subCategory: "at home",
           stockStatus: true,
+          options: ["view-details"],
         },
         {
           itemImg: cableOrganizer,
@@ -48,6 +63,7 @@ const items = {
           category: "Charging",
           subCategory: "at home",
           stockStatus: true,
+          options: ["quick-add+"],
         },
       ],
     },
@@ -62,6 +78,7 @@ const items = {
           category: "charging",
           subCategory: "On-the-road",
           stockStatus: false,
+          options: ["view-details"],
         },
         {
           itemImg: cordedMobileConnector,
@@ -80,8 +97,8 @@ const items = {
           itemPrice: "$245",
           category: "charging",
           subCategory: "on-the-road",
-          stockStatus: false,
-          options: ["quick-add"],
+          stockStatus: true,
+          options: ["quick-add+"],
         },
         {
           itemImg: gen2NemaAdapters,
@@ -90,7 +107,7 @@ const items = {
           itemPrice: "$35 - $45",
           category: "charging",
           subCategory: "on-the-road",
-          stockStatus: false,
+          stockStatus: true,
           options: ["view-Details"],
         },
 
@@ -101,8 +118,8 @@ const items = {
           itemPrice: "$50",
           category: "charging",
           subCategory: "on-the-road",
-          stockStatus: false,
-          options: ["quick-add"],
+          stockStatus: true,
+          options: ["quick-add+"],
         },
       ],
     },
@@ -117,8 +134,8 @@ const items = {
           itemPrice: "$75",
           category: "charging",
           subCategory: "parts",
-          stockStatus: false,
-          options: ["quick-add"],
+          stockStatus: true,
+          options: ["quick-add+"],
         },
         {
           itemImg: wallConWireboxK,
@@ -127,8 +144,8 @@ const items = {
           itemPrice: "$65",
           category: "charging",
           subCategory: "parts",
-          stockStatus: false,
-          options: ["quick-add"],
+          stockStatus: true,
+          options: ["quick-add+"],
         },
         {
           itemImg: wallConFastenerK,
@@ -137,18 +154,18 @@ const items = {
           itemPrice: "$20",
           category: "charging",
           subCategory: "parts",
-          stockStatus: false,
-          options: ["quick-add"],
+          stockStatus: true,
+          options: ["quick-add+"],
         },
         {
-          itemImg: Gen1NEMAAdapter,
-          itemImgHover: Gen1NEMAAdapter,
+          itemImg: gen1NEMAAdapter,
+          itemImgHover: gen1NEMAAdapter,
           itemName: "GEN 1 NEMA Adapter",
           itemPrice: "$45",
           category: "charging",
           subCategory: "parts",
-          stockStatus: false,
-          options: ["quick-add"],
+          stockStatus: true,
+          options: ["quick-add+"],
         },
       ],
     },
