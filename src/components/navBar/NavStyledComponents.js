@@ -47,8 +47,8 @@ export const StyledNav = styled.nav`
   input {
     color: white;
   }
-  ${({ persist }) =>
-    persist &&
+  ${({ persist, solidNav }) =>
+    (persist || solidNav) &&
     `
     background-color: white;
     color: black;

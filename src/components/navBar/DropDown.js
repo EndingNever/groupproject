@@ -2,12 +2,12 @@ import React from "react";
 import { DropDownMenu } from "./NavStyledComponents";
 import { useNavigate } from "react-router-dom";
 
-export default function DropDown({ dropDown, setDropDown }) {
+export default function DropDown({ dropDown, handleLeave }) {
   const navigate = useNavigate();
   return (
     <DropDownMenu
       slide={dropDown.category ? true : false}
-      onMouseLeave={() => setDropDown({})}
+      onMouseLeave={handleLeave}
       promo={dropDown.promo ? true : false}
     >
       <div className='nav-drop-section-left'>
