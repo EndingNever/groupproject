@@ -41,6 +41,7 @@ const items = {
           itemImgHover: wallConPedestalHov,
           itemName: "Wall Connector Pedestal",
           itemPrice: "$425",
+          category: "charging",
           subCategory: "at home",
           stockStatus: true,
           options: ["quick-add+"],
