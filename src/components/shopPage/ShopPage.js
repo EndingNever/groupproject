@@ -8,12 +8,9 @@ import model3 from '../../assets/images/model3.avif'
 import modelX from '../../assets/images/modelX.avif'
 import modelY from '../../assets/images/modelY.avif'
 import charging from '../../assets/images/charging.avif'
-import men from '../../assets/images/men.avif'
-import women from '../../assets/images/women.avif'
-import kids from '../../assets/images/kids.avif'
 import lifestyle from '../../assets/images/lifestyle.avif'
-import { ShopNowButton } from '../Styled';
 import ShopAccessories from './ShopAccessories';
+
 
 const ShopPage = () => {
   return (
