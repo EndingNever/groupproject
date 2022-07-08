@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "../App";
 import ShopPage from "../components/shopPage/ShopPage";
 import TestPage from "../pages/TestPage";
+import ChargingPage from "../components/chargingPage/ChargingPage";
 
 export default function MyRouter() {
   return (
@@ -19,7 +20,7 @@ export default function MyRouter() {
           <Route
             exact
             path="category/:productCategory"
-            element={<TestPage />}
+            element={<ChargingPage />}
           />
           <Route exact path="cart" element={<TestPage />} />
         </Route>

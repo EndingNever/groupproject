@@ -20,7 +20,7 @@
     transform: translateY(-80px);
     text-align: center;
     background-color: #fff;
-    z-index: 2;
+    z-index: 3;
     display: grid;
     place-items: center;
   }
@@ -35,8 +35,20 @@
     display: none;
   }
 }
+.stockStatus {
+  width: 114px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  p {
+    color: #fff;
+    background-color: #5c5d61;
+  }
+}
 .itemImgWrapper {
   height: 400px;
+  transform: translateY(-80px);
+  z-index: -1;
 }
 .itemImg {
   img {

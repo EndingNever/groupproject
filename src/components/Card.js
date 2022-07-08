@@ -1,15 +1,24 @@
 import React from "react";
 import "./Card.scss";
 
-function Card(props) {
+const Card = (props) => {
+  const itemImg = props.itemImg;
+  const itemImgHover = props.itemImgHover;
+  const itemName = props.itemName;
+  const itemPrice = props.itemPrice;
+  const stockStatus = props.stockStatus;
+
   return (
     <div className="cardWrapper">
+      <div className="stockStatus">
+        {stockStatus ? <p>Out Of Stock</p> : ""}
+      </div>
       <div className="itemImgWrapper">
         <div className="itemImg">
-          <img src={props.itemImg} alt="" />
+          <img src={itemImg} alt="" />
         </div>
         <div className="itemImgOnHover">
-          <img src={props.itemImgHover} alt="" />
+          <img src={itemImgHover} alt="" />
           <div className="quickAdd">
             {" "}
             <p>Quick Add +</p>
@@ -17,11 +26,11 @@ function Card(props) {
         </div>
       </div>
       <div className="item">
-        <p className="itemName">{props.itemName}</p>
-        <p className="itemPrice">{props.itemPrice}</p>
+        <p className="itemName">{itemName}</p>
+        <p className="itemPrice">${itemPrice}</p>
       </div>
     </div>
   );
-}
+};
 
 export default Card;
