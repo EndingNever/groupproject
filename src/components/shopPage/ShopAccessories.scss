@@ -1,0 +1,23 @@
+.apparel {
+  display: flex;
+  justify-content: space-between;
+  height: 99vh;
+  margin-bottom: -21px;
+  .men,
+  .women,
+  .kids {
+    width: 33%;
+    img {
+      object-fit: cover;
+      height: 98%;
+      width: 100%;
+    }
+    .apparel-text {
+      position: relative;
+      bottom: 10.5em;
+      h1{
+        font-weight: 500;
+      }
+    }
+  }
+}
