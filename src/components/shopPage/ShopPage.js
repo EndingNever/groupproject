@@ -1,5 +1,5 @@
-import React from 'react';
-import './ShopPage.scss'
+import React from "react";
+import "./ShopPage.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import HeroCarousel from './HeroCarousel';
 import VehicleAccessories from './VehicleAccessories';
@@ -14,7 +14,7 @@ import ShopAccessories from './ShopAccessories';
 
 const ShopPage = () => {
   return (
-    <div className='shop-page-component'>
+    <div className="shop-page-component">
       <HeroCarousel />
       <div>
         Tesfaye
@@ -33,6 +33,6 @@ const ShopPage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ShopPage;
