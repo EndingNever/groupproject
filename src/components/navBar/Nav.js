@@ -1,10 +1,10 @@
-<<<<<<< HEAD
 import React from "react";
 import styled from "styled-components";
-=======
 import React, { createRef, useRef, useState, useEffect } from "react";
->>>>>>> master
 import TeslaLogo from "../../assets/images/TeslaLogo";
+import styled from "styled-components";
+import TeslaLogo from "../../assets/images/TeslaLogo";
+import React, { createRef, useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DropDown from "./DropDown";
 import { Indicator, StyledNav } from "./NavStyledComponents";
@@ -144,29 +144,6 @@ export default function Nav() {
   ));
 
   return (
-<<<<<<< HEAD
-    <StyledNav>
-      <ul className="navLeft">
-        <div className="navLogo">
-          <TeslaLogo />
-        </div>
-        <li onClick={() => navigate("/")}>Shop</li>
-      </ul>
-      <ul className="navCenter">
-        <li onClick={() => navigate("category/charging")}>Charging</li>
-        <li onClick={() => navigate("category/vehicle-repair")}>
-          Vehicle Repair
-        </li>
-        <li onClick={() => navigate("category/apparel")}>Apparel</li>
-        <li onClick={() => navigate("category/lifestyle")}>Lifestyle</li>
-      </ul>
-      <ul className="navRight">
-        <li>Search</li>
-        <li onClick={() => navigate("cart")}>Cart</li>
-        <li>Menu</li>
-      </ul>
-    </StyledNav>
-=======
     <>
       <DropDown dropDown={dropDown} handleLeave={handleLeave} />
       <StyledNav
@@ -207,6 +184,5 @@ export default function Nav() {
         </ul>
       </StyledNav>
     </>
->>>>>>> master
   );
 }
