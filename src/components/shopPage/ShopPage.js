@@ -25,7 +25,7 @@ const ShopPage = () => {
       <VehicleAccessories image={modelY} title={'Model Y Accessories'} color={"black"} />
       <VehicleAccessories image={charging} title={'Charging'} />
       <ShopAccessories />
-      <VehicleAccessories image={lifestyle} title={'Lifestyle'} color={"black"} />
+      <VehicleAccessories button={true} image={lifestyle} title={'Lifestyle'} color={"black"} />
       <div className="copyright-text">
         <h5> Tesla © 2022 </h5>
         <h5>Privacy {'&'} Legal </h5>

@@ -6,18 +6,16 @@ background-color: #F5F5F5;
 border: 5px solid #F5F5F5;
 border-radius: 25px;
 cursor: pointer;
-padding: 12px;
+padding: 8px;
 margin-top: 16px;
-width: 20em;
+width: 21em;
 position: relative;
 `
 
 export const ShopNowButton = styled(ButtonPrimary)`
-
 &:hover {
   background-color: #EDEDED;
   border: 5px solid #EDEDED;
-  
 }
 &:active, :focus{
   &::after{
@@ -34,6 +32,7 @@ export const ShopNowButton = styled(ButtonPrimary)`
 `
 
 export const ApparelButton = styled(ButtonPrimary)`
+background-color: transparent;
   border: 3px solid black;
   width: 10em;
   transition: all ease-in-out 0.2s;
