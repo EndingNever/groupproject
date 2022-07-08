@@ -1,5 +1,5 @@
 import React from 'react'
-import { ShopNowButton } from '../Styled';
+import { ApparelButton, ShopNowButton } from '../Styled';
 import './VehicleAccessories.scss'
 
 export default function VehicleAccessories(props) {
@@ -10,8 +10,8 @@ export default function VehicleAccessories(props) {
     <div className='vehicle-accessories'>
       <img src={image} alt="" />
       <div className="vehicle-text">
-        <h1 style={{color: `${textColor}`}}>{title}</h1>
-        <ShopNowButton>Shop Now</ShopNowButton>
+        <h1 style={{ color: `${textColor}` }}>{title}</h1>
+        {props.button ? <ApparelButton style={{ width: '20em' }}>SHOP NOW</ApparelButton> : <ShopNowButton>Shop Now</ShopNowButton>}
       </div>
     </div>
   )
