@@ -1,26 +1,45 @@
 import styled from 'styled-components'
 
-export const ShopNowButton = styled.button`
+const ButtonPrimary = styled.button`
 background-color: #F5F5F5;
-box-shadow: 0 0 0 3px #F5F5F5;
-border: none;
+/* box-shadow: 0 0 0 3px #F5F5F5; */
+border: 5px solid #F5F5F5;
 border-radius: 25px;
 cursor: pointer;
 padding: 12px;
 margin-top: 16px;
-width: 19em;
+width: 20em;
+position: relative;
+`
+
+export const ShopNowButton = styled(ButtonPrimary)`
 
 &:hover {
   background-color: #EDEDED;
+  border: 5px solid #EDEDED;
+  
 }
 &:active, :focus{
-   /* display: inline-block; */
-   /* width: -4px; */
-    /* padding: 4px; */
-  /*  font-weight: bold;
-    font-size: 19px;
-    background: #27d9b4; */
-    box-shadow: 0 0 0 3px #EDEDED,
-                inset 0 0 0 2px black;
+  &::after{
+    content:"";
+    border: 2px solid black;
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    top: 0px;
+    left: 0px;
+    border-radius: 32px;
+  }
 }
+`
+
+export const ApparelButton = styled(ButtonPrimary)`
+  border: 3px solid black;
+  width: 10em;
+  transition: all ease-in-out 0.2s;
+  &:hover{
+    border: 3px solid black;
+    background-color: black;
+    color: #fff;
+  }
 `
