@@ -1,31 +1,3 @@
 .shop-page-component {
-  // color: #FFF;
-  .apparel {
-    display: flex;
-    justify-content: space-between;
-    .men,
-    .women,
-    .kids {
-      // border: 2px solid red;
-      width: 33%;
-      img {
-        object-fit: cover;
-        height: 99vh;
-        width: 100%;
-        // border: 2px solid purple;
-        // object-position: center;
-      }
-      .apparel-text {
-        position: relative;
-        bottom: 10.5em;
-        h1{
-          font-weight: 500;
-        }
-        button {
-          border: 3px solid black;
-          width: 150px;
-        }
-      }
-    }
-  }
+
 }

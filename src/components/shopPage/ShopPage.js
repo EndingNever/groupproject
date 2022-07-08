@@ -13,6 +13,7 @@ import women from '../../assets/images/women.avif'
 import kids from '../../assets/images/kids.avif'
 import lifestyle from '../../assets/images/lifestyle.avif'
 import { ShopNowButton } from '../Styled';
+import ShopAccessories from './ShopAccessories';
 
 const ShopPage = () => {
   return (
@@ -26,32 +27,8 @@ const ShopPage = () => {
       <VehicleAccessories image={modelX} title={'Model X Accessories'} />
       <VehicleAccessories image={modelY} title={'Model Y Accessories'} color={"black"} />
       <VehicleAccessories image={charging} title={'Charging'} />
-      <div className="apparel">
-        <div className="men">
-          <img src={men} alt="men's clothing" />
-          <div className="apparel-text">
-            <h1>Men's apparel</h1>
-            <ShopNowButton>SHOP NOW</ShopNowButton>
-          </div>
-        </div>
-        <div className="women">
-          <img src={women} alt="women's clothing" />
-          <div className="apparel-text">
-            <h1>Women's apparel</h1>
-            <ShopNowButton>SHOP NOW</ShopNowButton>
-          </div>
-        </div>
-        <div className="kids">
-          <img src={kids} alt="kids' clothing" />
-          <div className="apparel-text">
-            <h1>Kids' apparel</h1>
-            <ShopNowButton>SHOP NOW</ShopNowButton>
-          </div>
-        </div>
-      </div>
-      <div className="lifestyle">
-        <img src={lifestyle} alt="" />
-      </div>
+      <ShopAccessories />
+      <VehicleAccessories image={lifestyle}   title={'Lifestyle'} color={"black"} />
     </div>
   );
 }
