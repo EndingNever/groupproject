@@ -5,6 +5,7 @@ import App from "../App";
 import ShopPage from "../components/shopPage/ShopPage";
 import TestPage from "../pages/TestPage";
 import ProductPage from "../components/productPage/ProductPage";
+import Cart from "../components/cart/Cart";
 
 export default function MyRouter() {
   return (
@@ -33,7 +34,7 @@ export default function MyRouter() {
             element={<ProductPage />}
           />
 
-          <Route exact path='cart' element={<TestPage />} />
+          <Route exact path='cart' element={<Cart />} />
         </Route>
       </Routes>
     </Router>
