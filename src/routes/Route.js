@@ -5,35 +5,36 @@ import App from "../App";
 import ShopPage from "../components/shopPage/ShopPage";
 import TestPage from "../pages/TestPage";
 import ProductPage from "../components/productPage/ProductPage";
+import Cart from "../components/cart/Cart";
 
 export default function MyRouter() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path='/' element={<App />}>
           <Route index element={<ShopPage />} />
           <Route
             // exact
-            path="category/:productCategory/"
+            path='category/:productCategory/'
             element={<ProductPage />}
           />
           <Route
             // exact
-            path="category/:productCategory/:subCategory"
+            path='category/:productCategory/:subCategory'
             element={<ProductPage />}
           />
           <Route
             // exact
-            path="category/:productCategory/:subCategory/:option"
+            path='category/:productCategory/:subCategory/:option'
             element={<ProductPage />}
           />
           <Route
             // exact
-            path="search/:searchValue"
+            path='search/:searchValue'
             element={<ProductPage />}
           />
 
-          <Route exact path="cart" element={<TestPage />} />
+          <Route exact path='cart' element={<Cart />} />
         </Route>
       </Routes>
     </Router>
