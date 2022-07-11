@@ -8,7 +8,7 @@ const ProductPage = () => {
   const params = useParams();
 
   return (
-    <div style={{ paddingTop: "82px" }}>
+    <div style={{ paddingTop: "100px" }} className="productsPage">
       {/* search items for category that matches parameters using filter */}
       {items
         .filter(
@@ -20,7 +20,7 @@ const ProductPage = () => {
             {/* map through the subCategories and send each list of products to the Cards Grid */}
             {category.subCategories.map((sub, index) => (
               <div className="atHome">
-                <h3>{sub.subCategory}</h3>
+                <h3>{sub.subCategory.replace(/-/g, " ")}</h3>
                 <CardsGrid products={sub.products} />
               </div>
             ))}

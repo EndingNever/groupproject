@@ -15,7 +15,7 @@
     width: 100%;
   }
   .quickAdd {
-    height: 80px;
+    height: 76px;
     // margin-top: -80px;
     transform: translateY(-80px);
     text-align: center;
@@ -41,9 +41,14 @@
   display: grid;
   place-items: center;
   transform: translateY(100%);
+
+  // padding: 10px;
   p {
     color: #fff;
     background-color: #5c5d61;
+    padding: 10px 0;
+    font-size: 0.9em;
+    font-weight: 600;
   }
 }
 .itemImgWrapper {
@@ -60,6 +65,21 @@
 
 .item {
   height: 52px;
-  p {
+  padding: 3px;
+}
+.sizeSelector {
+  width: 100%;
+
+  h2 {
+    font-size: 16px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  li:hover {
+    text-decoration: underline;
+    text-decoration-color: #000;
   }
 }
