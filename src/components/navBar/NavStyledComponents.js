@@ -89,6 +89,7 @@ export const DropDownMenu = styled.div`
   gap: 32px;
   z-index: 1;
   min-height: 489px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   h3 {
     cursor: pointer;
   }
@@ -101,8 +102,9 @@ export const DropDownMenu = styled.div`
     height: fit-content;
   }
   hr {
-    border: 3px solid rgba(15, 15, 15, 0.1);
+    border: none;
     background-color: rgba(15, 15, 15, 0.1);
+    height: 6px;
     width: 100%;
     margin: 8px 0px 16px;
   }

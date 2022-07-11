@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./ProductPage.scss";
 import CardsGrid from "../CardsGrid";
 import items from "../../Data";
 
+//useEffect that goes through the options and creates separate arrays for each option (best seller, interior, exterior, etc.)
+// UseEffect will create a list of products
+// Something in the product page return to know if we have those options.
+// Switch statement into useEffect
+// For each option, run switch statement => for each it matches it will create an array of products
+// That array of products will get pushed to 
+//  For each option
+
 const ProductPage = () => {
   const params = useParams();
+
+
 
   return (
     <div style={{ paddingTop: "100px" }} className="productsPage">
