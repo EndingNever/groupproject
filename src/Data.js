@@ -19,6 +19,10 @@ import wallConGlassFpHov from "./assets/images/wallConGlassFpHov.avif";
 import wallConWireboxK from "./assets/images/wallConWireboxK.avif";
 import wallConFastenerK from "./assets/images/wallConFastenerK.avif";
 import gen1NEMAAdapter from "./assets/images/gen1NEMAAdapter.avif";
+import modelSLiner from './assets/images/modelSLiner.avif'
+import modelSLinerHov from './assets/images/modelSLinerHover.avif'
+import SRoofRack from './assets/images/SRoofRack.avif'
+import SRoofRackHov from './assets/images/SRoofRackHov.avif'
 
 const items = [
   {
@@ -173,5 +177,36 @@ const items = [
       },
     ],
   },
+  {
+    category: "vehicle-accessories",
+    subCategories: [
+      {
+        subCategory: "model-s",
+        products: [
+          {
+            itemImg: modelSLiner,
+            itemImgHover: modelSLinerHov,
+            itemName: "Model S All-Weather Interior Liners",
+            itemPrice: 250,
+            subCategory: "model-s",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-Details", "best-seller", 'interior', 'floor-mats']
+          },
+          {
+            itemImg: SRoofRack,
+            itemImgHover: SRoofRackHov,
+            itemName: "Model S Roof Rack - Glass Roof",
+            itemPrice: 450,
+            subCategory: "model-s",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-Details", "best-seller"]
+          },
+        ]
+      },
+    ]
+
+  }
 ];
 export default items;
