@@ -9,13 +9,11 @@ import items from "../../Data";
 // Something in the product page return to know if we have those options.
 // Switch statement into useEffect
 // For each option, run switch statement => for each it matches it will create an array of products
-// That array of products will get pushed to 
+// That array of products will get pushed to
 //  For each option
 
 const ProductPage = () => {
   const params = useParams();
-
-
 
   return (
     <div style={{ paddingTop: "82px" }}>
@@ -24,12 +22,12 @@ const ProductPage = () => {
         .filter(
           (category, index) => category.category === params.productCategory
         ) // map through the filtered array to get the categories data
-        .map((category) => (
-          <div className="chargingWrapper">
+        .map((category, i) => (
+          <div key={i} className='chargingWrapper'>
             <h2>{category.category}</h2>
             {/* map through the subCategories and send each list of products to the Cards Grid */}
             {category.subCategories.map((sub, index) => (
-              <div className="atHome">
+              <div className='atHome'>
                 <h3>{sub.subCategory}</h3>
                 <CardsGrid products={sub.products} />
               </div>
