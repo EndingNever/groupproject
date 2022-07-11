@@ -1,10 +1,10 @@
 import React from "react";
+// import styled from "styled-components";
+// import React, { createRef, useRef, useState, useEffect } from "react";
+// import TeslaLogo from "../../assets/images/TeslaLogo";
 import styled from "styled-components";
-import React, { createRef, useRef, useState, useEffect } from "react";
 import TeslaLogo from "../../assets/images/TeslaLogo";
-import styled from "styled-components";
-import TeslaLogo from "../../assets/images/TeslaLogo";
-import React, { createRef, useRef, useState, useEffect } from "react";
+import { createRef, useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DropDown from "./DropDown";
 import { Indicator, StyledNav } from "./NavStyledComponents";

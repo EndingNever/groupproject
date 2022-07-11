@@ -1,8 +1,8 @@
-import "./App.css";
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 import ShopPage from "./components/shopPage/ShopPage";
 import Nav from "./components/navBar/Nav";
 import { Outlet } from "react-router-dom";
-import Tesfayedev from "./components/tesfayedev";
 import CardsGrid from "./components/CardsGrid";
 
 function App() {
@@ -10,9 +10,6 @@ function App() {
     <div className="App">
       <Nav />
       <Outlet />
-      <Tesfayedev />
-      {/* <CardsGrid /> */}
-      {/* <ChargingPage /> */}
     </div>
   );
 }
