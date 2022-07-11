@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { ReactComponent as CartBtnSvg } from "../../assets/images/cart.svg";
 import styled from "styled-components";
+import { cartQuantity } from "../../app/features/cartSlice";
+import { useSelector } from "react-redux";
 
 const CartBtnStyled = styled.div`
   position: relative;
@@ -24,7 +26,8 @@ const CartBtnStyled = styled.div`
 `;
 
 export default function CartBtn() {
-  const [cartQty, setCartQty] = useState(5);
+  // const [cartQty, setCartQty] = useState(5);
+  const cartQty = useSelector(cartQuantity);
   return (
     <CartBtnStyled cartQty={cartQty}>
       {cartQty > 0 && <div className='cartQtyIndicator'>{cartQty}</div>}
