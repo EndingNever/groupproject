@@ -55,7 +55,7 @@ const items = [
             category: "charging",
             subCategory: "at-home",
             stockStatus: true,
-            options: [],
+            options: ["view-details"],
           },
           {
             itemImg: cableOrganizer,
@@ -80,7 +80,7 @@ const items = [
             category: "charging",
             subCategory: "On-the-road",
             stockStatus: false,
-            options: [],
+            options: ["view-details"],
           },
           {
             itemImg: cordedMobileConnector,
@@ -110,7 +110,7 @@ const items = [
             category: "charging",
             subCategory: "on-the-road",
             stockStatus: true,
-            options: [],
+            options: ["view-details"],
           },
 
           {
