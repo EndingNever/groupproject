@@ -16,7 +16,6 @@ const ProductPage = () => {
   const params = useParams();
 
 
-
   return (
     <div style={{ paddingTop: "82px" }}>
       {/* search items for category that matches parameters using filter */}

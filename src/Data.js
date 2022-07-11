@@ -114,7 +114,7 @@ const items = [
             category: "charging",
             subCategory: "on-the-road",
             stockStatus: true,
-            options: ["view-Details"],
+            options: ["view-details"],
           },
 
           {
@@ -191,7 +191,7 @@ const items = [
             subCategory: "model-s",
             category: "model-s",
             stockStatus: true,
-            options: ["view-Details", "best-seller", 'interior', 'floor-mats']
+            options: ["view-details", "best-seller", 'interior', 'floor-mats']
           },
           {
             itemImg: SRoofRack,
@@ -201,7 +201,7 @@ const items = [
             subCategory: "model-s",
             category: "model-s",
             stockStatus: true,
-            options: ["view-Details", "best-seller"]
+            options: ["view-details", "best-seller"]
           },
         ]
       },

@@ -24,15 +24,16 @@ const CardsGrid = ({ products }) => {
     setModelSItems(copy);
   }, []);
 
-  return Object.keys(modelSItems).length ? Object.keys(modelSItems).map((key, i) => <div><h3>{key}</h3><div className="cardGrid" key={key}>{modelSItems[key].map((product, index) => <Card
-    key={index}
-    itemImg={product.itemImg}
-    itemImgHover={product.itemImgHover}
-    itemName={product.itemName}
-    itemPrice={product.itemPrice}
-    stockStatus={product.stockStatus}
-    product={product}
-  />
+  return Object.keys(modelSItems).length ? Object.keys(modelSItems).map((key, i) => <div><h3>{key}</h3><div className="cardGrid" key={key}>{modelSItems[key].map((product, index) =>
+    <Card
+      key={index}
+      itemImg={product.itemImg}
+      itemImgHover={product.itemImgHover}
+      itemName={product.itemName}
+      itemPrice={product.itemPrice}
+      stockStatus={product.stockStatus}
+      product={product}
+    />
   )}</div></div>) : (
     <div className="cardGrid">
       {products.map((product, index) => (
