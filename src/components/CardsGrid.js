@@ -14,6 +14,7 @@ const CardsGrid = ({ products }) => {
           itemName={product.itemName}
           itemPrice={product.itemPrice}
           stockStatus={product.stockStatus}
+          product={product}
         />
       ))}
     </div>
