@@ -22,11 +22,11 @@ const Card = (props) => {
         </div>
         <div className='itemImgOnHover'>
           <img src={itemImgHover} alt='' />
-          <div className='quickAdd'>
-            {" "}
-            <button onClick={() => dispatch(addItem(props.product))}>
-              <p>Quick Add +</p>
-            </button>
+          <div
+            className='quickAdd'
+            onClick={() => dispatch(addItem(props.product))}
+          >
+            <p>Quick Add +</p>
           </div>
         </div>
       </div>

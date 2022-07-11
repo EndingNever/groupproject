@@ -64,7 +64,6 @@ export default function Nav() {
     }
   };
   const handleLeave = () => {
-    // console.log("this is happening");
     setIndicator({
       height: 0,
       width: 0,
@@ -103,7 +102,6 @@ export default function Nav() {
   //detect scroll position on main shop page
   useEffect(() => {
     setSolidNav(false);
-    console.log(location);
     if (location.pathname === "/cart") {
       setSolidNav(true);
     } else if (Object.entries(params).length <= 0) {
@@ -119,7 +117,6 @@ export default function Nav() {
       };
     } else {
       setSolidNav(true);
-      // console.log("running");
     }
   }, [params]);
 
