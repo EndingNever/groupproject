@@ -35,7 +35,7 @@ const items = [
             subCategory: "at-home",
             category: "charging",
             stockStatus: true,
-            options: ["quick-add+"],
+            options: ["quick-add+", "select-size"],
           },
           {
             itemImg: wallConPedestal,
@@ -55,7 +55,7 @@ const items = [
             category: "charging",
             subCategory: "at-home",
             stockStatus: true,
-            options: ["view-details"],
+            options: [],
           },
           {
             itemImg: cableOrganizer,
@@ -80,7 +80,7 @@ const items = [
             category: "charging",
             subCategory: "On-the-road",
             stockStatus: false,
-            options: ["view-details"],
+            options: [],
           },
           {
             itemImg: cordedMobileConnector,
@@ -90,7 +90,7 @@ const items = [
             category: "charging",
             subCategory: "On-the-road",
             stockStatus: false,
-            options: ["view-details"],
+            options: [],
           },
           {
             itemImg: nemaAdaptorBundle,
@@ -110,7 +110,7 @@ const items = [
             category: "charging",
             subCategory: "on-the-road",
             stockStatus: true,
-            options: ["view-Details"],
+            options: [],
           },
 
           {
