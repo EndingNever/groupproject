@@ -102,6 +102,7 @@ export const DropDownMenu = styled.div`
   }
   hr {
     border: 3px solid rgba(15, 15, 15, 0.1);
+    background-color: rgba(15, 15, 15, 0.1);
     width: 100%;
     margin: 8px 0px 16px;
   }

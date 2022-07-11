@@ -8,10 +8,13 @@ import { Indicator, StyledNav } from "./NavStyledComponents";
 import { navList } from "./navData";
 import SearchBar from "./SearchBar";
 import CartBtn from "./CartBtn";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 
 export default function Nav() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const params = useParams();
+
   //Refs for link locations and sizes
   const navRefs = useRef(navList.map(() => createRef()));
   //this is cool way to make a list of refs rather than making each one by one
@@ -24,8 +27,6 @@ export default function Nav() {
   const [dropDown, setDropDown] = useState({});
   //tracks the initial hover to indicate when transition should be active
   const [initialHover, setInitialHover] = useState(false);
-
-  const params = useParams();
 
   const [solidNav, setSolidNav] = useState(false);
 
@@ -63,7 +64,6 @@ export default function Nav() {
     }
   };
   const handleLeave = () => {
-    // console.log("this is happening");
     setIndicator({
       height: 0,
       width: 0,
@@ -74,7 +74,6 @@ export default function Nav() {
     setInitialHover(false);
     setDropDown({});
   };
-
   const handleLeaveNav = () => {
     //this will make the indicator disappear when the mouse exits the nav otherwise it might persist
     if (!dropDown.category) {
@@ -88,7 +87,6 @@ export default function Nav() {
       setInitialHover(false);
     }
   };
-
   const handleSearchHover = () => {
     setIndicator({
       height: 0,
@@ -104,7 +102,9 @@ export default function Nav() {
   //detect scroll position on main shop page
   useEffect(() => {
     setSolidNav(false);
-    if (Object.entries(params).length <= 0) {
+    if (location.pathname === "/cart") {
+      setSolidNav(true);
+    } else if (Object.entries(params).length <= 0) {
       window.onscroll = () => {
         if (window.pageYOffset > 200) {
           setSolidNav(true);
@@ -117,7 +117,6 @@ export default function Nav() {
       };
     } else {
       setSolidNav(true);
-      // console.log("running");
     }
   }, [params]);
 
