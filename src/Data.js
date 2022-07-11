@@ -39,7 +39,7 @@ const items = [
             subCategory: "at-home",
             category: "charging",
             stockStatus: true,
-            options: ["quick-add+"],
+            options: ["quick-add+", "select-size"],
           },
           {
             itemImg: wallConPedestal,
@@ -94,7 +94,7 @@ const items = [
             category: "charging",
             subCategory: "On-the-road",
             stockStatus: false,
-            options: ["view-details"],
+            options: [],
           },
           {
             itemImg: nemaAdaptorBundle,
