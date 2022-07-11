@@ -9,8 +9,6 @@ function App() {
     <div className="App">
       <Nav />
       <Outlet />
-      {/* <CardsGrid /> */}
-      {/* <ChargingPage /> */}
     </div>
   );
 }
