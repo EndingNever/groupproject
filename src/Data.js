@@ -112,6 +112,22 @@ import mXFrontTrunkLinerHov from "./assets/images/mXFrontTrunkLinerHov.avif"
 import mXHepa from "./assets/images/mXHepa.avif"
 import mXKeyFob from "./assets/images/mXKeyFob.avif"
 import mXKeyFobHov from "./assets/images/mXKeyFobHov.avif"
+import mYInteriorLiner from "./assets/images/mYInteriorLiner.avif"
+import mYInteriorLinerHov from "./assets/images/mYInteriorLinerHov.avif"
+import mYSills from "./assets/images/mYSills.avif"
+import mYSillsHov from "./assets/images/mYSillsHov.avif"
+import mYRoofRack from "./assets/images/mYRoofRack.avif"
+import mYRoofRackHov from "./assets/images/mYRoofRackHov.avif"
+import mYGeminiWheel from "./assets/images/mYGeminiWheel.avif"
+import mYGeminiWheelHov from "./assets/images/mYGeminiWheelHov.avif"
+import mYSnowChains from "./assets/images/mYSnowChains.avif"
+import mYSnowChainsHov from "./assets/images/mYSnowChainsHov.avif"
+import mYRearCargoLiner from "./assets/images/mYRearCargoLiner.avif"
+import mYRearCargoLinerHov from "./assets/images/mYRearCargoLinerHov.avif"
+import mYRuggedRearTrunk from "./assets/images/mYRuggedRearTrunk.avif"
+import mYRuggedRearTrunkHov from "./assets/images/mYRuggedRearTrunkHov.avif"
+import mYWiper from "./assets/images/mYWiper.avif"
+import mYWiperHov from "./assets/images/mYWiperHov.avif"
 
 const items = [
   {
@@ -305,7 +321,7 @@ const items = [
           {
             itemImg: S3YLiner,
             itemImgHover: S3YLinerHov,
-            itemName: "Model S/3/y Pet Liner",
+            itemName: "Model S/3/Y Pet Liner",
             itemPrice: 145,
             subCategory: "interior",
             category: "model-s",
@@ -469,7 +485,7 @@ const items = [
             itemPrice: 65,
             subCategory: "Parts",
             category: "model-s",
-            stockStatus: true,
+            stockStatus: false,
             options: ["view-details", "Parts"],
           },
           {
@@ -674,7 +690,7 @@ const items = [
             itemPrice: 65,
             subCategory: "Parts",
             category: "model-3",
-            stockStatus: true,
+            stockStatus: false,
             options: ["view-details", "Parts"],
           },
           {
@@ -879,7 +895,7 @@ const items = [
             itemPrice: 65,
             subCategory: "Parts",
             category: "model-x",
-            stockStatus: true,
+            stockStatus: false,
             options: ["view-details", "Parts"],
           },
           {
@@ -889,6 +905,211 @@ const items = [
             itemPrice: 175,
             subCategory: "keys",
             category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Keys"],
+          },
+        ]
+      },
+      {
+        subCategory: "model-y",
+        products:[
+          {
+            itemImg: mYInteriorLiner,
+            itemImgHover: mYInteriorLinerHov,
+            itemName: "Model Y All-Weather Interior Liners",
+            itemPrice: 225,
+            subCategory: "best-seller",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "Floor Mats"],
+          },
+          {
+            itemImg: mYSills,
+            itemImgHover: mYSillsHov,
+            itemName: "Model Y Illuminated Door Sills",
+            itemPrice: 250,
+            subCategory: "best-seller",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "Interior"],
+          },
+          {
+            itemImg: S3YLiner,
+            itemImgHover: S3YLinerHov,
+            itemName: "Model S/3/Y Pet Liner",
+            itemPrice: 145,
+            subCategory: "best-seller",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "Interior"],
+          },
+          {
+            itemImg: m3YTrays,
+            itemImgHover: m3YTraysHov,
+            itemName: "Model 3/Y Center Console Trays",
+            itemPrice: 30,
+            subCategory: "interior",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Interior",],
+          },
+          {
+            itemImg: m3YGarageOpener,
+            itemImgHover: m3YGarageOpener,
+            itemName: "Model 3/Y Automatic Garage Opener",
+            itemPrice: 350,
+            subCategory: "interior",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Interior",],
+          },
+          {
+            itemImg: usbDrive,
+            itemImgHover: usbDriveHov,
+            itemName: "USB Drive - 128 GB",
+            itemPrice: 45,
+            subCategory: "interior",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "quick-add+", "Interior",],
+          },
+          {
+            itemImg: xYSki,
+            itemImgHover: xYSkiHov,
+            itemName: "Model X/Y Ski/Snowboard Carrier for Hitch Rack",
+            itemPrice: 280,
+            subCategory: "exterior",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Exterior",],
+          },
+          {
+            itemImg: xYHitchRack,
+            itemImgHover: xYHitchRackHov,
+            itemName: "Model X/Y Hitch Rack",
+            itemPrice: 540,
+            subCategory: "exterior",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Exterior"],
+          },
+          {
+            itemImg: mYRoofRack,
+            itemImgHover: mYRoofRackHov,
+              itemName: "Model Y Roof Rack",
+            itemPrice: 500,
+            subCategory: "exterior",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Exterior"],
+          },
+          {
+            itemImg: mYGeminiWheel,
+            itemImgHover: mYGeminiWheelHov,
+              itemName: `Model Y 19" Gemini Wheel and Pirelli Winter Tire Package`,
+            itemPrice: 2750,
+            subCategory: "wheels",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Wheels and Tires"],
+          },
+          {
+            itemImg: mYSnowChains,
+            itemImgHover: mYSnowChainsHov,
+              itemName: `Model Y 19"/20" Snow Chains`,
+            itemPrice: 235,
+            subCategory: "wheels",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Wheels and Tires"],
+          },
+          {
+            itemImg: TireTote,
+            itemImgHover: TireToteHov,
+            itemName: `Tire Tote`,
+            itemPrice: 35,
+            subCategory: "Wheels and Tires",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "quick-add+", "Wheels and Tires"],
+          },
+          {
+            itemImg: WheelLocks,
+            itemImgHover: WheelLocksHov,
+            itemName: `Wheel Locks`,
+            itemPrice: 50,
+            subCategory: "Wheels and Tires",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Wheels and Tires"],
+          },
+          {
+            itemImg: mYRearCargoLiner,
+            itemImgHover: mYRearCargoLinerHov,
+            itemName: `Model Y All-Weather Rear Cargo Liner Set`,
+            itemPrice: 185,
+            subCategory: "floor-mats",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Floor Mats"],
+          },
+          {
+            itemImg: mYRuggedRearTrunk,
+            itemImgHover: mYRuggedRearTrunkHov,
+            itemName: `Model Y Rugged Textile Rear Trunk Mat`,
+            itemPrice: 80,
+            subCategory: "floor-mats",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Floor Mats"],
+          },
+          {
+            itemImg: mYWiper,
+            itemImgHover: mYWiperHov,
+            itemName: `Model Y Wiper Blade`,
+            itemPrice: 25,
+            subCategory: "Parts",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: m3YAirFilter,
+            itemImgHover: m3YAirFilterHov,
+            itemName: `Model 3/Y Air Filter`,
+            itemPrice: 17,
+            subCategory: "Parts",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: SafetyKit,
+            itemImgHover: SafetyKitHov,
+            itemName: `Roadside Safety Kit`,
+            itemPrice: 65,
+            subCategory: "Parts",
+            category: "model-y",
+            stockStatus: false,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: m3PaintRepair,
+            itemImgHover: m3PaintRepairHov,
+            itemName: `Paint Repair Kit`,
+            itemPrice: 60,
+            subCategory: "Parts",
+            category: "model-y",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: m3YKeyFob,
+            itemImgHover: m3YKeyFobHov,
+            itemName: `Model 3/Y Key Fob`,
+            itemPrice: 175,
+            subCategory: "keys",
+            category: "model-y",
             stockStatus: true,
             options: ["view-details", "Keys"],
           },
