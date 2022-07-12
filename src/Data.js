@@ -129,6 +129,23 @@ import mYRuggedRearTrunkHov from "./assets/images/mYRuggedRearTrunkHov.avif"
 import mYWiper from "./assets/images/mYWiper.avif"
 import mYWiperHov from "./assets/images/mYWiperHov.avif"
 
+//apparel image imports start here
+import mensTee1 from "./assets/images/mensTee1.avif";
+import mensTee1Alt from "./assets/images/mensTee1Alt.avif";
+import mensTee2 from "./assets/images/mens-turbine-tee-2.avif";
+import mensTee2Alt from "./assets/images/mens-turbine-tee-1.avif";
+import mensTee3 from "./assets/images/mensTee3.avif";
+import mensTee3Alt from "./assets/images/mensTee3Alt.avif";
+import mensTee4 from "./assets/images/mensTee4.avif";
+import mensTee4Alt from "./assets/images/mensTee4Alt.avif";
+import mensSweater1 from "./assets/images/mensSweater1.avif";
+import mensSweater1Alt from "./assets/images/mensSweater1Alt.avif";
+import mensSweater2 from "./assets/images/mensSweater2.avif";
+import mensSweater2Alt from "./assets/images/mensSweater2Alt.jpg";
+import mensSweater3 from "./assets/images/mensSweater3.avif";
+import mensSweater3Alt from "./assets/images/mensSweater3Alt.avif";
+import mensSweater4 from "./assets/images/mensSweater4.avif";
+import mensSweater4Alt from "./assets/images/mensSweater4Alt.jpg";
 const items = [
   {
     category: "charging",
@@ -1115,6 +1132,106 @@ const items = [
           },
         ]
       }
+    ],
+  },
+  {
+    category: "apparel",
+    subCategories: [
+      {
+        subCategory: "men",
+        products: [
+          {
+            itemImg: mensTee1,
+            itemImgHover: mensTee1Alt,
+            itemName: "Men's Plaid Quarter Mile Tee",
+            itemPrice: 35,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["select-size", "tees"],
+          },
+          {
+            itemImg: mensTee2,
+            itemImgHover: mensTee2Alt,
+            itemName: "Men's Turbine Short Sleeve Tee",
+            itemPrice: 40,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["select-size", "best-seller", "tees"],
+          },
+          {
+            itemImg: mensTee3,
+            itemImgHover: mensTee3Alt,
+            itemName: "Men's Plaid Quarter Mile Tee",
+            itemPrice: 35,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["select-size", "tees"],
+          },
+          {
+            itemImg: mensTee4,
+            itemImgHover: mensTee4Alt,
+            itemName: "Men's Plaid Quarter Mile Tee",
+            itemPrice: 35,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["select-size", "tees"],
+          },
+        ],
+      },
+      {
+        subCategory: "women",
+        products: [
+          {
+            itemImg: modelSLiner,
+            itemImgHover: modelSLinerHov,
+            itemName: "Model S All-Weather Interior Liners",
+            itemPrice: 250,
+            subCategory: "model-s",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "interior", "floor-mats"],
+          },
+          {
+            itemImg: SRoofRack,
+            itemImgHover: SRoofRackHov,
+            itemName: "Model S Roof Rack - Glass Roof",
+            itemPrice: 450,
+            subCategory: "model-s",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "best-seller"],
+          },
+        ],
+      },
+      {
+        subCategory: "kids",
+        products: [
+          {
+            itemImg: modelSLiner,
+            itemImgHover: modelSLinerHov,
+            itemName: "Model S All-Weather Interior Liners",
+            itemPrice: 250,
+            subCategory: "model-s",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "interior", "floor-mats"],
+          },
+          {
+            itemImg: SRoofRack,
+            itemImgHover: SRoofRackHov,
+            itemName: "Model S Roof Rack - Glass Roof",
+            itemPrice: 450,
+            subCategory: "model-s",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "best-seller"],
+          },
+        ],
+      },
     ],
   },
 ];
