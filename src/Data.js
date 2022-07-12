@@ -59,7 +59,37 @@ import SWiperBlade from "./assets/images/SWiperBlade.avif"
 import SWiperBladeHov from "./assets/images/SWiperBladeHov.avif"
 import SKeyFob from "./assets/images/SKeyFob.avif"
 import SKeyFobHov from "./assets/images/SKeyFobHov.avif"
-
+import model3Liner from "./assets/images/model3Liner.avif"
+import model3LinerHov from "./assets/images/model3LinerHov.avif"
+import model3DoorSills from "./assets/images/model3DoorSills.avif"
+import model3DoorSillsHov from "./assets/images/model3DoorSillsHov.avif"
+import model3RoofRack from "./assets/images/model3RoofRack.avif"
+import model3RoofRackHov from "./assets/images/model3RoofRackHov.avif"
+import m3YTrays from "./assets/images/m3YTrays.avif"
+import m3YTraysHov from "./assets/images/m3YTraysHov.avif"
+import m3YGarageOpener from "./assets/images/m3YGarageOpener.avif"
+import usbDrive from "./assets/images/usbDrive.avif"
+import usbDriveHov from "./assets/images/usbDriveHov.avif"
+import m3PaintProtect from "./assets/images/m3PaintProtect.avif"
+import m3CFSpoiler from "./assets/images/m3CFSpoiler.avif"
+import m3CFSpoilerHov from "./assets/images/m3CFSpoilerHov.avif"
+import m3Cover from "./assets/images/m3Cover.avif"
+import m3CoverHov from "./assets/images/m3CoverHov.avif"
+import m3MudFlaps from "./assets/images/m3MudFlaps.avif"
+import m3AeroWhl from "./assets/images/m3AeroWhl.avif"
+import m3AeroWhlHov from "./assets/images/m3AeroWhlHov.avif"
+import m3TrackPack from "./assets/images/m3TrackPack.avif"
+import m3TrackPackHov from "./assets/images/m3TrackPackHov.avif"
+import m3RearLiner from "./assets/images/m3RearLiner.avif"
+import m3RearLinerHov from "./assets/images/m3RearLinerHov.avif"
+import m3FrontTrunkLiner from "./assets/images/m3FrontTrunkLiner.avif"
+import m3FrontTrunkLinerHov from "./assets/images/m3FrontTrunkLinerHov.avif"
+import m3YAirFilter from "./assets/images/m3YAirFilter.avif"
+import m3YAirFilterHov from "./assets/images/m3YAirFilterHov.avif"
+import m3PaintRepair from "./assets/images/m3PaintRepair.avif"
+import m3PaintRepairHov from "./assets/images/m3PaintRepairHov.avif"
+import m3YKeyFob from "./assets/images/m3YKeyFob.avif"
+import m3YKeyFobHov from "./assets/images/m3YKeyFobHov.avif"
 
 const items = [
   {
@@ -431,6 +461,221 @@ const items = [
             options: ["view-details", "Keys"],
           },
         ],
+      },
+      {
+        subCategory: "model-3",
+        products:[
+          {
+            itemImg: model3Liner,
+            itemImgHover: model3LinerHov,
+            itemName: "Model 3 All-Weather Interior Liners",
+            itemPrice: 225,
+            subCategory: "model-3",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "Floor Mats"],
+          },
+          {
+            itemImg: model3DoorSills,
+            itemImgHover: model3DoorSillsHov,
+            itemName: "Model 3 Illuminated Door Sills",
+            itemPrice: 175,
+            subCategory: "model-3",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Interior"],
+          },
+          {
+            itemImg: model3RoofRack,
+            itemImgHover: model3RoofRackHov,
+            itemName: "Model 3 Roof Rack",
+            itemPrice: 400,
+            subCategory: "model-3",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "Exterior"],
+          },
+          {
+            itemImg: S3YLiner,
+            itemImgHover: S3YLinerHov,
+            itemName: "Model S/3/Y Pet Liner",
+            itemPrice: 145,
+            subCategory: "model-3",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "Interior"],
+          },
+          {
+            itemImg: m3YTrays,
+            itemImgHover: m3YTraysHov,
+            itemName: "Model 3/Y Center Console Trays",
+            itemPrice: 30,
+            subCategory: "interior",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Interior",],
+          },
+          {
+            itemImg: m3YGarageOpener,
+            itemImgHover: m3YGarageOpener,
+            itemName: "Model 3/Y Automatic Garage Opener",
+            itemPrice: 350,
+            subCategory: "interior",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Interior",],
+          },
+          {
+            itemImg: usbDrive,
+            itemImgHover: usbDriveHov,
+            itemName: "USB Drive - 128 GB",
+            itemPrice: 45,
+            subCategory: "interior",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Interior",],
+          },
+          {
+            itemImg: m3PaintProtect,
+            itemImgHover: m3PaintProtect,
+            itemName: "Model 3 Paint Protection Film",
+            itemPrice: 50,
+            subCategory: "exterior",
+            category: "model-3",
+            stockStatus: false,
+            options: ["view-details", "Exterior",],
+          },
+          {
+            itemImg: m3CFSpoiler,
+            itemImgHover: m3CFSpoilerHov,
+            itemName: "Model 3 Carbon Fiber Spoiler",
+            itemPrice: 800,
+            subCategory: "exterior",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Exterior",],
+          },
+          {
+            itemImg: m3Cover,
+            itemImgHover: m3CoverHov,
+            itemName: "Model 3 Car Cover",
+            itemPrice: 230,
+            subCategory: "exterior",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Exterior",],
+          },
+          {
+            itemImg: m3MudFlaps,
+            itemImgHover: m3MudFlaps,
+            itemName: "Model 3 Car Cover",
+            itemPrice: 230,
+            subCategory: "exterior",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Exterior",],
+          },
+          {
+            itemImg: m3AeroWhl,
+            itemImgHover: m3AeroWhlHov,
+            itemName: `Model 3 18" Aero Wheel and Summer Tire Package`,
+            itemPrice: 2000,
+            subCategory: "wheels",
+            category: "model-3",
+            stockStatus: false,
+            options: ["view-details", "Wheels and Tires",],
+          },
+          {
+            itemImg: m3TrackPack,
+            itemImgHover: m3TrackPackHov,
+            itemName: `Model 3 Track Package`,
+            itemPrice: 5500,
+            subCategory: "wheels",
+            category: "model-3",
+            stockStatus: false,
+            options: ["view-details", "Wheels and Tires",],
+          },
+          {
+            itemImg: TireTote,
+            itemImgHover: TireToteHov,
+            itemName: `Tire Tote`,
+            itemPrice: 35,
+            subCategory: "wheels",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Wheels and Tires"],
+          },
+          {
+            itemImg: WheelLocks,
+            itemImgHover: WheelLocksHov,
+            itemName: `Wheel Locks`,
+            itemPrice: 50,
+            subCategory: "wheels",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Wheels and Tires"],
+          },
+          {
+            itemImg: m3RearLiner,
+            itemImgHover: m3RearLinerHov,
+            itemName: `Model 3 All-Weather Rear Trunk Liner`,
+            itemPrice: 130,
+            subCategory: "floor-mats",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Floor Mats"],
+          },
+          {
+            itemImg: m3FrontTrunkLiner,
+            itemImgHover: m3FrontTrunkLinerHov,
+            itemName: `Model 3 All-Weather Front Trunk Liner`,
+            itemPrice: 70,
+            subCategory: "floor-mats",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Floor Mats"],
+          },
+          {
+            itemImg: m3PaintRepair,
+            itemImgHover: m3PaintRepairHov,
+            itemName: `Paint Repair Kit`,
+            itemPrice: 60,
+            subCategory: "Parts",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: SafetyKit,
+            itemImgHover: SafetyKitHov,
+            itemName: `Roadside Safety Kit`,
+            itemPrice: 65,
+            subCategory: "Parts",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: m3YAirFilter,
+            itemImgHover: m3YAirFilterHov,
+            itemName: `Model 3/Y Air Filter`,
+            itemPrice: 17,
+            subCategory: "Parts",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: m3YKeyFob,
+            itemImgHover: m3YKeyFobHov,
+            itemName: `Model 3/Y Key Fob`,
+            itemPrice: 175,
+            subCategory: "keys",
+            category: "model-3",
+            stockStatus: true,
+            options: ["view-details", "Keys"],
+          },
+        ]
       },
     ],
   },
