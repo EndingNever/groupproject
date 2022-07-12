@@ -47,6 +47,18 @@ import ArachnidWheel from "./assets/images/ArachnidWheel.avif"
 import ArachnidWheelHov from "./assets/images/ArachnidWheelHov.avif"
 import TireTote from "./assets/images/TireTote.avif"
 import TireToteHov from "./assets/images/TireToteHov.avif"
+import SFrontTrunkLiner from "./assets/images/SFrontTrunkLiner.avif"
+import SFrontTrunkLinerHov from "./assets/images/SFrontTrunkLinerHov.avif"
+import SRearWellLiner from "./assets/images/SRearWellLiner.avif"
+import SRearWellLinerHov from "./assets/images/SRearWellLinerHov.avif"
+import SXAirFilter from "./assets/images/SXAirFilter.avif"
+import SXAirFilterHov from "./assets/images/SXAirFilterHov.avif"
+import SafetyKit from "./assets/images/SafetyKit.avif"
+import SafetyKitHov from "./assets/images/SafetyKitHov.avif"
+import SWiperBlade from "./assets/images/SWiperBlade.avif"
+import SWiperBladeHov from "./assets/images/SWiperBladeHov.avif"
+import SKeyFob from "./assets/images/SKeyFob.avif"
+import SKeyFobHov from "./assets/images/SKeyFobHov.avif"
 
 
 const items = [
@@ -357,6 +369,66 @@ const items = [
             category: "model-s",
             stockStatus: true,
             options: ["view-details", "Wheels and Tires"],
+          },
+          {
+            itemImg: SFrontTrunkLiner,
+            itemImgHover: SFrontTrunkLinerHov,
+            itemName: `Model S All-Weather Front Trunk Liner`,
+            itemPrice: 70,
+            subCategory: "Floor Mats",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "Floor Mats"],
+          },
+          {
+            itemImg: SRearWellLiner,
+            itemImgHover: SRearWellLinerHov,
+            itemName: `Model S All-Weather Rear Well Liner`,
+            itemPrice: 65,
+            subCategory: "Floor Mats",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "Floor Mats"],
+          },
+          {
+            itemImg: SWiperBlade,
+            itemImgHover: SWiperBladeHov,
+            itemName: `Model S Wiper Blade`,
+            itemPrice: 28,
+            subCategory: "Parts",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: SXAirFilter,
+            itemImgHover: SXAirFilterHov,
+            itemName: `Model S/X Air Filter`,
+            itemPrice: 34,
+            subCategory: "Parts",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: SafetyKit,
+            itemImgHover: SafetyKitHov,
+            itemName: `Roadside Safety Kit`,
+            itemPrice: 65,
+            subCategory: "Parts",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: SKeyFob,
+            itemImgHover: SKeyFobHov,
+            itemName: `Model S Key Fob`,
+            itemPrice: 175,
+            subCategory: "Keys",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "Keys"],
           },
         ],
       },
