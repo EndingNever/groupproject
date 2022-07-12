@@ -10,24 +10,24 @@ const CardsGrid = ({ products }) => {
   const params = useParams();
   useEffect(() => {
     setUseSubSubCategories(false);
-    setModelSItems({});
-    console.log(params);
     if (
       params.productCategory === "vehicle-accessories" ||
       params.productCategory === "apparel"
     ) {
-      let copy = JSON.parse(JSON.stringify(modelSItems));
+      let copy = {};
       products.forEach((product) => {
         product.options.forEach((option) => {
-          if (option !== "view-details" && option !== "quick-add+") {
-            console.log(modelSItems);
+          if (
+            option !== "view-details" &&
+            option !== "quick-add+" &&
+            option !== "select-size"
+          ) {
             setUseSubSubCategories(true);
             if (copy[option]) {
               copy[option] = [...copy[option], product];
             } else {
               copy[option] = [product];
             }
-            console.log(copy);
           }
         });
       });
@@ -52,24 +52,48 @@ const CardsGrid = ({ products }) => {
       ))}
     </div>
   ) : (
-    Object.keys(modelSItems).map((key, i) => (
-      <div key={key}>
-        <h3>{key}</h3>
-        <div className='cardGrid'>
-          {modelSItems[key].map((product, index) => (
-            <Card
-              key={index}
-              itemImg={product.itemImg}
-              itemImgHover={product.itemImgHover}
-              itemName={product.itemName}
-              itemPrice={product.itemPrice}
-              stockStatus={product.stockStatus}
-              product={product}
-            />
-          ))}
-        </div>
-      </div>
-    ))
+    <>
+      {Object.keys(modelSItems)
+        .filter((key) => key === "best-seller")
+        .map((key, i) => (
+          <div key={key}>
+            <h3>{key}</h3>
+            <div className='cardGrid'>
+              {modelSItems[key].map((product, index) => (
+                <Card
+                  key={index}
+                  itemImg={product.itemImg}
+                  itemImgHover={product.itemImgHover}
+                  itemName={product.itemName}
+                  itemPrice={product.itemPrice}
+                  stockStatus={product.stockStatus}
+                  product={product}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      {Object.keys(modelSItems)
+        .filter((key) => key !== "best-seller")
+        .map((key, i) => (
+          <div key={key}>
+            <h3>{key}</h3>
+            <div className='cardGrid'>
+              {modelSItems[key].map((product, index) => (
+                <Card
+                  key={index}
+                  itemImg={product.itemImg}
+                  itemImgHover={product.itemImgHover}
+                  itemName={product.itemName}
+                  itemPrice={product.itemPrice}
+                  stockStatus={product.stockStatus}
+                  product={product}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+    </>
   );
 };
 
