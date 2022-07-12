@@ -41,6 +41,14 @@ import mensSweater3 from "./assets/images/mensSweater3.avif";
 import mensSweater3Alt from "./assets/images/mensSweater3Alt.avif";
 import mensSweater4 from "./assets/images/mensSweater4.avif";
 import mensSweater4Alt from "./assets/images/mensSweater4Alt.jpg";
+import mensOuterwear1 from "./assets/images/mensOuterwear1.avif";
+import mensOuterwear1Alt from "./assets/images/mensOuterwear1Alt.avif";
+import mensOuterwear2 from "./assets/images/mensOuterwear2.avif";
+import mensOuterwear2Alt from "./assets/images/mensOuterwear2Alt.avif";
+import mensOuterwear3 from "./assets/images/mensOuterwear3.avif";
+import mensOuterwear3Alt from "./assets/images/mensOuterwear3Alt.avif";
+
+
 const items = [
   {
     category: "charging",
@@ -238,7 +246,7 @@ const items = [
             subCategory: "men",
             category: "apparel",
             stockStatus: true,
-            options: ["select-size", "tees"],
+            options: ["quick-add+", "select-size", "tees", "best-seller"],
           },
           {
             itemImg: mensTee2,
@@ -248,27 +256,67 @@ const items = [
             subCategory: "men",
             category: "apparel",
             stockStatus: true,
-            options: ["select-size", "best-seller", "tees"],
+            options: ["quick-add+", "select-size", "best-seller", "tees"],
           },
           {
             itemImg: mensTee3,
             itemImgHover: mensTee3Alt,
-            itemName: "Men's Plaid Quarter Mile Tee",
+            itemName: "Men's Cybertruck Owl Tee",
             itemPrice: 35,
             subCategory: "men",
             category: "apparel",
             stockStatus: true,
-            options: ["select-size", "tees"],
+            options: ["quick-add+", "select-size", "tees"],
           },
           {
             itemImg: mensTee4,
             itemImgHover: mensTee4Alt,
-            itemName: "Men's Plaid Quarter Mile Tee",
+            itemName: "Men's Let the Sun Shine Tee",
             itemPrice: 35,
             subCategory: "men",
             category: "apparel",
             stockStatus: true,
-            options: ["select-size", "tees"],
+            options: ["quick-add+", "select-size", "tees"],
+          },
+          {
+            itemImg: mensSweater1,
+            itemImgHover: mensSweater1Alt,
+            itemName: "Men's Raven Lightweight Zip Up Bomber Jacket",
+            itemPrice: 130,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["quick-add+", "select-size", "Sweatshirts and Hoodies"],
+          },
+          {
+            itemImg: mensSweater2,
+            itemImgHover: mensSweater2Alt,
+            itemName: "Men's Raven Lightweight Hoodie",
+            itemPrice: 115,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["quick-add+", "select-size", "Sweatshirts and Hoodies"],
+          },
+          {
+            itemImg: mensSweater3,
+            itemImgHover: mensSweater3Alt,
+            itemName: "Chill Pullover Hoodie",
+            itemPrice: 90,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["quick-add+", "select-size", "Sweatshirts and Hoodies"],
+          },
+          {
+            itemImg: mensSweater4,
+            itemImgHover: mensSweater4Alt,
+            itemName: "Men’s Chill Crew Neck Sweatshirt",
+            itemPrice: 75,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["quick-add+", "select-size", "Sweatshirts and Hoodies"],
           },
         ],
       },
