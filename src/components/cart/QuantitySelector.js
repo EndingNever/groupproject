@@ -30,7 +30,7 @@ const QuantitySelector = ({ handleSelect, itemQty }) => {
   }, [dropDown]);
 
   return (
-    <StyledSelector maxQty={maxQty}>
+    <StyledSelector maxQty={maxQty} dropDown={dropDown}>
       <button
         onClick={() => setDropDown(!dropDown)}
         onBlur={() => setDropDown(false)}
