@@ -39,7 +39,7 @@ const items = [
             subCategory: "at-home",
             category: "charging",
             stockStatus: true,
-            options: ["quick-add+", "select-size"],
+            options: ["quick-add+", "select-size", "select-color"],
           },
           {
             itemImg: wallConPedestal,
