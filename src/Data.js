@@ -90,6 +90,28 @@ import m3PaintRepair from "./assets/images/m3PaintRepair.avif"
 import m3PaintRepairHov from "./assets/images/m3PaintRepairHov.avif"
 import m3YKeyFob from "./assets/images/m3YKeyFob.avif"
 import m3YKeyFobHov from "./assets/images/m3YKeyFobHov.avif"
+import mXMats from "./assets/images/mXMats.avif"
+import mXMatsHov from "./assets/images/mXMatsHov.avif"
+import xYHitchRack from "./assets/images/xYHitchRack.avif"
+import xYHitchRackHov from "./assets/images/xYHitchRackHov.avif"
+import mXPetLiner from "./assets/images/mXPetLiner.avif"
+import mXPetLinerHov from "./assets/images/mXPetLinerHov.avif"
+import mXSunShades from "./assets/images/mXSunShades.avif"
+import mXSunShadesHov from "./assets/images/mXSunShadesHov.avif"
+import mXAntiTheft from "./assets/images/mXAntiTheft.avif"
+import mXCover from "./assets/images/mXCover.avif"
+import mXCoverHov from "./assets/images/mXCoverHov.avif"
+import xYSki from "./assets/images/xYSki.avif"
+import xYSkiHov from "./assets/images/xYSkiHov.avif"
+import mXCyberWheel from "./assets/images/mXCyberWheel.avif"
+import mXCyberWheelHov from "./assets/images/mXCyberWheelHov.avif"
+import mXSnowChains from "./assets/images/mXSnowChains.avif"
+import mXSnowChainsHov from "./assets/images/mXSnowChainsHov.avif"
+import mXFrontTrunkLiner from "./assets/images/mXFrontTrunkLiner.avif"
+import mXFrontTrunkLinerHov from "./assets/images/mXFrontTrunkLinerHov.avif"
+import mXHepa from "./assets/images/mXHepa.avif"
+import mXKeyFob from "./assets/images/mXKeyFob.avif"
+import mXKeyFobHov from "./assets/images/mXKeyFobHov.avif"
 
 const items = [
   {
@@ -388,7 +410,7 @@ const items = [
             subCategory: "Wheels and Tires",
             category: "model-s",
             stockStatus: true,
-            options: ["view-details", "Wheels and Tires"],
+            options: ["view-details", "quick-add+", "Wheels and Tires"],
           },
           {
             itemImg: WheelLocks,
@@ -533,7 +555,7 @@ const items = [
             subCategory: "interior",
             category: "model-3",
             stockStatus: true,
-            options: ["view-details", "Interior",],
+            options: ["view-details", "quick-add+", "Interior",],
           },
           {
             itemImg: m3PaintProtect,
@@ -603,7 +625,7 @@ const items = [
             subCategory: "wheels",
             category: "model-3",
             stockStatus: true,
-            options: ["view-details", "Wheels and Tires"],
+            options: ["view-details", "quick-add+", "Wheels and Tires"],
           },
           {
             itemImg: WheelLocks,
@@ -677,6 +699,201 @@ const items = [
           },
         ]
       },
+      {
+        subCategory: "model-x",
+        products:[
+          {
+            itemImg: mXMats,
+            itemImgHover: mXMatsHov,
+            itemName: "Model X All-Weather Interior Liners",
+            itemPrice: 120,
+            subCategory: "best-seller",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "Floor Mats"],
+          },
+          {
+            itemImg: xYHitchRack,
+            itemImgHover: xYHitchRackHov,
+            itemName: "Model X/Y Hitch Rack",
+            itemPrice: 540,
+            subCategory: "best-seller",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "Exterior"],
+          },
+          {
+            itemImg: mXPetLiner,
+            itemImgHover: mXPetLinerHov,
+            itemName: "Model X Pet Liner",
+            itemPrice: 135,
+            subCategory: "best-seller",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "best-seller", "Interior"],
+          },
+          {
+            itemImg: mXSunShades,
+            itemImgHover: mXSunShadesHov,
+            itemName: "Model X Falcon Wing Sunshades",
+            itemPrice: 80,
+            subCategory: "interior",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Interior"],
+          },
+          {
+            itemImg: SXCoatHooks,
+            itemImgHover: SXCoatHooksHov,
+            itemName: "2012-2020 | Model S/X Coat Hooks",
+            itemPrice: 30,
+            subCategory: "interior",
+            category: "model-s",
+            stockStatus: true,
+            options: ["view-details", "Interior"],
+          },
+          {
+            itemImg: mXAntiTheft,
+            itemImgHover: mXAntiTheft,
+            itemName: "2015-2020 | Model X Enhanced Anti-Theft Upgrade",
+            itemPrice: 350,
+            subCategory: "interior",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Interior"],
+          },
+          {
+            itemImg: usbDrive,
+            itemImgHover: usbDriveHov,
+            itemName: "USB Drive - 128 GB",
+            itemPrice: 45,
+            subCategory: "interior",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "quick-add+", "Interior",],
+          },
+          {
+            itemImg: mXCover,
+            itemImgHover: mXCoverHov,
+            itemName: "Model X Car Cover",
+            itemPrice: 450,
+            subCategory: "exterior",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Exterior",],
+          },
+          {
+            itemImg: xYSki,
+            itemImgHover: xYSkiHov,
+            itemName: "Model X/Y Ski/Snowboard Carrier for Hitch Rack",
+            itemPrice: 280,
+            subCategory: "exterior",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Exterior",],
+          },
+          {
+            itemImg: mXCyberWheel,
+            itemImgHover: mXCyberWheelHov,
+            itemName: `Model X 20" Cyberstream Wheel and Winter Tire Package`,
+            itemPrice: 3250,
+            subCategory: "wheels",
+            category: "model-x",
+            stockStatus: false,
+            options: ["view-details", "Wheels and Tires",],
+          },
+          {
+            itemImg: mXSnowChains,
+            itemImgHover: mXSnowChainsHov,
+            itemName: `Model X Snow Chains`,
+            itemPrice: 555,
+            subCategory: "wheels",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Wheels and Tires",],
+          },
+          {
+            itemImg: TireTote,
+            itemImgHover: TireToteHov,
+            itemName: `Tire Tote`,
+            itemPrice: 35,
+            subCategory: "Wheels and Tires",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "quick-add+", "Wheels and Tires"],
+          },
+          {
+            itemImg: WheelLocks,
+            itemImgHover: WheelLocksHov,
+            itemName: `Wheel Locks`,
+            itemPrice: 50,
+            subCategory: "Wheels and Tires",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Wheels and Tires"],
+          },
+          {
+            itemImg: mXFrontTrunkLiner,
+            itemImgHover: mXFrontTrunkLinerHov,
+            itemName: `2015-2020 | Model X All-Weather Front Trunk Liner`,
+            itemPrice: 80,
+            subCategory: "floor-mats",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Floor Mats"],
+          },
+          {
+            itemImg: mXHepa,
+            itemImgHover: mXHepa,
+            itemName: `2015-2020 | Model X HEPA Air Filtration Upgrade`,
+            itemPrice: 500,
+            subCategory: "parts",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: SXAirFilter,
+            itemImgHover: SXAirFilterHov,
+            itemName: `Model S/X Air Filter`,
+            itemPrice: 34,
+            subCategory: "Parts",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: m3PaintRepair,
+            itemImgHover: m3PaintRepairHov,
+            itemName: `Paint Repair Kit`,
+            itemPrice: 60,
+            subCategory: "Parts",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: SafetyKit,
+            itemImgHover: SafetyKitHov,
+            itemName: `Roadside Safety Kit`,
+            itemPrice: 65,
+            subCategory: "Parts",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Parts"],
+          },
+          {
+            itemImg: mXKeyFob,
+            itemImgHover: mXKeyFobHov,
+            itemName: `Model X Key Fob`,
+            itemPrice: 175,
+            subCategory: "keys",
+            category: "model-x",
+            stockStatus: true,
+            options: ["view-details", "Keys"],
+          },
+        ]
+      }
     ],
   },
 ];
