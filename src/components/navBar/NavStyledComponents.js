@@ -7,12 +7,14 @@ export const StyledNav = styled.nav`
   background: none;
   position: fixed;
   width: 100%;
-  height: 48px;
+  padding: 5px;
+  /* height: 48px; */
   top: 0px;
   color: white;
   transition: all 0.1s;
   z-index: 2;
   pointer-events: default;
+  flex-wrap: wrap;
   svg {
     fill: white;
   }
@@ -25,7 +27,7 @@ export const StyledNav = styled.nav`
     display: flex;
     list-style: none;
     /* gap: 32px; */
-    padding: 14px;
+    padding: 0px 14px;
     align-items: center;
     gap: 16px;
     li {
@@ -46,6 +48,22 @@ export const StyledNav = styled.nav`
   }
   input {
     color: white;
+  }
+  .navSearchBarLi {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  .navCenter {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  .navLeft {
+    padding-right: 0px;
+  }
+  .navRight {
+    padding-left: 0px;
   }
   ${({ persist, solidNav }) =>
     (persist || solidNav) &&
@@ -108,6 +126,7 @@ export const DropDownMenu = styled.div`
     width: 100%;
     margin: 8px 0px 16px;
   }
+
   li {
     height: 31px;
     margin-bottom: 8px;
@@ -142,6 +161,10 @@ export const Indicator = styled.div`
   height: ${({ setting }) => `${setting.height}px`};
   width: ${({ setting }) => `${setting.width}px`};
   transform: translateX(${({ setting }) => `${setting.posX}px`});
+  @media (max-width: 389px) {
+    transform: translateX(${({ setting }) => `${setting.posX}px`})
+      translateY(${({ setting }) => `calc(-100% + ${setting.posY + 8}px)`});
+  }
   z-index: -1;
   transition: ${({ setting }) =>
     setting.initial ? "all 0.5s cubic-bezier(0.55, 0, 0, 1)" : "none"};

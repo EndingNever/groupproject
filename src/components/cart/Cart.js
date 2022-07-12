@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { CartPage } from "./CartStyledComponents";
+import { CartPage, MobileCheckoutBtn } from "./CartStyledComponents";
 import { useDispatch, useSelector } from "react-redux";
 import {
   cartSelectors,
@@ -32,11 +32,15 @@ export default function Cart() {
     <CartPage>
       <div className='cartContainer'>
         <h1>Cart</h1>
+
         <div className='cartContent'>
           <div className='cartItems'>{cartItems}</div>
           <OrderSummary />
         </div>
       </div>
+      <MobileCheckoutBtn>
+        <button>CHECKOUT</button>
+      </MobileCheckoutBtn>
     </CartPage>
   );
 }
