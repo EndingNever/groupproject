@@ -9,6 +9,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { OrderSummary } from "./OrderSummary";
 import { CartItem } from "./CartItem";
+import Footer from "../Footer";
 
 export default function Cart() {
   const cartEntities = useSelector(cartSelectors.selectEntities);
@@ -36,6 +37,9 @@ export default function Cart() {
         <div className='cartContent'>
           <div className='cartItems'>{cartItems}</div>
           <OrderSummary />
+          <div className="cartExtraFooterController">
+            <Footer />
+          </div>
         </div>
       </div>
       <MobileCheckoutBtn>
