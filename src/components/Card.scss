@@ -37,7 +37,7 @@
   .quickAdd {
     height: 25%;
     position: absolute;
-    width: 100%;
+    width: calc(100% + 0.5px);
     // margin-top: -80px;
     transform: translateY(-100%);
     text-align: center;
