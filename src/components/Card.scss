@@ -9,8 +9,6 @@
 }
 .cardWrapper {
   width: 30%;
-  // width: calc(calc(100vw - 10vw - 64px) / 3);
-  // height: calc(calc(100vw - 10vw - 64px) / 3);
   @media (max-width: 960px) {
     width: 48%;
   }
@@ -54,7 +52,8 @@
     display: block;
   }
   .itemImg {
-    display: none;
+    // display: none;
+    opacity: 0;
   }
 }
 .stockStatus {
