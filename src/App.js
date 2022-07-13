@@ -1,5 +1,4 @@
-import "./App.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import ShopPage from "./components/shopPage/ShopPage";
 import Nav from "./components/navBar/Nav";
 import { Outlet } from "react-router-dom";
