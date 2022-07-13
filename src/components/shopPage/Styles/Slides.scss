@@ -1,35 +1,17 @@
-// .btn {
-// background-color: #fff;
-//   text-transform: none;
-//   overflow: visible;
-//   margin: 0;
-
-//   top: 50%;
-//   left: 25px;
-//   transform: translateY(0%);
-//   z-index: 1;
-//   border-radius: 50%;
-//   outline: none;
-//   position: relative;
-//   display: block;
-//   cursor: pointer;
-//   border: none;
-//   color: transparent;
-
-//   &:hover {
-//     background:#fff !important;
-// }
-// }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gotham Medium";
+}
 
 .title-wrap {
   width: 366px;
   padding-top: 40px;
   padding-bottom: -10px;
-  background-color: #fff;
 
   h3 {
     font-size: 28px;
-    font-family: "Gotham Medium";
     color: #181b21;
     padding-bottom: 15px;
     letter-spacing: -0.6px;
@@ -37,29 +19,19 @@
   }
 }
 
-.main-slide {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: row;
+.main-carousel {
+  padding: 0;
+  padding-top: 5px;
+  //   display: flex;
+  //   flex-direction: row;
   outline: none;
+  background-color: rgb(255, 255, 255);
 }
 
-// .carousel .slider-wrapper {
-//   width: 50%;
-// }
-
-// .carousel .thumb {
-//   width: 5%;
-//   height: 50px;
-// }
-
-// .carousel {
-//   text-align: center;
-// }
-
 .wrap {
-  width: 366px;
-  padding: 0px 24px;
+  height: 30vw;
+  //   width: 100%;
+  //   padding: 0px 24px;
   margin-bottom: 50px;
   -webkit-box-direction: normal;
   position: relative;
@@ -68,35 +40,46 @@
   z-index: 0;
 }
 
-.wrap .slide {
-  min-width: 100%;
-  margin: 0;
+.wrap .img-wrapper {
+  //   display: block;
   position: relative;
   text-align: center;
 }
 
-.wrap h5 {
-  font-family: "Gotham Medium";
-  color: #181b21;
-  background-color: #fff;
-  margin-bottom: -35px;
-  margin-top: 10px;
-  width: 100%;
-  text-align: left;
-  line-height: 20px;
+.img-wrapper {
+  margin: 0;
+  padding: 0 12px;
 }
 
 h5 {
+  color: #181b21;
+  background-color: #fff;
+  //   margin-bottom: -35px;
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 100%;
+  text-align: left;
+  line-height: 20px;
   font-size: 17px;
   font-weight: 500;
-  margin-left: -20px;
   padding: 24px 0px 0px;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Gotham Medium";
-  background-color: #fff;
+.control-arrow {
+  border: none !important;
+  height: 32px !important;
+  width: 32px !important;
+  border-radius: 50px !important;
+  background-color: rgb(178, 176, 176) !important;
+  top: 50% !important;
+  margin: 0px 30px !important;
+  display: grid !important;
+  place-items: center;
 }
+.control-dots {
+  display: none !important;
+}
+
+// .carousel-wrapper * {
+//   outline: 2px solid green !important;
+// }
