@@ -53,7 +53,13 @@ const Card = (props) => {
       <div className="item">
         <div>
           <p className="itemName">{itemName}</p>
-          <p className="itemPrice">${itemPrice}</p>
+          <p className="itemPrice">
+            {" "}
+            $
+            {typeof itemPrice === "object"
+              ? `${itemPrice[0]} - $${itemPrice[1]}`
+              : itemPrice}
+          </p>
         </div>
         {product.options.includes("select-color") && product.color ? (
           <div className="productTile">
