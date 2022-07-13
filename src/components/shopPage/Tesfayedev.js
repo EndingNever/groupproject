@@ -35,6 +35,7 @@ const Tesfayedev = () => {
           controls={true}
           showThumbs={false}
           showArrows={showArrow}
+          showStatus={false}
           interval={2000}
           infiniteLoop
           centerMode={true}
