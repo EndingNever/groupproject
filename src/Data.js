@@ -27,107 +27,107 @@ import modelSRearLiner from "./assets/images/modelSRearLiner.avif";
 import modelSRearLinerHov from "./assets/images/modelSRearLinerHov.avif";
 import S3YLiner from "./assets/images/S3YLiner.avif";
 import S3YLinerHov from "./assets/images/S3YLinerHov.avif";
-import SDoorSills from "./assets/images/SDoorSills.avif"
-import SDoorSillsHov from "./assets/images/SDoorSillsHov.avif"
-import SXCoatHooks from "./assets/images/SXCoatHooks.avif"
-import SXCoatHooksHov from "./assets/images/SXCoatHooksHov.avif"
-import SunShades from "./assets/images/SunShades.avif"
-import SMudFlaps from "./assets/images/SMudFlaps.avif"
-import SMudFlapsHov from "./assets/images/SMudFlapsHov.avif"
-import SCarCover from "./assets/images/SCarCover.avif"
-import SCarCoverHov from "./assets/images/SCarCoverHov.avif"
-import ModelSSpoiler from "./assets/images/ModelSSpoiler.avif"
-import ModelSSpoilerHov from "./assets/images/ModelSSpoilerHov.avif"
-import SBreakKit from "./assets/images/SBreakKit.avif"
-import STempestWheel from "./assets/images/STempestWheel.avif"
-import STempestWheelHov from "./assets/images/STempestWheelHov.avif"
-import WheelLocks from "./assets/images/WheelLocks.avif"
-import WheelLocksHov from "./assets/images/WheelLocksHov.avif"
-import ArachnidWheel from "./assets/images/ArachnidWheel.avif"
-import ArachnidWheelHov from "./assets/images/ArachnidWheelHov.avif"
-import TireTote from "./assets/images/TireTote.avif"
-import TireToteHov from "./assets/images/TireToteHov.avif"
-import SFrontTrunkLiner from "./assets/images/SFrontTrunkLiner.avif"
-import SFrontTrunkLinerHov from "./assets/images/SFrontTrunkLinerHov.avif"
-import SRearWellLiner from "./assets/images/SRearWellLiner.avif"
-import SRearWellLinerHov from "./assets/images/SRearWellLinerHov.avif"
-import SXAirFilter from "./assets/images/SXAirFilter.avif"
-import SXAirFilterHov from "./assets/images/SXAirFilterHov.avif"
-import SafetyKit from "./assets/images/SafetyKit.avif"
-import SafetyKitHov from "./assets/images/SafetyKitHov.avif"
-import SWiperBlade from "./assets/images/SWiperBlade.avif"
-import SWiperBladeHov from "./assets/images/SWiperBladeHov.avif"
-import SKeyFob from "./assets/images/SKeyFob.avif"
-import SKeyFobHov from "./assets/images/SKeyFobHov.avif"
-import model3Liner from "./assets/images/model3Liner.avif"
-import model3LinerHov from "./assets/images/model3LinerHov.avif"
-import model3DoorSills from "./assets/images/model3DoorSills.avif"
-import model3DoorSillsHov from "./assets/images/model3DoorSillsHov.avif"
-import model3RoofRack from "./assets/images/model3RoofRack.avif"
-import model3RoofRackHov from "./assets/images/model3RoofRackHov.avif"
-import m3YTrays from "./assets/images/m3YTrays.avif"
-import m3YTraysHov from "./assets/images/m3YTraysHov.avif"
-import m3YGarageOpener from "./assets/images/m3YGarageOpener.avif"
-import usbDrive from "./assets/images/usbDrive.avif"
-import usbDriveHov from "./assets/images/usbDriveHov.avif"
-import m3PaintProtect from "./assets/images/m3PaintProtect.avif"
-import m3CFSpoiler from "./assets/images/m3CFSpoiler.avif"
-import m3CFSpoilerHov from "./assets/images/m3CFSpoilerHov.avif"
-import m3Cover from "./assets/images/m3Cover.avif"
-import m3CoverHov from "./assets/images/m3CoverHov.avif"
-import m3MudFlaps from "./assets/images/m3MudFlaps.avif"
-import m3AeroWhl from "./assets/images/m3AeroWhl.avif"
-import m3AeroWhlHov from "./assets/images/m3AeroWhlHov.avif"
-import m3TrackPack from "./assets/images/m3TrackPack.avif"
-import m3TrackPackHov from "./assets/images/m3TrackPackHov.avif"
-import m3RearLiner from "./assets/images/m3RearLiner.avif"
-import m3RearLinerHov from "./assets/images/m3RearLinerHov.avif"
-import m3FrontTrunkLiner from "./assets/images/m3FrontTrunkLiner.avif"
-import m3FrontTrunkLinerHov from "./assets/images/m3FrontTrunkLinerHov.avif"
-import m3YAirFilter from "./assets/images/m3YAirFilter.avif"
-import m3YAirFilterHov from "./assets/images/m3YAirFilterHov.avif"
-import m3PaintRepair from "./assets/images/m3PaintRepair.avif"
-import m3PaintRepairHov from "./assets/images/m3PaintRepairHov.avif"
-import m3YKeyFob from "./assets/images/m3YKeyFob.avif"
-import m3YKeyFobHov from "./assets/images/m3YKeyFobHov.avif"
-import mXMats from "./assets/images/mXMats.avif"
-import mXMatsHov from "./assets/images/mXMatsHov.avif"
-import xYHitchRack from "./assets/images/xYHitchRack.avif"
-import xYHitchRackHov from "./assets/images/xYHitchRackHov.avif"
-import mXPetLiner from "./assets/images/mXPetLiner.avif"
-import mXPetLinerHov from "./assets/images/mXPetLinerHov.avif"
-import mXSunShades from "./assets/images/mXSunShades.avif"
-import mXSunShadesHov from "./assets/images/mXSunShadesHov.avif"
-import mXAntiTheft from "./assets/images/mXAntiTheft.avif"
-import mXCover from "./assets/images/mXCover.avif"
-import mXCoverHov from "./assets/images/mXCoverHov.avif"
-import xYSki from "./assets/images/xYSki.avif"
-import xYSkiHov from "./assets/images/xYSkiHov.avif"
-import mXCyberWheel from "./assets/images/mXCyberWheel.avif"
-import mXCyberWheelHov from "./assets/images/mXCyberWheelHov.avif"
-import mXSnowChains from "./assets/images/mXSnowChains.avif"
-import mXSnowChainsHov from "./assets/images/mXSnowChainsHov.avif"
-import mXFrontTrunkLiner from "./assets/images/mXFrontTrunkLiner.avif"
-import mXFrontTrunkLinerHov from "./assets/images/mXFrontTrunkLinerHov.avif"
-import mXHepa from "./assets/images/mXHepa.avif"
-import mXKeyFob from "./assets/images/mXKeyFob.avif"
-import mXKeyFobHov from "./assets/images/mXKeyFobHov.avif"
-import mYInteriorLiner from "./assets/images/mYInteriorLiner.avif"
-import mYInteriorLinerHov from "./assets/images/mYInteriorLinerHov.avif"
-import mYSills from "./assets/images/mYSills.avif"
-import mYSillsHov from "./assets/images/mYSillsHov.avif"
-import mYRoofRack from "./assets/images/mYRoofRack.avif"
-import mYRoofRackHov from "./assets/images/mYRoofRackHov.avif"
-import mYGeminiWheel from "./assets/images/mYGeminiWheel.avif"
-import mYGeminiWheelHov from "./assets/images/mYGeminiWheelHov.avif"
-import mYSnowChains from "./assets/images/mYSnowChains.avif"
-import mYSnowChainsHov from "./assets/images/mYSnowChainsHov.avif"
-import mYRearCargoLiner from "./assets/images/mYRearCargoLiner.avif"
-import mYRearCargoLinerHov from "./assets/images/mYRearCargoLinerHov.avif"
-import mYRuggedRearTrunk from "./assets/images/mYRuggedRearTrunk.avif"
-import mYRuggedRearTrunkHov from "./assets/images/mYRuggedRearTrunkHov.avif"
-import mYWiper from "./assets/images/mYWiper.avif"
-import mYWiperHov from "./assets/images/mYWiperHov.avif"
+import SDoorSills from "./assets/images/SDoorSills.avif";
+import SDoorSillsHov from "./assets/images/SDoorSillsHov.avif";
+import SXCoatHooks from "./assets/images/SXCoatHooks.avif";
+import SXCoatHooksHov from "./assets/images/SXCoatHooksHov.avif";
+import SunShades from "./assets/images/SunShades.avif";
+import SMudFlaps from "./assets/images/SMudFlaps.avif";
+import SMudFlapsHov from "./assets/images/SMudFlapsHov.avif";
+import SCarCover from "./assets/images/SCarCover.avif";
+import SCarCoverHov from "./assets/images/SCarCoverHov.avif";
+import ModelSSpoiler from "./assets/images/ModelSSpoiler.avif";
+import ModelSSpoilerHov from "./assets/images/ModelSSpoilerHov.avif";
+import SBreakKit from "./assets/images/SBreakKit.avif";
+import STempestWheel from "./assets/images/STempestWheel.avif";
+import STempestWheelHov from "./assets/images/STempestWheelHov.avif";
+import WheelLocks from "./assets/images/WheelLocks.avif";
+import WheelLocksHov from "./assets/images/WheelLocksHov.avif";
+import ArachnidWheel from "./assets/images/ArachnidWheel.avif";
+import ArachnidWheelHov from "./assets/images/ArachnidWheelHov.avif";
+import TireTote from "./assets/images/TireTote.avif";
+import TireToteHov from "./assets/images/TireToteHov.avif";
+import SFrontTrunkLiner from "./assets/images/SFrontTrunkLiner.avif";
+import SFrontTrunkLinerHov from "./assets/images/SFrontTrunkLinerHov.avif";
+import SRearWellLiner from "./assets/images/SRearWellLiner.avif";
+import SRearWellLinerHov from "./assets/images/SRearWellLinerHov.avif";
+import SXAirFilter from "./assets/images/SXAirFilter.avif";
+import SXAirFilterHov from "./assets/images/SXAirFilterHov.avif";
+import SafetyKit from "./assets/images/SafetyKit.avif";
+import SafetyKitHov from "./assets/images/SafetyKitHov.avif";
+import SWiperBlade from "./assets/images/SWiperBlade.avif";
+import SWiperBladeHov from "./assets/images/SWiperBladeHov.avif";
+import SKeyFob from "./assets/images/SKeyFob.avif";
+import SKeyFobHov from "./assets/images/SKeyFobHov.avif";
+import model3Liner from "./assets/images/model3Liner.avif";
+import model3LinerHov from "./assets/images/model3LinerHov.avif";
+import model3DoorSills from "./assets/images/model3DoorSills.avif";
+import model3DoorSillsHov from "./assets/images/model3DoorSillsHov.avif";
+import model3RoofRack from "./assets/images/model3RoofRack.avif";
+import model3RoofRackHov from "./assets/images/model3RoofRackHov.avif";
+import m3YTrays from "./assets/images/m3YTrays.avif";
+import m3YTraysHov from "./assets/images/m3YTraysHov.avif";
+import m3YGarageOpener from "./assets/images/m3YGarageOpener.avif";
+import usbDrive from "./assets/images/usbDrive.avif";
+import usbDriveHov from "./assets/images/usbDriveHov.avif";
+import m3PaintProtect from "./assets/images/m3PaintProtect.avif";
+import m3CFSpoiler from "./assets/images/m3CFSpoiler.avif";
+import m3CFSpoilerHov from "./assets/images/m3CFSpoilerHov.avif";
+import m3Cover from "./assets/images/m3Cover.avif";
+import m3CoverHov from "./assets/images/m3CoverHov.avif";
+import m3MudFlaps from "./assets/images/m3MudFlaps.avif";
+import m3AeroWhl from "./assets/images/m3AeroWhl.avif";
+import m3AeroWhlHov from "./assets/images/m3AeroWhlHov.avif";
+import m3TrackPack from "./assets/images/m3TrackPack.avif";
+import m3TrackPackHov from "./assets/images/m3TrackPackHov.avif";
+import m3RearLiner from "./assets/images/m3RearLiner.avif";
+import m3RearLinerHov from "./assets/images/m3RearLinerHov.avif";
+import m3FrontTrunkLiner from "./assets/images/m3FrontTrunkLiner.avif";
+import m3FrontTrunkLinerHov from "./assets/images/m3FrontTrunkLinerHov.avif";
+import m3YAirFilter from "./assets/images/m3YAirFilter.avif";
+import m3YAirFilterHov from "./assets/images/m3YAirFilterHov.avif";
+import m3PaintRepair from "./assets/images/m3PaintRepair.avif";
+import m3PaintRepairHov from "./assets/images/m3PaintRepairHov.avif";
+import m3YKeyFob from "./assets/images/m3YKeyFob.avif";
+import m3YKeyFobHov from "./assets/images/m3YKeyFobHov.avif";
+import mXMats from "./assets/images/mXMats.avif";
+import mXMatsHov from "./assets/images/mXMatsHov.avif";
+import xYHitchRack from "./assets/images/xYHitchRack.avif";
+import xYHitchRackHov from "./assets/images/xYHitchRackHov.avif";
+import mXPetLiner from "./assets/images/mXPetLiner.avif";
+import mXPetLinerHov from "./assets/images/mXPetLinerHov.avif";
+import mXSunShades from "./assets/images/mXSunShades.avif";
+import mXSunShadesHov from "./assets/images/mXSunShadesHov.avif";
+import mXAntiTheft from "./assets/images/mXAntiTheft.avif";
+import mXCover from "./assets/images/mXCover.avif";
+import mXCoverHov from "./assets/images/mXCoverHov.avif";
+import xYSki from "./assets/images/xYSki.avif";
+import xYSkiHov from "./assets/images/xYSkiHov.avif";
+import mXCyberWheel from "./assets/images/mXCyberWheel.avif";
+import mXCyberWheelHov from "./assets/images/mXCyberWheelHov.avif";
+import mXSnowChains from "./assets/images/mXSnowChains.avif";
+import mXSnowChainsHov from "./assets/images/mXSnowChainsHov.avif";
+import mXFrontTrunkLiner from "./assets/images/mXFrontTrunkLiner.avif";
+import mXFrontTrunkLinerHov from "./assets/images/mXFrontTrunkLinerHov.avif";
+import mXHepa from "./assets/images/mXHepa.avif";
+import mXKeyFob from "./assets/images/mXKeyFob.avif";
+import mXKeyFobHov from "./assets/images/mXKeyFobHov.avif";
+import mYInteriorLiner from "./assets/images/mYInteriorLiner.avif";
+import mYInteriorLinerHov from "./assets/images/mYInteriorLinerHov.avif";
+import mYSills from "./assets/images/mYSills.avif";
+import mYSillsHov from "./assets/images/mYSillsHov.avif";
+import mYRoofRack from "./assets/images/mYRoofRack.avif";
+import mYRoofRackHov from "./assets/images/mYRoofRackHov.avif";
+import mYGeminiWheel from "./assets/images/mYGeminiWheel.avif";
+import mYGeminiWheelHov from "./assets/images/mYGeminiWheelHov.avif";
+import mYSnowChains from "./assets/images/mYSnowChains.avif";
+import mYSnowChainsHov from "./assets/images/mYSnowChainsHov.avif";
+import mYRearCargoLiner from "./assets/images/mYRearCargoLiner.avif";
+import mYRearCargoLinerHov from "./assets/images/mYRearCargoLinerHov.avif";
+import mYRuggedRearTrunk from "./assets/images/mYRuggedRearTrunk.avif";
+import mYRuggedRearTrunkHov from "./assets/images/mYRuggedRearTrunkHov.avif";
+import mYWiper from "./assets/images/mYWiper.avif";
+import mYWiperHov from "./assets/images/mYWiperHov.avif";
 
 //apparel image imports start here
 import mensTee1 from "./assets/images/mensTee1.avif";
@@ -153,6 +153,47 @@ import mensOuterwear2Alt from "./assets/images/mensOuterwear2Alt.avif";
 import mensOuterwear3 from "./assets/images/mensOuterwear3.avif";
 import mensOuterwear3Alt from "./assets/images/mensOuterwear3Alt.avif";
 
+//lifestyle image imports start here
+import cyberquadForKids from "./assets/images/cyberquadForKids.avif";
+import cyberquadForKidsHover from "./assets/images/cyberquadForKidsHOver.avif";
+import desktopSupercharger from "./assets/images/desktopSuperCharger.avif";
+import diecastRoadster from "./assets/images/diecastRoadster.avif";
+import diecastRoadsterHover from "./assets/images/diecastRoadsterHover.avif";
+import diecastModelS from "./assets/images/diecastModelS.avif";
+import diecastModelSHover from "./assets/images/diecastModelSHover.avif";
+import diecastModelX from "./assets/images/diecastModelX.avif";
+import diecastModelXHover from "./assets/images/diecastModelXHover.avif";
+import diecastSemi from "./assets/images/diecastSemi.avif";
+import diecastSemiHover from "./assets/images/diecastSemiHover.avif";
+import diecastModel3Black from "./assets/images/diecastModel3Black.avif";
+import diecastModel3BlackHover from "./assets/images/diecastModel3BlackHover.avif";
+import diecastModel3Red from "./assets/images/diecastModel3Red.avif";
+import diecastModel3RedHover from "./assets/images/diecastModel3RedHover.avif";
+import diecastModel3Blue from "./assets/images/diecastModel3Blue.avif";
+import diecastModel3BlueHover from "./assets/images/diecastModel3BlueHover.avif";
+import diecastModel3White from "./assets/images/diecastModel3White.avif";
+import diecastModel3WhiteHover from "./assets/images/diecastModel3WhiteHover.avif";
+import diecastModel3Gray from "./assets/images/diecastModel3Gray.avif";
+import diecastModel3GrayHover from "./assets/images/diecstModel3GrayHover.avif";
+import teslaTequila from "./assets/images/teslaTequila.avif";
+import S3XYMug from "./assets/images/S3XYMug.avif";
+import travelTumblerBlack from "./assets/images/travelTumblerBlack.avif";
+import travelTumblerSilver from "./assets/images/travelTumblerSilver.avif";
+import SSWaterBottleBlack from "./assets/images/SSWaterBottleBlack.avif";
+import SSWaterBottleSilver from "./assets/images/SSWaterBottleSilver.avif";
+
+import giftCard from "./assets/images/GIftCard.webm";
+import umbrella from "./assets/images/umbrella.avif";
+import umbrellaHover from "./assets/images/umbrellaHover.avif";
+import cyberwhistle from "./assets/images/cyberWhistle.avif";
+import cyberwhistleHover from "./assets/images/cyberWhistleHover.avif";
+import texasBeltBuckle from "./assets/images/TexasBeltBuckle.avif";
+import texasBeltBuckleHover from "./assets/images/texasBeltBuckleHover.avif";
+import wirelessPortableChargerBlue from "./assets/images/wirelessPortableChargerBlue.avif";
+import wirelessPortableChargerHover from "./assets/images/wirelessPortableChargerBlue.avif";
+import wirelessPortableChargerWhite from "./assets/images/wirelessPortableChargerWhite.avif";
+import wirelessPortableChargerBlack from "./assets/images/wirelessPortableChargerBlack.avif";
+import wirelessPortableChargerRed from "./assets/images/wirelessPortableChargerRed.avif";
 
 const items = [
   {
@@ -527,7 +568,7 @@ const items = [
       },
       {
         subCategory: "model-3",
-        products:[
+        products: [
           {
             itemImg: model3Liner,
             itemImgHover: model3LinerHov,
@@ -576,7 +617,7 @@ const items = [
             subCategory: "interior",
             category: "model-3",
             stockStatus: true,
-            options: ["view-details", "Interior",],
+            options: ["view-details", "Interior"],
           },
           {
             itemImg: m3YGarageOpener,
@@ -586,7 +627,7 @@ const items = [
             subCategory: "interior",
             category: "model-3",
             stockStatus: true,
-            options: ["view-details", "Interior",],
+            options: ["view-details", "Interior"],
           },
           {
             itemImg: usbDrive,
@@ -596,7 +637,7 @@ const items = [
             subCategory: "interior",
             category: "model-3",
             stockStatus: true,
-            options: ["view-details", "quick-add+", "Interior",],
+            options: ["view-details", "quick-add+", "Interior"],
           },
           {
             itemImg: m3PaintProtect,
@@ -606,7 +647,7 @@ const items = [
             subCategory: "exterior",
             category: "model-3",
             stockStatus: false,
-            options: ["view-details", "Exterior",],
+            options: ["view-details", "Exterior"],
           },
           {
             itemImg: m3CFSpoiler,
@@ -616,7 +657,7 @@ const items = [
             subCategory: "exterior",
             category: "model-3",
             stockStatus: true,
-            options: ["view-details", "Exterior",],
+            options: ["view-details", "Exterior"],
           },
           {
             itemImg: m3Cover,
@@ -626,7 +667,7 @@ const items = [
             subCategory: "exterior",
             category: "model-3",
             stockStatus: true,
-            options: ["view-details", "Exterior",],
+            options: ["view-details", "Exterior"],
           },
           {
             itemImg: m3MudFlaps,
@@ -636,7 +677,7 @@ const items = [
             subCategory: "exterior",
             category: "model-3",
             stockStatus: true,
-            options: ["view-details", "Exterior",],
+            options: ["view-details", "Exterior"],
           },
           {
             itemImg: m3AeroWhl,
@@ -646,7 +687,7 @@ const items = [
             subCategory: "wheels",
             category: "model-3",
             stockStatus: false,
-            options: ["view-details", "Wheels and Tires",],
+            options: ["view-details", "Wheels and Tires"],
           },
           {
             itemImg: m3TrackPack,
@@ -656,7 +697,7 @@ const items = [
             subCategory: "wheels",
             category: "model-3",
             stockStatus: false,
-            options: ["view-details", "Wheels and Tires",],
+            options: ["view-details", "Wheels and Tires"],
           },
           {
             itemImg: TireTote,
@@ -738,11 +779,11 @@ const items = [
             stockStatus: true,
             options: ["view-details", "Keys"],
           },
-        ]
+        ],
       },
       {
         subCategory: "model-x",
-        products:[
+        products: [
           {
             itemImg: mXMats,
             itemImgHover: mXMatsHov,
@@ -811,7 +852,7 @@ const items = [
             subCategory: "interior",
             category: "model-x",
             stockStatus: true,
-            options: ["view-details", "quick-add+", "Interior",],
+            options: ["view-details", "quick-add+", "Interior"],
           },
           {
             itemImg: mXCover,
@@ -821,7 +862,7 @@ const items = [
             subCategory: "exterior",
             category: "model-x",
             stockStatus: true,
-            options: ["view-details", "Exterior",],
+            options: ["view-details", "Exterior"],
           },
           {
             itemImg: xYSki,
@@ -831,7 +872,7 @@ const items = [
             subCategory: "exterior",
             category: "model-x",
             stockStatus: true,
-            options: ["view-details", "Exterior",],
+            options: ["view-details", "Exterior"],
           },
           {
             itemImg: mXCyberWheel,
@@ -841,7 +882,7 @@ const items = [
             subCategory: "wheels",
             category: "model-x",
             stockStatus: false,
-            options: ["view-details", "Wheels and Tires",],
+            options: ["view-details", "Wheels and Tires"],
           },
           {
             itemImg: mXSnowChains,
@@ -851,7 +892,7 @@ const items = [
             subCategory: "wheels",
             category: "model-x",
             stockStatus: true,
-            options: ["view-details", "Wheels and Tires",],
+            options: ["view-details", "Wheels and Tires"],
           },
           {
             itemImg: TireTote,
@@ -933,11 +974,11 @@ const items = [
             stockStatus: true,
             options: ["view-details", "Keys"],
           },
-        ]
+        ],
       },
       {
         subCategory: "model-y",
-        products:[
+        products: [
           {
             itemImg: mYInteriorLiner,
             itemImgHover: mYInteriorLinerHov,
@@ -976,7 +1017,7 @@ const items = [
             subCategory: "interior",
             category: "model-y",
             stockStatus: true,
-            options: ["view-details", "Interior",],
+            options: ["view-details", "Interior"],
           },
           {
             itemImg: m3YGarageOpener,
@@ -986,7 +1027,7 @@ const items = [
             subCategory: "interior",
             category: "model-y",
             stockStatus: true,
-            options: ["view-details", "Interior",],
+            options: ["view-details", "Interior"],
           },
           {
             itemImg: usbDrive,
@@ -996,7 +1037,7 @@ const items = [
             subCategory: "interior",
             category: "model-y",
             stockStatus: true,
-            options: ["view-details", "quick-add+", "Interior",],
+            options: ["view-details", "quick-add+", "Interior"],
           },
           {
             itemImg: xYSki,
@@ -1006,7 +1047,7 @@ const items = [
             subCategory: "exterior",
             category: "model-y",
             stockStatus: true,
-            options: ["view-details", "Exterior",],
+            options: ["view-details", "Exterior"],
           },
           {
             itemImg: xYHitchRack,
@@ -1021,7 +1062,7 @@ const items = [
           {
             itemImg: mYRoofRack,
             itemImgHover: mYRoofRackHov,
-              itemName: "Model Y Roof Rack",
+            itemName: "Model Y Roof Rack",
             itemPrice: 500,
             subCategory: "exterior",
             category: "model-y",
@@ -1031,7 +1072,7 @@ const items = [
           {
             itemImg: mYGeminiWheel,
             itemImgHover: mYGeminiWheelHov,
-              itemName: `Model Y 19" Gemini Wheel and Pirelli Winter Tire Package`,
+            itemName: `Model Y 19" Gemini Wheel and Pirelli Winter Tire Package`,
             itemPrice: 2750,
             subCategory: "wheels",
             category: "model-y",
@@ -1041,7 +1082,7 @@ const items = [
           {
             itemImg: mYSnowChains,
             itemImgHover: mYSnowChainsHov,
-              itemName: `Model Y 19"/20" Snow Chains`,
+            itemName: `Model Y 19"/20" Snow Chains`,
             itemPrice: 235,
             subCategory: "wheels",
             category: "model-y",
@@ -1138,8 +1179,8 @@ const items = [
             stockStatus: true,
             options: ["view-details", "Keys"],
           },
-        ]
-      }
+        ],
+      },
     ],
   },
   {
@@ -1277,6 +1318,192 @@ const items = [
             category: "model-s",
             stockStatus: true,
             options: ["view-details", "best-seller"],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "lifestyle",
+    subCategories: [
+      {
+        subCategory: "mini-teslas",
+        products: [
+          {
+            itemImg: cyberquadForKids,
+            itemImgHover: cyberquadForKidsHover,
+            itemName: "Cyberquad for Kids",
+            itemPrice: 1900,
+            subCategory: "mini-teslas",
+            category: "lifestyle",
+            stockStatus: false,
+            options: ["view-details"],
+          },
+          {
+            itemImg: diecastRoadster,
+            itemImgHover: diecastRoadsterHover,
+            itemName: "Diecast 1:18 Scale Roadster",
+            itemPrice: 175,
+            category: "lifestyle",
+            subCategory: "mini-tesla",
+            stockStatus: false,
+            options: ["view-details"],
+          },
+          {
+            itemImg: diecastModelS,
+            itemImgHover: diecastModelSHover,
+            itemName: "Diecast 1:18 Scale Model S",
+            itemPrice: 175,
+            category: "lifestyle",
+            subCategory: "mini-tesla",
+            stockStatus: true,
+            options: ["view-details", "last-chance"],
+          },
+          {
+            itemImg: diecastModelX,
+            itemImgHover: diecastModelXHover,
+            itemName: "Diecast 1:18 Scale Model X",
+            itemPrice: 175,
+            category: "lifestyle",
+            subCategory: "mini-tesla",
+            stockStatus: false,
+            options: ["view-details", "last-chance"],
+          },
+          {
+            itemImg: diecastSemi,
+            itemImgHover: diecastSemiHover,
+            itemName: "Diecast 1:24 Scale Semi",
+            itemPrice: 175,
+            category: "lifestyle",
+            subCategory: "mini-tesla",
+            stockStatus: false,
+            options: ["view-details"],
+          },
+          {
+            itemImg: diecastModel3Black,
+            itemImgHover: diecastModel3BlackHover,
+            itemName: "Diecast 1:18 Scale Model 3",
+            itemPrice: 175,
+            category: "lifestyle",
+            subCategory: "mini-tesla",
+            stockStatus: true,
+            options: ["view-details"],
+          },
+        ],
+      },
+      {
+        subCategory: "drinkware",
+        products: [
+          {
+            itemImg: teslaTequila,
+            itemImgHover: teslaTequila,
+            itemName: "Tesla Tequila Limited Edition Set",
+            itemPrice: 420,
+            category: "lifestyle",
+            subCategory: "drinkware",
+            stockStatus: false,
+            options: ["view-details"],
+          },
+          {
+            itemImg: S3XYMug,
+            itemImgHover: S3XYMug,
+            itemName: "S3XY Mug",
+            itemPrice: 445,
+            category: "lifestyle",
+            subCategory: "drinkware",
+            stockStatus: true,
+            options: ["view-details"],
+          },
+          {
+            itemImg: travelTumblerBlack,
+            itemImgHover: travelTumblerBlack,
+            itemName: "Travel Tumbler",
+            itemPrice: 30,
+            category: "lifestyle",
+            subCategory: "drinkware",
+            stockStatus: true,
+            options: ["view-details"],
+          },
+          {
+            itemImg: SSWaterBottleBlack,
+            itemImgHover: SSWaterBottleBlack,
+            itemName: "Stainless Steel Water Bottle",
+            itemPrice: 30,
+            category: "lifestyle",
+            subCategory: "drinkware",
+            stockStatus: true,
+            options: ["view-details"],
+          },
+        ],
+      },
+
+      {
+        subCategory: "outdoor-&-tech",
+        products: [
+          {
+            itemImg: wirelessPortableChargerBlue,
+            itemImgHover: wirelessPortableChargerHover,
+            itemName: "Wireless Portable Charger 2.0",
+            itemPrice: 70,
+            category: "lifestyle",
+            subCategory: "outdoor-&-tech",
+            stockStatus: false,
+            options: ["view-details"],
+          },
+          {
+            itemImg: texasBeltBuckle,
+            itemImgHover: texasBeltBuckleHover,
+            itemName: "Giga Texas Belt Buckle",
+            itemPrice: 100,
+            category: "lifestyle",
+            subCategory: "outdoor-&-tech",
+            stockStatus: true,
+            options: ["view-details"],
+          },
+          {
+            itemImg: cyberwhistle,
+            itemImgHover: cyberwhistleHover,
+            itemName: "Cyberwhistle",
+            itemPrice: 890,
+            category: "lifestyle",
+            subCategory: "outdoor-&-tech",
+            stockStatus: false,
+            options: ["view-details"],
+          },
+          {
+            itemImg: desktopSupercharger,
+            itemImgHover: desktopSupercharger,
+            itemName: "Desktop Supercharger",
+            itemPrice: 45,
+            category: "lifestyle",
+            subCategory: "outdoor-&-tech",
+            stockStatus: true,
+            options: ["view-details"],
+          },
+          {
+            itemImg: umbrella,
+            itemImgHover: umbrellaHover,
+            itemName: "Umbrella",
+            itemPrice: 60,
+            category: "lifestyle",
+            subCategory: "outdoor-&-tech",
+            stockStatus: true,
+            options: ["view-details"],
+          },
+        ],
+      },
+      {
+        subCategory: "gift-card",
+        products: [
+          {
+            itemImg: giftCard,
+            itemImgHover: giftCard,
+            itemName: "Tesla Shop Gift card",
+            itemPrice: 10,
+            category: "lifestyle",
+            subCategory: "gift-card",
+            stockStatus: false,
+            options: ["view-details"],
           },
         ],
       },
