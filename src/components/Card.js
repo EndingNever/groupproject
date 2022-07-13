@@ -16,7 +16,6 @@ const Card = (props) => {
   return (
     <div className="cardWrapper">
       <div className="stockStatus">{!stockStatus && <p>Out Of Stock</p>}</div>
-
       <div className="itemImgWrapper">
         <div className="itemImg">
           <img src={itemImg} alt="" />
