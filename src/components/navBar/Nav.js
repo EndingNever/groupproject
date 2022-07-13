@@ -155,23 +155,23 @@ export default function Nav() {
         solidNav={solidNav}
       >
         <Indicator setting={indicator} />
-        <ul className='navLeft'>
-          <div className='navLogo'>
+        <ul className="navLeft">
+          <div className="navLogo">
             <TeslaLogo />
           </div>
           <hr />
           <li
             ref={shopRef}
-            className='navHoverEffect'
+            className="navHoverEffect"
             onClick={() => navigate("/")}
             onMouseEnter={() => handleEnter(shopRef.current)}
           >
             Shop
           </li>
         </ul>
-        <ul className='navCenter'>{mainNavLinks}</ul>
-        <ul className='navRight'>
-          <li className='navSearchBarLi' onMouseEnter={handleSearchHover}>
+        <ul className="navCenter">{mainNavLinks}</ul>
+        <ul className="navRight">
+          <li className="navSearchBarLi" onMouseEnter={handleSearchHover}>
             <SearchBar />
           </li>
           <li onClick={() => navigate("cart")}>
@@ -179,7 +179,7 @@ export default function Nav() {
           </li>
           <li
             ref={menuRef}
-            className='navHoverEffect'
+            className="navHoverEffect"
             onMouseEnter={() => handleEnter(menuRef.current)}
             onClick={() => setShowSideMenu(!showSideMenu)}
           >
