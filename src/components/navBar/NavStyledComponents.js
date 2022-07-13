@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
+  * {
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -163,7 +168,7 @@ export const Indicator = styled.div`
   transform: translateX(${({ setting }) => `${setting.posX}px`});
   @media (max-width: 389px) {
     transform: translateX(${({ setting }) => `${setting.posX}px`})
-      translateY(${({ setting }) => `calc(-100% + ${setting.posY + 8}px)`});
+      translateY(${({ setting }) => `calc(-100% + ${setting.posY + 14}px)`});
   }
   z-index: -1;
   transition: ${({ setting }) =>
