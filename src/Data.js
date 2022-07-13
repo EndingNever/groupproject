@@ -1542,7 +1542,7 @@ const items = [
             itemImg: giftCard,
             itemImgHover: giftCard,
             itemName: "Tesla Shop Gift card",
-            itemPrice: 10,
+            itemPrice: [10, 500],
             category: "lifestyle",
             subCategory: "gift-card",
             stockStatus: false,
