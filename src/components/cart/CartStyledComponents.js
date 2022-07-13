@@ -36,6 +36,7 @@ export const CartPage = styled.div`
   .cartContent {
     display: flex;
     justify-content: space-between;
+    gap: 32px;
 
     @media (max-width: 960px) {
       flex-direction: column;
