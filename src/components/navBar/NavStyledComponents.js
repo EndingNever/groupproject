@@ -111,8 +111,10 @@ export const DropDownMenu = styled.div`
   transition: all 0.5s;
   gap: 32px;
   z-index: 1;
-  min-height: 489px;
+  height: 489px;
+  max-height: 50vh;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
   h3 {
     cursor: pointer;
   }
