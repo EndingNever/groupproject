@@ -1,9 +1,10 @@
 import { useSelector } from "react-redux";
 import { cartTotal } from "../../app/features/cartSlice";
 import { StyledOrderSummary } from "./CartStyledComponents";
+import { useNavigate } from "react-router-dom";
 export const OrderSummary = () => {
   const cartTtl = useSelector(cartTotal);
-
+  const navigate = useNavigate();
   return (
     <StyledOrderSummary>
       <h2>Order Summary</h2>
@@ -20,7 +21,9 @@ export const OrderSummary = () => {
       <h2>
         Subtotal <span>${cartTtl}</span>
       </h2>
-      <button className='checkoutButton'>CHECKOUT</button>
+      <button className='checkoutButton' onClick={() => navigate("/checkout")}>
+        CHECKOUT
+      </button>
     </StyledOrderSummary>
   );
 };

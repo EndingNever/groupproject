@@ -1,29 +1,51 @@
 .cardGrid {
   display: flex;
-  // justify-content: space-around;
+  gap: 5%;
   flex-wrap: wrap;
+  @media (max-width: 960px) {
+    gap: 0%;
+    justify-content: space-between;
+  }
 }
 .cardWrapper {
-  width: 400px;
-  height: 450px;
+  width: 30%;
+  // width: calc(calc(100vw - 10vw - 64px) / 3);
+  // height: calc(calc(100vw - 10vw - 64px) / 3);
+  @media (max-width: 960px) {
+    width: 48%;
+  }
+  margin-bottom: 100px;
   text-align: left;
+  position: relative;
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
 }
 .itemImgOnHover {
   display: none;
+  position: absolute;
+  top: 0px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   img {
     height: 100%;
     width: 100%;
   }
   .quickAdd {
-    height: 76px;
-    position: relative;
-    // margin-top: -80px;
-    transform: translateY(-80px);
+    height: 25%;
+    position: absolute;
+    width: calc(100% + 0.5px);
+    transform: translateY(-100%);
     text-align: center;
     background-color: #fff;
     z-index: 3;
     display: grid;
     place-items: center;
+    p {
+      margin: 0px;
+      padding: 0px;
+    }
   }
 }
 .cardWrapper:hover {
@@ -36,25 +58,25 @@
   }
 }
 .stockStatus {
-  width: 114px;
+  width: fit-content;
   height: 40px;
   display: grid;
   place-items: center;
-  transform: translateY(100%);
-
-  // padding: 10px;
+  // transform: translateY(100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
   p {
     color: #fff;
     background-color: #5c5d61;
-    padding: 10px 0;
+    padding: 10px 4px;
     font-size: 0.9em;
     font-weight: 600;
+    width: 100%;
   }
 }
 .itemImgWrapper {
-  height: 400px;
-  cursor: pointer;
-  outline: 2px solid green;
+  height: 100%;
   // transform: translateY(-80px);
   // z-index: -1;
 }
@@ -66,17 +88,27 @@
 }
 .sizeSelector {
   width: 100%;
-  height: 76px;
+  height: 100%;
   position: absolute;
   bottom: 0px;
   background-color: #fff;
-  h3 {
-    font-size: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  h4 {
+    font-size: max(min(2vw, 2em), 16px);
   }
   ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    width: 100%;
+  }
+  li {
+    font-size: max(min(2vw, 1em), 12px);
   }
   li:hover {
     text-decoration: underline;
