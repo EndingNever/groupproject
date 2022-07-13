@@ -39,6 +39,7 @@ const Tesfayedev = () => {
           infiniteLoop
           centerMode={true}
           centerSlidePercentage={30}
+          showStatus={false}
         >
           <div className="wrap">
             <div>
