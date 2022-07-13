@@ -24,8 +24,8 @@ export const ShopNowButton = styled(ButtonPrimary)`
     position: absolute;
     width: calc(100% - 4px);
     height: calc(100% - 4px);
-    top: 0px;
-    left: 0px;
+    top: 2px;
+    left: 2px;
     border-radius: 32px;
   }
 }

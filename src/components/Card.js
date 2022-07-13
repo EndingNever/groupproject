@@ -7,7 +7,7 @@ const Card = (props) => {
   const itemImg = props.itemImg;
   const itemImgHover = props.itemImgHover;
   const itemName = props.itemName;
-  const itemPrice = props.itemPrice;
+  const itemPrice = props.itemPrice.toLocaleString("en-US");
   const stockStatus = props.stockStatus;
   const product = props.product;
   const [size, setSize] = useState(false);
