@@ -57,7 +57,8 @@ const CardsGrid = ({ products }) => {
         .filter((key) => key === "best-seller")
         .map((key, i) => (
           <div key={key}>
-            <h3>{key}</h3>
+            <h3>{key.replace(/-/s, " ")}</h3>
+            {/* <h3>{key}</h3> */}
             <div className='cardGrid'>
               {modelSItems[key].map((product, index) => (
                 <Card
