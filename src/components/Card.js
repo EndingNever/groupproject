@@ -7,7 +7,7 @@ const Card = (props) => {
   const itemImg = props.itemImg;
   const itemImgHover = props.itemImgHover;
   const itemName = props.itemName;
-  const itemPrice = props.itemPrice.toLocaleString("en-US");
+  const itemPrice = props.itemPrice;
   const stockStatus = props.stockStatus;
   const product = props.product;
   const [size, setSize] = useState(false);
@@ -83,8 +83,10 @@ const Card = (props) => {
             {" "}
             $
             {typeof itemPrice === "object"
-              ? `${itemPrice[0]} - $${itemPrice[1]}`
-              : itemPrice}
+              ? `${itemPrice[0].toLocaleString(
+                  "en-US"
+                )} - $${itemPrice[1].toLocaleString("en-US")}`
+              : itemPrice.toLocaleString("en-US")}
           </p>
         </div>
         {product.options.includes("select-color") && product.color ? (
