@@ -6,6 +6,7 @@ import ShopPage from "../components/shopPage/ShopPage";
 import TestPage from "../pages/TestPage";
 import ProductPage from "../components/productPage/ProductPage";
 import Cart from "../components/cart/Cart";
+import Checkout from "../components/checkoutPage/Checkout";
 
 export default function MyRouter() {
   return (
@@ -32,6 +33,11 @@ export default function MyRouter() {
             // exact
             path='search/:searchValue'
             element={<ProductPage />}
+          />
+          <Route
+            // exact
+            path='checkout'
+            element={<Checkout />}
           />
 
           <Route exact path='cart' element={<Cart />} />

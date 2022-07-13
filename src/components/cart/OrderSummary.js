@@ -11,7 +11,10 @@ export const OrderSummary = () => {
         Shipping <span>Calculated at checkout</span>
       </p>
       <p>
-        Sales Tax <button className="cart-sales-tax-info-button">i</button>
+        Sales Tax{" "}
+        <button className='cart-sales-tax-info-button'>
+          <p>i</p>
+        </button>
         <span>Calculated at checkout</span>
       </p>
       <h2>
@@ -21,4 +24,3 @@ export const OrderSummary = () => {
     </StyledOrderSummary>
   );
 };
-
