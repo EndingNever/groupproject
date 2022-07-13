@@ -18,7 +18,7 @@ import img8 from "../../assets/images/img8.avif";
 import img9 from "../../assets/images/img9.avif";
 import img10 from "../../assets/images/img10.avif";
 
-const Tesfayedev = () => {
+export const Tesfayedev = () => {
   const [showArrow, setShowArrow] = useState(false);
   return (
     <div>
