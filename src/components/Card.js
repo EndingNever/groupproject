@@ -7,50 +7,50 @@ const Card = (props) => {
   const itemImg = props.itemImg;
   const itemImgHover = props.itemImgHover;
   const itemName = props.itemName;
-  const itemPrice = props.itemPrice.toLocaleString("en-US");
+  const itemPrice = props.itemPrice;
   const stockStatus = props.stockStatus;
   const product = props.product;
   const [size, setSize] = useState(false);
 
   const dispatch = useDispatch();
   return (
-    <div className="cardWrapper">
-      <div className="stockStatus">{!stockStatus && <p>Out Of Stock</p>}</div>
+    <div className='cardWrapper'>
+      <div className='stockStatus'>{!stockStatus && <p>Out Of Stock</p>}</div>
 
-      <div className="itemImgWrapper">
-        <div className="itemImg">
+      <div className='itemImgWrapper'>
+        <div className='itemImg'>
           {itemName === "Tesla Shop Gift card" ? (
             <video
-              className="img-wrapper"
-              height="100%"
-              width="100%"
-              autoplay="autoplay"
+              className='img-wrapper'
+              height='100%'
+              width='100%'
+              autoplay='autoplay'
               muted
               loop
             >
-              <source src={itemImg} type="video/webm" />{" "}
+              <source src={itemImg} type='video/webm' />{" "}
             </video>
           ) : (
-            <img src={itemImg} alt="" />
+            <img src={itemImg} alt='' />
           )}
         </div>
-        <div className="itemImgOnHover">
+        <div className='itemImgOnHover'>
           {itemName === "Tesla Shop Gift card" ? (
             <video
-              className="img-wrapper"
-              height="100%"
-              width="100%"
-              autoplay="autoplay"
+              className='img-wrapper'
+              height='100%'
+              width='100%'
+              autoplay='autoplay'
               muted
               loop
             >
-              <source src={itemImg} type="video/webm" />{" "}
+              <source src={itemImg} type='video/webm' />{" "}
             </video>
           ) : (
-            <img src={itemImg} alt="" />
+            <img src={itemImg} alt='' />
           )}
           <div
-            className="quickAdd"
+            className='quickAdd'
             onClick={() => dispatch(addItem(props.product))}
             onMouseEnter={() => setSize(true)}
             onMouseLeave={() => setSize(false)}
@@ -61,7 +61,7 @@ const Card = (props) => {
               <p>View Details</p>
             )}
             {size && product.options.includes("select-size") && (
-              <div className="sizeSelector">
+              <div className='sizeSelector'>
                 <h4>Select Your Size</h4>
                 <ul>
                   <li>S</li>
@@ -76,19 +76,21 @@ const Card = (props) => {
           </div>
         </div>
       </div>
-      <div className="item">
+      <div className='item'>
         <div>
-          <p className="itemName">{itemName}</p>
-          <p className="itemPrice">
+          <p className='itemName'>{itemName}</p>
+          <p className='itemPrice'>
             {" "}
             $
             {typeof itemPrice === "object"
-              ? `${itemPrice[0]} - $${itemPrice[1]}`
-              : itemPrice}
+              ? `${itemPrice[0].toLocaleString(
+                  "en-US"
+                )} - $${itemPrice[1].toLocaleString("en-US")}`
+              : itemPrice.toLocaleString("en-US")}
           </p>
         </div>
         {product.options.includes("select-color") && product.color ? (
-          <div className="productTile">
+          <div className='productTile'>
             {product.color.map((color) => (
               <button style={{ backgroundColor: color }}> </button>
             ))}
