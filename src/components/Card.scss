@@ -1,7 +1,8 @@
 .cardGrid {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  outline: 2px solid purple;
 }
 .cardWrapper {
   width: 400px;
