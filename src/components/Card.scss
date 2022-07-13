@@ -1,19 +1,12 @@
 .cardGrid {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .cardWrapper {
-  outline: 2px solid red;
-  width: 30vw;
-  height: 40vh;
+  width: 400px;
+  height: 450px;
   text-align: left;
-  .itemImgWrapper {
-    height: 100%;
-    outline: 2px solid green;
-    // transform: translateY(-80px);
-    // z-index: -1;
-  }
 }
 .itemImgOnHover {
   display: none;
@@ -49,6 +42,8 @@
   display: grid;
   place-items: center;
   transform: translateY(100%);
+
+  // padding: 10px;
   p {
     color: #fff;
     background-color: #5c5d61;
@@ -57,7 +52,11 @@
     font-weight: 600;
   }
 }
-
+.itemImgWrapper {
+  height: 400px;
+  // transform: translateY(-80px);
+  // z-index: -1;
+}
 .itemImg {
   img {
     width: 100%;
