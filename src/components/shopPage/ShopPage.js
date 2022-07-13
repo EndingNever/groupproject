@@ -37,11 +37,11 @@ const ShopPage = () => {
         title={"Lifestyle"}
         color={"black"}
       />
-      <div className="copyright-text">
+      {/* <div className="copyright-text">
         <h5> Tesla © 2022 </h5>
         <h5>Privacy {"&"} Legal </h5>
         <h5>Locations</h5>
-      </div>
+      </div> */}
     </div>
   );
 };

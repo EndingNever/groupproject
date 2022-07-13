@@ -1,10 +1,6 @@
-import React from "react";
-// import styled from "styled-components";
-// import React, { createRef, useRef, useState, useEffect } from "react";
-// import TeslaLogo from "../../assets/images/TeslaLogo";
 import styled from "styled-components";
 import TeslaLogo from "../../assets/images/TeslaLogo";
-import { createRef, useRef, useState, useEffect } from "react";
+import React, { createRef, useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DropDown from "./DropDown";
 import { Indicator, StyledNav } from "./NavStyledComponents";
@@ -12,6 +8,7 @@ import { navList } from "./navData";
 import SearchBar from "./SearchBar";
 import CartBtn from "./CartBtn";
 import { useParams, useLocation } from "react-router-dom";
+import NavSideMenu from "./navSideMenu/NavSideMenu";
 
 export default function Nav() {
   const navigate = useNavigate();
@@ -30,6 +27,8 @@ export default function Nav() {
   const [dropDown, setDropDown] = useState({});
   //tracks the initial hover to indicate when transition should be active
   const [initialHover, setInitialHover] = useState(false);
+  //track open state of side menu
+  const [showSideMenu, setShowSideMenu] = useState(false);
 
   const [solidNav, setSolidNav] = useState(false);
 
@@ -42,7 +41,7 @@ export default function Nav() {
         height: ref.offsetHeight,
         width: ref.offsetWidth,
         posY: ref.offsetTop,
-        posX: ref.offsetLeft,
+        posX: ref.offsetLeft - 4,
         initial: true,
       });
       if (item) {
@@ -55,7 +54,7 @@ export default function Nav() {
         height: ref.offsetHeight,
         width: ref.offsetWidth,
         posY: ref.offsetTop,
-        posX: ref.offsetLeft,
+        posX: ref.offsetLeft - 4,
         initial: false,
       });
       setInitialHover(true);
@@ -144,6 +143,11 @@ export default function Nav() {
 
   return (
     <>
+      <NavSideMenu
+        showSideMenu={showSideMenu}
+        setShowSideMenu={setShowSideMenu}
+        navList={navList}
+      />
       <DropDown dropDown={dropDown} handleLeave={handleLeave} />
       <StyledNav
         persist={dropDown.category ? true : false}
@@ -167,7 +171,7 @@ export default function Nav() {
         </ul>
         <ul className="navCenter">{mainNavLinks}</ul>
         <ul className="navRight">
-          <li onMouseEnter={handleSearchHover}>
+          <li className="navSearchBarLi" onMouseEnter={handleSearchHover}>
             <SearchBar />
           </li>
           <li onClick={() => navigate("cart")}>
@@ -177,6 +181,7 @@ export default function Nav() {
             ref={menuRef}
             className="navHoverEffect"
             onMouseEnter={() => handleEnter(menuRef.current)}
+            onClick={() => setShowSideMenu(!showSideMenu)}
           >
             Menu
           </li>

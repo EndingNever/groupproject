@@ -4,9 +4,11 @@ import styled from "styled-components";
 import { ReactComponent as SearchBtn } from "../../assets/images/search.svg";
 import { StyledSearchBar } from "./NavStyledComponents";
 
-export default function SearchBar() {
+export default function SearchBar({ initialActive }) {
   const searchInput = useRef();
-  const [searchActive, setSearchActive] = useState(false);
+  const [searchActive, setSearchActive] = useState(
+    initialActive ? initialActive : false
+  );
   const [inputValue, setInputValue] = useState("");
 
   const navigate = useNavigate();

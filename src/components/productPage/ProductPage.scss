@@ -1,14 +1,22 @@
+.productsPage {
+  // padding-top: 80px;
+}
 .chargingWrapper {
   background-color: aqua;
   width: calc(100% - 100px);
   margin: auto;
   text-align: left;
-  h2 {
+  text-transform: capitalize;
+  padding: 15px 0 h2 {
     font-size: 20px;
     font-weight: 700;
   }
   h3 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
+    padding: 15px 0 1px;
   }
+}
+.atHome {
+  padding: 40px 0 50px;
 }

@@ -19,13 +19,13 @@ export default function DropDown({ dropDown, handleLeave }) {
                   navigate(
                     `category/${dropDown.category
                       .toLocaleLowerCase()
-                      .replace(/\s/g, "-")}/${sub
+                      .replace(/\s/g, "-")}/${sub.title
                       .toLocaleLowerCase()
                       .replace(/\s/g, "-")}`
                   )
                 }
               >
-                {sub}
+                {sub.title}
               </h3>
               <hr />
               {dropDown.options &&
@@ -35,7 +35,7 @@ export default function DropDown({ dropDown, handleLeave }) {
                       navigate(
                         `category/${dropDown.category
                           .toLocaleLowerCase()
-                          .replace(/\s/g, "-")}/${sub
+                          .replace(/\s/g, "-")}/${sub.title
                           .toLocaleLowerCase()
                           .replace(/\s/g, "-")}/${option
                           .toLocaleLowerCase()

@@ -83,6 +83,7 @@ const cartSlice = createSlice({
       });
       console.log(total);
       state.total = total;
+      window.sessionStorage.setItem("cart", JSON.stringify(state));
     },
   },
 });
