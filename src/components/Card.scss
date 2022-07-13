@@ -1,20 +1,18 @@
 .cardGrid {
   display: flex;
-  // justify-content: space-between;
-  // gap: calc(calc)
-  gap: calc(calc(100vw - 10vw) - calc(100vw - 10vw - 16px));
+  gap: 5%;
   flex-wrap: wrap;
   @media (max-width: 960px) {
-    gap: auto;
+    gap: 0%;
     justify-content: space-between;
   }
 }
 .cardWrapper {
-  width: calc(calc(100vw - 10vw - 32px) / 3);
-  height: calc(calc(100vw - 10vw - 32px) / 3);
+  width: 30%;
+  // width: calc(calc(100vw - 10vw - 64px) / 3);
+  // height: calc(calc(100vw - 10vw - 64px) / 3);
   @media (max-width: 960px) {
-    width: calc(calc(100vw - 10vw - 20px) / 2);
-    height: calc(calc(100vw - 10vw - 20px) / 2);
+    width: 48%;
   }
   margin-bottom: 100px;
   text-align: left;
