@@ -38,7 +38,7 @@ const CardsGrid = ({ products }) => {
   }, [params]);
 
   return !useSubSubCategories ? (
-    <div className='cardGrid'>
+    <div className="cardGrid">
       {products.map((product, index) => (
         <Card
           key={index}
@@ -58,7 +58,7 @@ const CardsGrid = ({ products }) => {
         .map((key, i) => (
           <div key={key}>
             <h3>{key}</h3>
-            <div className='cardGrid'>
+            <div className="cardGrid">
               {modelSItems[key].map((product, index) => (
                 <Card
                   key={index}
@@ -78,7 +78,7 @@ const CardsGrid = ({ products }) => {
         .map((key, i) => (
           <div key={key}>
             <h3>{key}</h3>
-            <div className='cardGrid'>
+            <div className="cardGrid">
               {modelSItems[key].map((product, index) => (
                 <Card
                   key={index}

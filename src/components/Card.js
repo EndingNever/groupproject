@@ -56,7 +56,7 @@ const Card = (props) => {
           <p className="itemPrice">${itemPrice}</p>
         </div>
         {product.options.includes("select-color") && (
-          <div className="productTile active">
+          <div className="productTile">
             <button></button>
             <button></button>
           </div>

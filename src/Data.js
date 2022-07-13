@@ -1402,7 +1402,7 @@ const items = [
             category: "lifestyle",
             subCategory: "drinkware",
             stockStatus: false,
-            options: ["view-details"],
+            options: ["view-details", "best-seller"],
           },
           {
             itemImg: S3XYMug,
@@ -1458,7 +1458,7 @@ const items = [
             category: "lifestyle",
             subCategory: "outdoor-&-tech",
             stockStatus: true,
-            options: ["view-details"],
+            options: ["view-details", "best-seller"],
           },
           {
             itemImg: cyberwhistle,
@@ -1503,7 +1503,7 @@ const items = [
             category: "lifestyle",
             subCategory: "gift-card",
             stockStatus: false,
-            options: ["view-details"],
+            options: ["view-details", "best-seller"],
           },
         ],
       },
