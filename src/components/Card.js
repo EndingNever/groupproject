@@ -36,7 +36,7 @@ const Card = (props) => {
             )}
             {size && product.options.includes("select-size") && (
               <div className="sizeSelector">
-                <h3>Select Your Size</h3>
+                <h4>Select Your Size</h4>
                 <ul>
                   <li>S</li>
                   <li>M</li>

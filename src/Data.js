@@ -152,7 +152,8 @@ import mensOuterwear2 from "./assets/images/mensOuterwear2.avif";
 import mensOuterwear2Alt from "./assets/images/mensOuterwear2Alt.avif";
 import mensOuterwear3 from "./assets/images/mensOuterwear3.avif";
 import mensOuterwear3Alt from "./assets/images/mensOuterwear3Alt.avif";
-
+import mensJogger1 from "./assets/images/mensJogger1.avif";
+import mensJogger1Alt from "./assets/images/mensJogger1Alt.avif";
 
 const items = [
   {
@@ -1227,6 +1228,46 @@ const items = [
             category: "apparel",
             stockStatus: true,
             options: ["quick-add+", "select-size", "Sweatshirts and Hoodies"],
+          },
+          {
+            itemImg: mensOuterwear1,
+            itemImgHover: mensOuterwear1Alt,
+            itemName: "Men's Quilted Bomber Jacket",
+            itemPrice: 195,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["quick-add+", "select-size", "Outerwear"],
+          },
+          {
+            itemImg: mensOuterwear2,
+            itemImgHover: mensOuterwear2Alt,
+            itemName: "Men's Quilted Shirt Jacket ",
+            itemPrice: 160,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["quick-add+", "select-size", "Outerwear"],
+          },
+          {
+            itemImg: mensOuterwear3,
+            itemImgHover: mensOuterwear3Alt,
+            itemName: "Men's Corp Jacket",
+            itemPrice: 90,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["quick-add+", "select-size", "Outerwear"],
+          },
+          {
+            itemImg: mensJogger1,
+            itemImgHover: mensJogger1Alt,
+            itemName: "Men's Chill Joggers",
+            itemPrice: 85,
+            subCategory: "men",
+            category: "apparel",
+            stockStatus: true,
+            options: ["quick-add+", "select-size", "Joggers", "best-seller"],
           },
         ],
       },

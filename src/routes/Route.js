@@ -39,7 +39,6 @@ export default function MyRouter() {
             path='checkout'
             element={<Checkout />}
           />
-
           <Route exact path='cart' element={<Cart />} />
         </Route>
       </Routes>
