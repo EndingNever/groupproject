@@ -81,7 +81,6 @@ const cartSlice = createSlice({
       Object.values(cartEnts).forEach((item) => {
         total += item.itemPrice * item.quantity;
       });
-      console.log(total);
       state.total = total;
       window.sessionStorage.setItem("cart", JSON.stringify(state));
     },

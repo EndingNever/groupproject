@@ -7,6 +7,11 @@ import { ReactComponent as SearchBtn } from "../../../assets/images/search.svg";
 import { useNavigate } from "react-router-dom";
 
 const StyledSideMenu = styled.div`
+  * {
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+  }
   position: fixed;
   z-index: 3;
   overflow: hidden;

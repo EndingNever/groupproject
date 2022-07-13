@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
+  * {
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,8 +111,10 @@ export const DropDownMenu = styled.div`
   transition: all 0.5s;
   gap: 32px;
   z-index: 1;
-  min-height: 489px;
+  height: 489px;
+  max-height: 50vh;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
   h3 {
     cursor: pointer;
   }
@@ -163,7 +170,7 @@ export const Indicator = styled.div`
   transform: translateX(${({ setting }) => `${setting.posX}px`});
   @media (max-width: 389px) {
     transform: translateX(${({ setting }) => `${setting.posX}px`})
-      translateY(${({ setting }) => `calc(-100% + ${setting.posY + 8}px)`});
+      translateY(${({ setting }) => `calc(-100% + ${setting.posY + 14}px)`});
   }
   z-index: -1;
   transition: ${({ setting }) =>
