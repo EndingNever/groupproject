@@ -19,6 +19,8 @@ import wallConGlassFpHov from "./assets/images/wallConGlassFpHov.avif";
 import wallConWireboxK from "./assets/images/wallConWireboxK.avif";
 import wallConFastenerK from "./assets/images/wallConFastenerK.avif";
 import gen1NEMAAdapter from "./assets/images/gen1NEMAAdapter.avif";
+
+// Vehicle image imports start here
 import modelSLiner from "./assets/images/modelSLiner.avif";
 import modelSLinerHov from "./assets/images/modelSLinerHover.avif";
 import SRoofRack from "./assets/images/SRoofRack.avif";
