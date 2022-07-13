@@ -55,11 +55,14 @@ const Card = (props) => {
           <p className="itemName">{itemName}</p>
           <p className="itemPrice">${itemPrice}</p>
         </div>
-        {product.options.includes("select-color") && (
+        {product.options.includes("select-color") && product.color ? (
           <div className="productTile">
-            <button></button>
-            <button></button>
+            {product.color.map((color) => (
+              <button style={{ backgroundColor: color }}> </button>
+            ))}
           </div>
+        ) : (
+          <></>
         )}
       </div>
     </div>
