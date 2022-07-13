@@ -19,10 +19,36 @@ const Card = (props) => {
 
       <div className="itemImgWrapper">
         <div className="itemImg">
-          <img src={itemImg} alt="" />
+          {itemName === "Tesla Shop Gift card" ? (
+            <video
+              className="img-wrapper"
+              height="100%"
+              width="100%"
+              autoplay="autoplay"
+              muted
+              loop
+            >
+              <source src={itemImg} type="video/webm" />{" "}
+            </video>
+          ) : (
+            <img src={itemImg} alt="" />
+          )}
         </div>
         <div className="itemImgOnHover">
-          <img src={itemImgHover} alt="" />
+          {itemName === "Tesla Shop Gift card" ? (
+            <video
+              className="img-wrapper"
+              height="100%"
+              width="100%"
+              autoplay="autoplay"
+              muted
+              loop
+            >
+              <source src={itemImg} type="video/webm" />{" "}
+            </video>
+          ) : (
+            <img src={itemImg} alt="" />
+          )}
           <div
             className="quickAdd"
             onClick={() => dispatch(addItem(props.product))}
