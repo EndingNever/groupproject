@@ -11,6 +11,7 @@ export default function HeroCarousel() {
   return (
     <div className="hero-carousel">
       <Carousel
+      
         autoPlay
         infiniteLoop
         emulateTouch

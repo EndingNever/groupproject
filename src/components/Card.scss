@@ -1,7 +1,7 @@
 .cardGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 65px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .cardWrapper {
   width: 400px;
@@ -54,6 +54,7 @@
 }
 .itemImgWrapper {
   height: 400px;
+  outline: 2px solid green;
   // transform: translateY(-80px);
   // z-index: -1;
 }
