@@ -1,10 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Gotham Medium";
-}
-
 .title-wrap {
   width: 366px;
   padding-top: 40px;
@@ -26,7 +19,7 @@
   //   flex-direction: row;
   outline: none;
   background-color: rgb(255, 255, 255);
-}
+
 
 .wrap {
   height: 30vw;
@@ -51,7 +44,7 @@
   padding: 0 12px;
 }
 
-h5 {
+ h5 {
   color: #181b21;
   background-color: #fff;
   //   margin-bottom: -35px;
@@ -65,7 +58,7 @@ h5 {
   padding: 24px 0px 0px;
 }
 
-.control-arrow {
+ .control-arrow {
   border: none !important;
   height: 32px !important;
   width: 32px !important;
@@ -76,10 +69,11 @@ h5 {
   display: grid !important;
   place-items: center;
 }
-.control-dots {
+ .control-dots {
   display: none !important;
 }
 
 // .carousel-wrapper * {
 //   outline: 2px solid green !important;
 // }
+}
