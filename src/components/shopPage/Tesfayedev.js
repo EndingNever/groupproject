@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Styles/Slides.scss";
-
-// import styled from "styled-components";
-// import { Button } from "react-bootstrap";
+import BackwardArrow from "./BackwardArrow";
+import ForwardArrow from "./ForwardArrow";
 
 import img1 from "../../assets/images/img1.avif";
 import img2 from "../../assets/images/img2.avif";
@@ -21,14 +19,14 @@ import img10 from "../../assets/images/img10.avif";
 const Tesfayedev = () => {
   const [showArrow, setShowArrow] = useState(false);
   return (
-    <div>
+    <>
       <div className="title-wrap">
         <h3>Best Sellers</h3>
       </div>
       <div
+        className="carousel-wrapper"
         onMouseEnter={() => setShowArrow(true)}
         onMouseLeave={() => setShowArrow(false)}
-        className="carousel-wrapper"
       >
         <Carousel
           className="main-carousel"
@@ -36,11 +34,16 @@ const Tesfayedev = () => {
           showThumbs={false}
           showArrows={showArrow}
           showStatus={false}
-          interval={2000}
+          interval={2500}
           infiniteLoop
           centerMode={true}
           centerSlidePercentage={30}
-          showStatus={false}
+          renderArrowPrev={(clickHandler, hasPrev, label) => (
+            <BackwardArrow clickHandler={clickHandler} />
+          )}
+          renderArrowNext={(clickHandler, hasNext, label) => (
+            <ForwardArrow clickHandler={clickHandler} />
+          )}
         >
           <div className="wrap">
             <div>
@@ -117,8 +120,8 @@ const Tesfayedev = () => {
               <video
                 className="img-wrapper"
                 height="100%"
-                width="`100%`"
-                autoplay
+                width="100%"
+                autoplay="autoplay"
                 muted
                 loop
               >
@@ -187,57 +190,10 @@ const Tesfayedev = () => {
           </div>
         </Carousel>
       </div>
-    </div>
+    </>
   );
 };
-
-// export const Button = styled.div`
-//   background: black;
-// `;
 
 export default Tesfayedev;
 
 //a functional component that returns a fragment (single root element) & all the functionalities are carried by carousel/wrapper, within that we've divisions/cards
-
-//styled-component
-
-//export const Title = styled.h3`
-//   width: 100%;
-//   height: auto;
-//   padding-top: 30px;
-//   font-family: 'Gotham Medium';
-//   background-color: white;
-
-//   h3 {
-//     font-size: 28px;
-//     font-weight: 600;
-//    font-family: 'Gotham Medium';
-//     color: #181B21;
-//     margin: 0px 0px 32px;
-//     padding: 0px 24px;
-//     margin-bottom: -10px;
-//   }
-// `;
-
-// export const Wrap = styled.div`
-//   width: 366px;
-//   height: 366px;
-//   padding: 0px 24px;
-
-//   h5 {
-//     font-size: 18px;
-//     font-weight: 400;
-//     color: #181B21;
-//     margin: 0px 0px 32px;
-//     padding: 0px 24px;
-//   }
-// `;
-
-//fontawesome
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// <div>
-//   <FontAwesomeIcon icon="fa-light fa-angle-left" />
-// </div>
-// <div>
-//   <FontAwesomeIcon icon="fa-light fa-angle-right" />
-// </div>

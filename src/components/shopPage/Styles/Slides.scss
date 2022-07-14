@@ -1,79 +1,71 @@
 .title-wrap {
-  width: 366px;
-  padding-top: 40px;
-  padding-bottom: -10px;
+  color: #393c41;
+  padding: 0px 24px;
+  margin: 0px 0px 32px;
+  padding-top: 30px;
 
   h3 {
     font-size: 28px;
+    font-weight: 600;
     color: #181b21;
-    padding-bottom: 15px;
-    letter-spacing: -0.6px;
+    margin-block-start: 1em;
     text-align: left;
+    margin-left: 5px;
   }
 }
 
 .main-carousel {
   padding: 0;
   padding-top: 5px;
-  //   display: flex;
-  //   flex-direction: row;
   outline: none;
   background-color: rgb(255, 255, 255);
-
-
-.wrap {
-  height: 30vw;
-  //   width: 100%;
-  //   padding: 0px 24px;
-  margin-bottom: 50px;
-  -webkit-box-direction: normal;
   position: relative;
-  object-fit: cover;
-  object-position: center;
-  z-index: 0;
-}
 
-.wrap .img-wrapper {
-  //   display: block;
-  position: relative;
-  text-align: center;
-}
+  .carousel {
+    display: flex;
+    align-items: center;
+  }
 
-.img-wrapper {
-  margin: 0;
-  padding: 0 12px;
-}
+  .wrap {
+    width: 100%;
+    height: 30vw;
+    margin-left: -90px;
+  }
 
- h5 {
-  color: #181b21;
-  background-color: #fff;
-  //   margin-bottom: -35px;
-  margin-top: 10px;
-  margin-left: 15px;
-  width: 100%;
-  text-align: left;
-  line-height: 20px;
-  font-size: 17px;
-  font-weight: 500;
-  padding: 24px 0px 0px;
-}
+  .wrap .img-wrapper {
+    position: relative;
+    text-align: center;
+    object-fit: contain;
+    object-position: center;
+    -webkit-box-direction: normal;
+    margin: 0px;
+    padding: 0 12px;
+  }
 
- .control-arrow {
-  border: none !important;
-  height: 32px !important;
-  width: 32px !important;
-  border-radius: 50px !important;
-  background-color: rgb(178, 176, 176) !important;
-  top: 50% !important;
-  margin: 0px 30px !important;
-  display: grid !important;
-  place-items: center;
-}
- .control-dots {
-  display: none !important;
-}
+  h5 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #181b21;
+    background-color: #fff;
+    text-align: left;
+    margin-left: 25px;
+    padding: 24px 0px 0px;
+  }
 
-// .carousel-wrapper * {
-//   outline: 2px solid green !important;
-// }
+  .control-arrow {
+    border: none !important;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50% !important;
+    background-color: #adadad !important;
+    top: 45% !important;
+    margin-left: 27px !important;
+    margin-right: 20px !important;
+    display: grid !important;
+    place-items: center;
+  }
+
+  .control-dots {
+    display: none !important;
+  }
 }
