@@ -39,10 +39,10 @@ const Tesfayedev = () => {
           centerMode={true}
           centerSlidePercentage={30}
           renderArrowPrev={(clickHandler, hasPrev, label) => (
-            <BackwardArrow clickHandler={clickHandler} />
+            showArrow && <BackwardArrow clickHandler={clickHandler} />
           )}
           renderArrowNext={(clickHandler, hasNext, label) => (
-            <ForwardArrow clickHandler={clickHandler} />
+            showArrow && <ForwardArrow clickHandler={clickHandler} />
           )}
         >
           <div className="wrap">

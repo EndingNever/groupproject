@@ -19,11 +19,14 @@
   padding-top: 5px;
   outline: none;
   background-color: rgb(255, 255, 255);
-  position: relative;
-
+  margin-bottom: 60px;
   .carousel {
     display: flex;
     align-items: center;
+    position: relative;
+  }
+  .slider-wrapper{
+    height: 450px;
   }
 
   .wrap {

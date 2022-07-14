@@ -16,6 +16,8 @@ const ForwardArrow = (props) => {
         color: "white",
         display: "grid",
         placeItems: "center",
+        position: "absolute",
+        right: "32px"
       }}
     >
       <ArrowForwardIosIcon />

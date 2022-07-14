@@ -16,9 +16,12 @@ const BackwardArrow = (props) => {
         color: "white",
         display: "grid",
         placeItems: "center",
+        position: "absolute",
+        left: "32px",
+        zIndex: "1"
       }}
     >
-      <ArrowBackIosIcon />
+      <ArrowBackIosIcon style={{marginLeft: "8px"}}/>
     </div>
   );
 };
