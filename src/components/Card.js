@@ -47,11 +47,7 @@ const Card = (props) => {
               <source src={itemImg} type="video/webm" />{" "}
             </video>
           ) : (
-<<<<<<< HEAD
-            <img src={itemImgHover} alt='' /> 
-=======
             <img src={itemImgHover} alt="" />
->>>>>>> master
           )}
           <div
             className="quickAdd"
