@@ -26,11 +26,21 @@
   .slider-wrapper {
     height: fit-content;
   }
-
+  .slider{
+    margin-left: -5%;
+  }
+  .slide{
+    width: fit-content;
+    display: grid;
+    place-items: center;
+  }
   .wrap {
     width: 100%;
     height: 30vw;
-    margin-left: -90px;
+    // margin-left: -90px;
+    h5{
+      padding-right: 12px;
+    }
   }
 
   .wrap .img-wrapper {
