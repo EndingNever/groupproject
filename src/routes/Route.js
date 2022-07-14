@@ -33,7 +33,7 @@ export default function MyRouter() {
           <Route
             // exact
             path='/groupproject/search/:searchValue'
-            element={<ProductPage />}
+            element={<TestPage />}
           />
           <Route
             // exact
