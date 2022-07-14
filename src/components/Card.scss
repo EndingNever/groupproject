@@ -2,6 +2,7 @@
   display: flex;
   gap: 5%;
   flex-wrap: wrap;
+  font-weight: 700;
   @media (max-width: 960px) {
     gap: 0%;
     justify-content: space-between;
@@ -31,7 +32,7 @@
     width: 100%;
   }
   .quickAdd {
-    height: 25%;
+    height: 22%;
     position: absolute;
     width: calc(100% + 0.5px);
     transform: translateY(-100%);
@@ -43,6 +44,7 @@
     p {
       margin: 0px;
       padding: 0px;
+      font-weight: 700;
     }
   }
 }

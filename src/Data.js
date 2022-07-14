@@ -1437,6 +1437,19 @@ const items = [
             category: "lifestyle",
             subCategory: "mini-tesla",
             stockStatus: true,
+
+            color2: [
+              {
+                color: "#002E82",
+                itemImg: diecastModel3Black,
+                itemImgHover: diecastModel3BlackHover,
+              },
+              {
+                color: "#DD0000",
+                itemImg: diecastModel3Black,
+                itemImgHover: diecastModel3BlackHover,
+              },
+            ],
             options: ["view-details", "last-chance"],
           },
           {
@@ -1467,6 +1480,34 @@ const items = [
             category: "lifestyle",
             subCategory: "mini-tesla",
             stockStatus: true,
+
+            color2: [
+              {
+                color: "#05020A",
+                itemImg: diecastModel3Black,
+                itemImgHover: diecastModel3BlackHover,
+              },
+              {
+                color: "#808080",
+                itemImg: diecastModel3Gray,
+                itemImgHover: diecastModel3GrayHover,
+              },
+              {
+                color: "#fff",
+                itemImg: diecastModel3White,
+                itemImgHover: diecastModel3WhiteHover,
+              },
+              {
+                color: "#002E82",
+                itemImg: diecastModel3Blue,
+                itemImgHover: diecastModel3BlueHover,
+              },
+              {
+                color: "#DD0000",
+                itemImg: diecastModel3Red,
+                itemImgHover: diecastModel3RedHover,
+              },
+            ],
             options: ["view-details", "select-color"],
           },
         ],
@@ -1502,6 +1543,19 @@ const items = [
             category: "lifestyle",
             subCategory: "drinkware",
             stockStatus: true,
+            color: ["#05020A", "#E0DFDB"],
+            color2: [
+              {
+                color: "#05020A",
+                itemImg: travelTumblerBlack,
+                itemImgHover: travelTumblerBlack,
+              },
+              {
+                color: "#E0DFDB",
+                itemImg: travelTumblerSilver,
+                itemImgHover: travelTumblerSilver,
+              },
+            ],
             options: ["view-details", "select-color"],
           },
           {
@@ -1529,6 +1583,28 @@ const items = [
             subCategory: "outdoor-&-tech",
             stockStatus: false,
             color: ["#002E82", "#05020A", "#FFFFFF", "#DD0000"],
+            color2: [
+              {
+                color: "#002E82",
+                itemImg: wirelessPortableChargerBlue,
+                itemImgHover: wirelessPortableChargerHover,
+              },
+              {
+                color: "#05020A",
+                itemImg: wirelessPortableChargerBlack,
+                itemImgHover: wirelessPortableChargerHover,
+              },
+              {
+                color: "#fff",
+                itemImg: wirelessPortableChargerWhite,
+                itemImgHover: wirelessPortableChargerHover,
+              },
+              {
+                color: "#DD0000",
+                itemImg: wirelessPortableChargerRed,
+                itemImgHover: wirelessPortableChargerHover,
+              },
+            ],
             options: ["view-details", "select-color"],
           },
           {
