@@ -9,6 +9,7 @@ const QuantitySelector = ({ handleSelect, itemQty }) => {
 
   let options = [...Array(maxQty)].map((el, index) => (
     <StyledOption
+      key={index}
       selected={index + 1 === itemQty}
       onClick={() => {
         handleSelect(index + 1);
