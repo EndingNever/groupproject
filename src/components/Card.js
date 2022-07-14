@@ -26,7 +26,7 @@ const Card = (props) => {
               className="img-wrapper"
               height="100%"
               width="100%"
-              autoplay="autoplay"
+              autoPlay="autoplay"
               muted
               loop
             >
@@ -49,7 +49,7 @@ const Card = (props) => {
               className="img-wrapper"
               height="100%"
               width="100%"
-              autoplay="autoplay"
+              autoPlay="autoplay"
               muted
               loop
             >
@@ -107,8 +107,9 @@ const Card = (props) => {
         </div>
         {product.options.includes("select-color") && product.color2 ? (
           <div className="productTile">
-            {product.color2.map((color) => (
+            {product.color2.map((color, index) => (
               <button
+                key={index}
                 style={{ backgroundColor: color.color }}
                 onClick={() => {
                   setSelectedColor(color);
