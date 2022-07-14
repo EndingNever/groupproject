@@ -101,6 +101,20 @@ export const StyledOrderSummary = styled.div`
     background-color: #3d69e1;
     color: white;
     font-weight: 500;
+    position: relative;
+    &:active,
+    :focus {
+      &::after {
+        content: "";
+        border: 2px solid white;
+        position: absolute;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        top: 3px;
+        left: 3px;
+        border-radius: 32px;
+      }
+    }
   }
   .cart-sales-tax-info-button {
     background: none;
@@ -224,6 +238,7 @@ export const MobileCheckoutBtn = styled.div`
     display: none;
   }
   button {
+    position: relative;
     cursor: pointer;
     width: 500px;
     max-width: 90vw;
@@ -233,5 +248,18 @@ export const MobileCheckoutBtn = styled.div`
     background-color: #3d69e1;
     color: white;
     font-family: "Gotham-Medium", sans-serif;
+    &:active,
+    :focus {
+      &::after {
+        content: "";
+        border: 2px solid white;
+        position: absolute;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        top: 3px;
+        left: 3px;
+        border-radius: 32px;
+      }
+    }
   }
 `;
