@@ -1371,6 +1371,42 @@ const items = [
     category: "lifestyle",
     subCategories: [
       {
+        subCategory: "best-sellers",
+        products: [
+          {
+            itemImg: teslaTequila,
+            itemImgHover: teslaTequila,
+            itemName: "Tesla Tequila Limited Edition Set",
+            itemPrice: 420,
+            category: "lifestyle",
+            subCategory: "drinkware",
+            stockStatus: false,
+            options: ["view-details", "best-seller"],
+          },
+
+          {
+            itemImg: texasBeltBuckle,
+            itemImgHover: texasBeltBuckleHover,
+            itemName: "Giga Texas Belt Buckle",
+            itemPrice: 100,
+            category: "lifestyle",
+            subCategory: "outdoor-&-tech",
+            stockStatus: true,
+            options: ["view-details", "best-seller"],
+          },
+          {
+            itemImg: giftCard,
+            itemImgHover: giftCard,
+            itemName: "Tesla Shop Gift card",
+            itemPrice: [10, 500],
+            category: "lifestyle",
+            subCategory: "gift-card",
+            stockStatus: false,
+            options: ["view-details", "best-seller"],
+          },
+        ],
+      },
+      {
         subCategory: "mini-teslas",
         products: [
           {
