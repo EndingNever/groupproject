@@ -20,13 +20,13 @@ export default function Cart() {
 
   useEffect(() => {
     if (cartQty <= 0) {
-      navigate("/");
+      navigate("/groupproject");
     }
     dispatch(getTotal());
   }, [cartQty, navigate, dispatch]);
 
   const cartItems = cartIds.map((cartId) => (
-    <CartItem cartId={cartId} cartEntities={cartEntities} />
+    <CartItem key={cartId} cartId={cartId} cartEntities={cartEntities} />
   ));
 
   return (
@@ -37,13 +37,15 @@ export default function Cart() {
         <div className='cartContent'>
           <div className='cartItems'>{cartItems}</div>
           <OrderSummary />
-          <div className="cartExtraFooterController">
+          <div className='cartExtraFooterController'>
             <Footer />
           </div>
         </div>
       </div>
       <MobileCheckoutBtn>
-        <button>CHECKOUT</button>
+        <button onClick={() => navigate("/groupproject/checkout")}>
+          CHECKOUT
+        </button>
       </MobileCheckoutBtn>
     </CartPage>
   );

@@ -47,6 +47,7 @@ const Card = (props) => {
               <source src={itemImg} type="video/webm" />{" "}
             </video>
           ) : (
+
             <img src={itemImgHover} alt="" />
           )}
           <div
