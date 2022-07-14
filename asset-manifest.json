@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/groupproject/static/css/main.8c353126.css",
-    "main.js": "/groupproject/static/js/main.a8a62dea.js",
+    "main.js": "/groupproject/static/js/main.ac3a90af.js",
     "static/js/787.aa55c2b5.chunk.js": "/groupproject/static/js/787.aa55c2b5.chunk.js",
     "static/media/mYRuggedRearTrunk.avif": "/groupproject/static/media/mYRuggedRearTrunk.3a746ccb736c36d7a653.avif",
     "static/media/nemaAdaptorBundleHov.avif": "/groupproject/static/media/nemaAdaptorBundleHov.bbad2d932c04bdc242b5.avif",
@@ -246,11 +246,11 @@
     "static/media/arrow.svg": "/groupproject/static/media/arrow.bbdca70ff936292e60300b140ab57c00.svg",
     "static/media/checkMark.svg": "/groupproject/static/media/checkMark.88110c0c3370cb6e8a5ac194e9da2828.svg",
     "main.8c353126.css.map": "/groupproject/static/css/main.8c353126.css.map",
-    "main.a8a62dea.js.map": "/groupproject/static/js/main.a8a62dea.js.map",
+    "main.ac3a90af.js.map": "/groupproject/static/js/main.ac3a90af.js.map",
     "787.aa55c2b5.chunk.js.map": "/groupproject/static/js/787.aa55c2b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c353126.css",
-    "static/js/main.a8a62dea.js"
+    "static/js/main.ac3a90af.js"
   ]
 }
