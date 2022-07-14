@@ -104,7 +104,11 @@ export default function Nav() {
   //detect scroll position on main shop page
   useEffect(() => {
     setSolidNav(false);
-    if (location.pathname === "/groupproject/cart" || location.pathname === "/groupproject/checkout") {
+    if (
+      location.pathname === "/groupproject/cart" ||
+      location.pathname === "/groupproject/checkout" ||
+      location.pathname === "/groupproject/checkout/confirm"
+    ) {
       setSolidNav(true);
     } else if (Object.entries(params).length <= 0) {
       window.onscroll = () => {

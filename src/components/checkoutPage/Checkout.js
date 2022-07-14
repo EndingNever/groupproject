@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const StyledCheckoutPage = styled.div`
   * {
@@ -15,7 +16,7 @@ const StyledCheckoutPage = styled.div`
   text-align: left;
   h1 {
     font-size: 28px;
-    font-family: "Gotham-Bold", sans-serif;
+    font-family: "Gotham-Medium", sans-serif;
   }
   .checkout-sign-in {
     display: flex;
@@ -81,6 +82,26 @@ const StyledCheckoutPage = styled.div`
       background-color: #3d69e1;
       border: none;
       color: white;
+      position: relative;
+      &:active,
+      :focus {
+        &::after {
+          content: "";
+          border: 2px solid white;
+          position: absolute;
+          width: calc(100% - 6px);
+          height: calc(100% - 6px);
+          top: 3px;
+          left: 3px;
+          border-radius: 32px;
+        }
+      }
+      &:hover {
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.1),
+          rgba(0, 0, 0, 0.1)
+        );
+      }
     }
     .forgot-something-options {
       display: flex;
@@ -122,19 +143,49 @@ const StyledCheckoutPage = styled.div`
       transform: translate(-50%, -50%);
     }
   }
+  .guest-checkout {
+    p {
+      font-size: 14px;
+      margin: 20px 0px;
+    }
+    button {
+      height: 40px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      background-color: white;
+      border: none;
+      color: black;
+      position: relative;
+      outline: 3px solid black;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
 `;
 
 export default function Checkout() {
   const [justChecking, setJustChecking] = useState(false);
   const [input, setInput] = useState("");
   const [valid, setValid] = useState(true);
+
+  const navigate = useNavigate();
+
   const validateEmail = () => {
     let regexp =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (input.length) {
       setValid(regexp.test(String(input).toLowerCase()));
+      return true;
     }
+    setValid(false);
+    return false;
   };
+
   return (
     <StyledCheckoutPage valid={valid} justChecking={justChecking}>
       <div className='checkout-sign-in'>
@@ -151,7 +202,14 @@ export default function Checkout() {
           />
         </div>
 
-        <button className='checkout-sign-in-button'>CONTINUE</button>
+        <button
+          className='checkout-sign-in-button'
+          onClick={() => {
+            validateEmail() && navigate("confirm");
+          }}
+        >
+          CONTINUE
+        </button>
         <div className='forgot-something-options'>
           <p>Forgot email?</p>
           <hr />
@@ -165,7 +223,7 @@ export default function Checkout() {
           You'll have the opportunity to create an account after you complete
           checkout.
         </p>
-        <button>CONTINUE AS GUEST</button>
+        <button onClick={() => navigate("confirm")}>CONTINUE AS GUEST</button>
       </div>
     </StyledCheckoutPage>
   );
