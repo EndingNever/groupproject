@@ -104,7 +104,7 @@ export default function Nav() {
   //detect scroll position on main shop page
   useEffect(() => {
     setSolidNav(false);
-    if (location.pathname === "/cart" || location.pathname === "/checkout") {
+    if (location.pathname === "/groupproject/cart" || location.pathname === "/groupproject/checkout") {
       setSolidNav(true);
     } else if (Object.entries(params).length <= 0) {
       window.onscroll = () => {
@@ -163,7 +163,7 @@ export default function Nav() {
           <li
             ref={shopRef}
             className='navHoverEffect'
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/groupproject")}
             onMouseEnter={() => handleEnter(shopRef.current)}
           >
             Shop
