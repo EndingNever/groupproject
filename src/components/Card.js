@@ -11,8 +11,10 @@ const Card = (props) => {
   const stockStatus = props.stockStatus;
   const product = props.product;
   const [size, setSize] = useState(false);
+  const [selectedColor, setSelectedColor] = useState({});
 
   const dispatch = useDispatch();
+
   return (
     <div className="cardWrapper">
       <div className="stockStatus">{!stockStatus && <p>Out Of Stock</p>}</div>
@@ -24,14 +26,21 @@ const Card = (props) => {
               className="img-wrapper"
               height="100%"
               width="100%"
-              autoplay="autoplay"
+              autoPlay="autoplay"
               muted
               loop
             >
               <source src={itemImg} type="video/webm" />{" "}
             </video>
           ) : (
-            <img src={itemImg} alt="" />
+            <img
+              src={
+                Object.values(selectedColor).length > 0
+                  ? selectedColor.itemImg
+                  : itemImg
+              }
+              alt=""
+            />
           )}
         </div>
         <div className="itemImgOnHover">
@@ -40,15 +49,21 @@ const Card = (props) => {
               className="img-wrapper"
               height="100%"
               width="100%"
-              autoplay="autoplay"
+              autoPlay="autoplay"
               muted
               loop
             >
               <source src={itemImg} type="video/webm" />{" "}
             </video>
           ) : (
-
-            <img src={itemImgHover} alt="" />
+            <img
+              src={
+                Object.values(selectedColor).length > 0
+                  ? selectedColor.itemImgHover
+                  : itemImgHover
+              }
+              alt=""
+            />
           )}
           <div
             className="quickAdd"
@@ -90,10 +105,18 @@ const Card = (props) => {
               : itemPrice.toLocaleString("en-US")}
           </p>
         </div>
-        {product.options.includes("select-color") && product.color ? (
+        {product.options.includes("select-color") && product.color2 ? (
           <div className="productTile">
-            {product.color.map((color) => (
-              <button style={{ backgroundColor: color }}> </button>
+            {product.color2.map((color, index) => (
+              <button
+                key={index}
+                style={{ backgroundColor: color.color }}
+                onClick={() => {
+                  setSelectedColor(color);
+                }}
+              >
+                {" "}
+              </button>
             ))}
           </div>
         ) : (
