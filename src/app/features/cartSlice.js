@@ -84,10 +84,16 @@ const cartSlice = createSlice({
       state.total = total;
       window.sessionStorage.setItem("cart", JSON.stringify(state));
     },
+    resetCart: (state, action) => {
+      state.cartItems = cartAdapter.getInitialState();
+      state.cartQuantity = 0;
+      state.total = 0;
+      sessionStorage.clear();
+    },
   },
 });
 
-export const { addItem, removeItem, updateQuantity, getTotal } =
+export const { addItem, removeItem, updateQuantity, getTotal, resetCart } =
   cartSlice.actions;
 export const cartQuantity = (state) => state.cart.cartQuantity;
 export const cartTotal = (state) => state.cart.total;
