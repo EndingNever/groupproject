@@ -16,7 +16,8 @@ const ProductPage = () => {
         ) // map through the filtered array to get the categories data
         .map((category, i) => (
           <div key={i} className="chargingWrapper">
-            <h2>{category.category}</h2>
+            {category.category === 'vehicle-accessories' ? <h2>Vehicle Accessories</h2>
+              : <h2>{category.category}</h2>}
             {/* map through the subCategories and send each list of products to the Cards Grid */}
             {category.subCategories.map((sub, index) => (
               <div className="atHome">
