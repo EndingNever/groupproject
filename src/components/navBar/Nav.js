@@ -104,7 +104,7 @@ export default function Nav() {
   //detect scroll position on main shop page
   useEffect(() => {
     setSolidNav(false);
-    if (location.pathname === "/cart") {
+    if (location.pathname === "/groupproject/cart" || location.pathname === "/groupproject/checkout") {
       setSolidNav(true);
     } else if (Object.entries(params).length <= 0) {
       window.onscroll = () => {
@@ -155,23 +155,23 @@ export default function Nav() {
         solidNav={solidNav}
       >
         <Indicator setting={indicator} />
-        <ul className="navLeft">
-          <div className="navLogo">
+        <ul className='navLeft'>
+          <div className='navLogo'>
             <TeslaLogo />
           </div>
           <hr />
           <li
             ref={shopRef}
-            className="navHoverEffect"
-            onClick={() => navigate("/")}
+            className='navHoverEffect'
+            onClick={() => navigate("/groupproject")}
             onMouseEnter={() => handleEnter(shopRef.current)}
           >
             Shop
           </li>
         </ul>
-        <ul className="navCenter">{mainNavLinks}</ul>
-        <ul className="navRight">
-          <li className="navSearchBarLi" onMouseEnter={handleSearchHover}>
+        <ul className='navCenter'>{mainNavLinks}</ul>
+        <ul className='navRight'>
+          <li className='navSearchBarLi' onMouseEnter={handleSearchHover}>
             <SearchBar />
           </li>
           <li onClick={() => navigate("cart")}>
@@ -179,7 +179,7 @@ export default function Nav() {
           </li>
           <li
             ref={menuRef}
-            className="navHoverEffect"
+            className='navHoverEffect'
             onMouseEnter={() => handleEnter(menuRef.current)}
             onClick={() => setShowSideMenu(!showSideMenu)}
           >

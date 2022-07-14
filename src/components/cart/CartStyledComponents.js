@@ -1,13 +1,21 @@
 import styled from "styled-components";
 
 export const CartPage = styled.div`
+  * {
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+  }
+  min-height: calc(100vh - 91.2px);
+  max-width: 100vw;
   padding: 0px 20px;
   padding-top: 88px;
   display: flex;
   justify-content: center;
   text-align: left;
-  @media (max-width: 960px) {
-    padding-bottom: 120px;
+  overflow-x: hidden;
+  @media (min-width: 960px) {
+    padding-bottom: 80px;
   }
   .cartContainer {
     width: 100%;
@@ -28,6 +36,7 @@ export const CartPage = styled.div`
   .cartContent {
     display: flex;
     justify-content: space-between;
+    gap: 32px;
 
     @media (max-width: 960px) {
       flex-direction: column;
@@ -49,6 +58,11 @@ export const CartPage = styled.div`
         width: 100%;
         max-width: 100%;
       }
+    }
+  }
+  .cartExtraFooterController {
+    @media (min-width: 960px) {
+      display: none;
     }
   }
 `;
@@ -97,6 +111,9 @@ export const StyledOrderSummary = styled.div`
     border-radius: 50%;
     font-family: "Gotham-Bold", sans-serif;
     margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -121,6 +138,7 @@ export const StyledCartItem = styled.div`
   }
   .quantity-selector-main-cart {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
   }
   .cart-item-remove {
@@ -206,6 +224,7 @@ export const MobileCheckoutBtn = styled.div`
     display: none;
   }
   button {
+    cursor: pointer;
     width: 500px;
     max-width: 90vw;
     height: 40px;

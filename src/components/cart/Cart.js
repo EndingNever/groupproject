@@ -9,6 +9,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { OrderSummary } from "./OrderSummary";
 import { CartItem } from "./CartItem";
+import Footer from "../Footer";
 
 export default function Cart() {
   const cartEntities = useSelector(cartSelectors.selectEntities);
@@ -19,13 +20,13 @@ export default function Cart() {
 
   useEffect(() => {
     if (cartQty <= 0) {
-      navigate("/");
+      navigate("/groupproject");
     }
     dispatch(getTotal());
   }, [cartQty, navigate, dispatch]);
 
   const cartItems = cartIds.map((cartId) => (
-    <CartItem cartId={cartId} cartEntities={cartEntities} />
+    <CartItem key={cartId} cartId={cartId} cartEntities={cartEntities} />
   ));
 
   return (
@@ -36,10 +37,15 @@ export default function Cart() {
         <div className='cartContent'>
           <div className='cartItems'>{cartItems}</div>
           <OrderSummary />
+          <div className='cartExtraFooterController'>
+            <Footer />
+          </div>
         </div>
       </div>
       <MobileCheckoutBtn>
-        <button>CHECKOUT</button>
+        <button onClick={() => navigate("/groupproject/checkout")}>
+          CHECKOUT
+        </button>
       </MobileCheckoutBtn>
     </CartPage>
   );

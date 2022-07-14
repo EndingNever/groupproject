@@ -19,10 +19,37 @@ const Card = (props) => {
 
       <div className="itemImgWrapper">
         <div className="itemImg">
-          <img src={itemImg} alt="" />
+          {itemName === "Tesla Shop Gift card" ? (
+            <video
+              className="img-wrapper"
+              height="100%"
+              width="100%"
+              autoplay="autoplay"
+              muted
+              loop
+            >
+              <source src={itemImg} type="video/webm" />{" "}
+            </video>
+          ) : (
+            <img src={itemImg} alt="" />
+          )}
         </div>
         <div className="itemImgOnHover">
-          <img src={itemImgHover} alt="" />
+          {itemName === "Tesla Shop Gift card" ? (
+            <video
+              className="img-wrapper"
+              height="100%"
+              width="100%"
+              autoplay="autoplay"
+              muted
+              loop
+            >
+              <source src={itemImg} type="video/webm" />{" "}
+            </video>
+          ) : (
+
+            <img src={itemImgHover} alt="" />
+          )}
           <div
             className="quickAdd"
             onClick={() => dispatch(addItem(props.product))}
@@ -36,7 +63,7 @@ const Card = (props) => {
             )}
             {size && product.options.includes("select-size") && (
               <div className="sizeSelector">
-                <h3>Select Your Size</h3>
+                <h4>Select Your Size</h4>
                 <ul>
                   <li>S</li>
                   <li>M</li>
@@ -51,8 +78,27 @@ const Card = (props) => {
         </div>
       </div>
       <div className="item">
-        <p className="itemName">{itemName}</p>
-        <p className="itemPrice">${itemPrice}</p>
+        <div>
+          <p className="itemName">{itemName}</p>
+          <p className="itemPrice">
+            {" "}
+            $
+            {typeof itemPrice === "object"
+              ? `${itemPrice[0].toLocaleString(
+                  "en-US"
+                )} - $${itemPrice[1].toLocaleString("en-US")}`
+              : itemPrice.toLocaleString("en-US")}
+          </p>
+        </div>
+        {product.options.includes("select-color") && product.color ? (
+          <div className="productTile">
+            {product.color.map((color) => (
+              <button style={{ backgroundColor: color }}> </button>
+            ))}
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );

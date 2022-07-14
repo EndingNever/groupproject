@@ -1,60 +1,83 @@
 .cardGrid {
   display: flex;
-  // justify-content: space-around;
+  gap: 5%;
   flex-wrap: wrap;
+  @media (max-width: 960px) {
+    gap: 0%;
+    justify-content: space-between;
+  }
 }
 .cardWrapper {
-  width: 400px;
-  height: 450px;
+  width: 30%;
+  @media (max-width: 960px) {
+    width: 48%;
+  }
+  margin-bottom: 100px;
   text-align: left;
+  position: relative;
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
 }
 .itemImgOnHover {
   display: none;
+  position: absolute;
+  top: 0px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   img {
     height: 100%;
     width: 100%;
   }
   .quickAdd {
-    height: 76px;
-    position: relative;
-    // margin-top: -80px;
-    transform: translateY(-80px);
+    height: 25%;
+    position: absolute;
+    width: calc(100% + 0.5px);
+    transform: translateY(-100%);
     text-align: center;
     background-color: #fff;
     z-index: 3;
     display: grid;
     place-items: center;
+    p {
+      margin: 0px;
+      padding: 0px;
+    }
   }
 }
 .cardWrapper:hover {
-  cursor: pointer;
   transition: all 0.1s;
   .itemImgOnHover {
     display: block;
   }
   .itemImg {
-    display: none;
+    // display: none;
+    opacity: 0;
   }
 }
 .stockStatus {
-  width: 114px;
+  width: fit-content;
   height: 40px;
   display: grid;
   place-items: center;
-  transform: translateY(100%);
-
-  // padding: 10px;
+  // transform: translateY(100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
   p {
     color: #fff;
     background-color: #5c5d61;
-    padding: 10px 0;
+    padding: 10px 4px;
     font-size: 0.9em;
     font-weight: 600;
+    width: 100%;
   }
 }
 .itemImgWrapper {
-  height: 400px;
-  outline: 2px solid green;
+  height: 100%;
+  outline: none;
+  border: none;
   // transform: translateY(-80px);
   // z-index: -1;
 }
@@ -63,29 +86,65 @@
     width: 100%;
     height: 100%;
   }
-}
-
-.item {
-  height: 52px;
-  padding: 3px;
+  .img-wrapper {
+    border: none;
+    outline: none;
+  }
 }
 .sizeSelector {
   width: 100%;
-  height: 76px;
+  height: 100%;
   position: absolute;
   bottom: 0px;
   background-color: #fff;
-  outline: 2px solid green;
-  h2 {
-    font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  h4 {
+    font-size: max(min(2vw, 2em), 16px);
   }
   ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    width: 100%;
+  }
+  li {
+    font-size: max(min(2vw, 1em), 12px);
   }
   li:hover {
     text-decoration: underline;
     text-decoration-color: #000;
+  }
+}
+.item {
+  height: 52px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  .itemName:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .productTile {
+    position: absolute;
+    right: 0;
+    gap: 8px;
+    display: flex;
+
+    // padding: 0;
+
+    button {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin-top: 6px;
+      border: 0;
+      border-radius: 50%;
+      padding: 5px;
+    }
   }
 }
