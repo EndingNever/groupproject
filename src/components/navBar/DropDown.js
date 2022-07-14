@@ -42,6 +42,7 @@ export default function DropDown({ dropDown, handleLeave }) {
                           .replace(/\s/g, "-")}`
                       )
                     }
+                    key={i}
                   >
                     {option}
                   </li>
