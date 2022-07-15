@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+# Tesla Shop Clone - With React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I used react for this project for the pure purpose of practicing React.
 
-## Available Scripts
+[Checkout a hosted version here](https://endingnever.github.io/groupproject/)
 
-In the project directory, you can run:
+## Table of contents
 
-### `npm start`
+- [Authors](#authors)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Authors
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Andrew Schroepfer
+  - [Website](https://syntheticdesigner.github.io/)
+  - [Linkedin](https://www.linkedin.com/in/andrew-schroepfer/)
+- Fabian Villasenor
+  - [Website](https://github.com/EndingNever)
+  - [Linkedin](https://www.linkedin.com/in/fabianvillasenor/)
+- Tesfaye Robelle
+  - [Website](https://github.com/tdebella)
+  - [Linkedin](https://www.linkedin.com/in/tesfaye-robelle-4a2b7921a/)
+- Eyerusalem Abebe
+  - [Website](https://github.com/SalemAbebe)
+  - [Linkedin](https://www.linkedin.com/in/eyerusalem-abebe-8858a495/)
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### The challenge
 
-### `npm run build`
+In 8 days with a group of four create/recreate a single-page multi-page react application. Must consist of at least 5 pages.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Our team chose the [shop.tesla](https://shop.tesla.com/) website.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Stretch Goals:
+[x]Animate components.
+[x]Create product color options
+[x]Create product size options
+[x]Create cart with redux
+[x]Create checkout user flow
+[ ]Add product data and user to mock database with firebase
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Screenshot
 
-### `npm run eject`
+![Shop Home Page](./readmeImages/shopHome.png)
+![Shop Product Page](./readmeImages/shopProducts.png)
+![Shop Home Page](./readmeImages/shopCheckout.png)
+![Shop Home Page](./readmeImages/colorSelectorRec.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Links
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Solution URL: [https://github.com/EndingNever/groupproject](https://github.com/EndingNever/groupproject)
+- Live Site URL: [https://endingnever.github.io/groupproject/](https://endingnever.github.io/groupproject/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Our process
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Built with
 
-## Learn More
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS Grid and Flex
+- [SASS](https://sass-lang.com/)
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/)
+- [React Router v6](https://reactrouter.com/)
+- [React Responsive Carousel](https://github.com/leandrowd/react-responsive-carousel)
+- [Redux](https://redux.js.org/) & [Redux Toolkit](https://redux-toolkit.js.org/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We decided early on that we were going to create a set of data that we could use throughout the site. We discussed several different ways of structuring the data before deciding on a solution.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```javascript
+let data = [
+  {
+    category,
+    subCategory,
+    products: [
+      {
+        itemImg,
+        itemImgHover,
+        itemName,
+        itemPrice: integer || [low, high],
+        subCategory,
+        category,
+        stockStatus,
+        options: [],
+        colors: [{ color, itemImg, itemImgHover }],
+      },
+    ],
+  },
+];
+```
 
-### Code Splitting
+One of the most parts of this data was the options. We used it control many conditional properties of our products. Whether they had a quick add, or view details button, whether they had select size, or if they were a best seller, or if they had a subx2 (sub sub) category.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Of course now that we made our bed we had to lie in it. Some of the most interesting code we wrote was our method for interpreting the options. We would read the options and create an object with the options as the keys mapping the products to an array based on which options it had. We did this to resolve many items which would be in multiple subx2 categories.
 
-### Analyzing the Bundle Size
+```javascript
+products.forEach((product) => {
+  product.options.forEach((option) => {
+    if (
+      option !== "view-details" &&
+      option !== "quick-add+" &&
+      option !== "select-size"
+    ) {
+      setUseSubSubCategories(true);
+      if (optionArraysObject[option]) {
+        optionArraysObject[option] = [...optionArraysObject[option], product];
+      } else {
+        optionArraysObject[option] = [product];
+      }
+    }
+  });
+});
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+We used redux to build the cart. With redux toolkits entityAdapters we quickly made a list cart items and track the total cart value and quantity when a product is added or removed.
 
-### Making a Progressive Web App
+The floating nave hover effect was a enjoyable puzzle. After carefully inspecting the tesla website we used a very similar method to move an indicator div by passing its targets property values to it. We made use of the useRef hook and styled components props to change the indicators position rather then css var.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The method of creating our refs for the nav was interesting. We create a ref that then dynamically generated an array of refs inside of it rather than create each ref individually.
 
-### Advanced Configuration
+```javascript
+const navRefs = useRef(navList.map(() => createRef()));
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+const mainNavLinks = navList.map((listItem, i) => (
+  <li
+    key={i}
+    ref={navRefs.current[i]}
+    onClick={() =>
+      navigate(
+        `category/${listItem.category.toLocaleLowerCase().replace(/\s/g, "-")}`
+      )
+    }
+    onMouseEnter={() => handleEnter(navRefs.current[i].current, listItem)}
+  >
+    {listItem.category}
+  </li>
+));
+```
