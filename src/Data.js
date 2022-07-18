@@ -192,7 +192,7 @@ import cyberwhistleHover from "./assets/images/cyberWhistleHover.avif";
 import texasBeltBuckle from "./assets/images/TexasBeltBuckle.avif";
 import texasBeltBuckleHover from "./assets/images/texasBeltBuckleHover.avif";
 import wirelessPortableChargerBlue from "./assets/images/wirelessPortableChargerBlue.avif";
-import wirelessPortableChargerHover from "./assets/images/wirelessPortableChargerBlue.avif";
+import wirelessPortableChargerHover from "./assets/images/wirelessPortableChargerHover.avif";
 import wirelessPortableChargerWhite from "./assets/images/wirelessPortableChargerWhite.avif";
 import wirelessPortableChargerBlack from "./assets/images/wirelessPortableChargerBlack.avif";
 import wirelessPortableChargerRed from "./assets/images/wirelessPortableChargerRed.avif";
@@ -1566,6 +1566,19 @@ const items = [
             category: "lifestyle",
             subCategory: "drinkware",
             stockStatus: true,
+            color: ["#05020A", "#E0DFDB"],
+            color2: [
+              {
+                color: "#05020A",
+                itemImg: SSWaterBottleBlack,
+                itemImgHover: SSWaterBottleBlack,
+              },
+              {
+                color: "#E0DFDB",
+                itemImg: SSWaterBottleSilver,
+                itemImgHover: SSWaterBottleSilver,
+              },
+            ],
             options: ["view-details", "select-color"],
           },
         ],
